@@ -22,13 +22,13 @@
     color: #333324;
 }
 #start{
-    width: 600px;
+    width: auto;
     border: 2px solid var(--primary);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     font-size: 56px;
     cursor: pointer;
     color: #333324;

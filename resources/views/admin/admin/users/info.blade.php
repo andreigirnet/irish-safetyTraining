@@ -1,10 +1,52 @@
 @extends('admin.administrator.layout')
 @section('adminPages')
-    <div class="dashWrapper">
+    <div class="dashWrapper" x-data="{
+        query:'',
+        showResult: false,
+        showMessage: false,
+        selectedEmployee:'',
+        message: '',
+        showSubmitButton: false,
+        users: [],
+        checkIfSelected: function(){
+            this.showSubmitButton = true
+        },
+        getUsers: function(){
+            if(this.query !== ''){
+                axios.get('/search/all/employees?q=' + this.query)
+                .then(response => {
+                    this.users = response.data
+
+                    if(this.users.length === 0){
+                        this.showResult = false
+                        this.showSubmitButton = false
+                        this.showMessage = true
+                        this.message = 'No employee has been found with this email'
+                    }else
+                    {
+                        this.showResult = true;
+                        this.showMessage = false
+                        this.message = ''
+                    }
+                })
+                .catch(error => console.log(error));
+            }else{
+                this.users = [];
+                this.showResult = false;
+                this.showSubmitButton = false;
+                this.showMessage = false
+                this.message = ''
+            }
+        }
+    }">
         <div class="adminHomePageTitle">Info</div>
-        <div class="titleText" style="font-size: 23px">Packages Owned By: {{$user->email}}</div>
-        <div href="" class="addEmployee" id="addPackage">Add package</div>
-        <form action="{{route('packages.admin.add')}}" method="POST" id="adminCreatePackage" class="registerEmployeeForm">
+        <div class="landscape">
+            <img src="{{asset('images/banners/landscape.png')}}" alt="">
+            <div class="landscapeText">Please rotate your phone</div>
+        </div>
+        <div class="titleText hide" style="font-size: 23px">Packages Owned By: {{$user->email}}</div>
+        <div href="" class="addEmployee hide" id="addPackage">Add package</div>
+        <form action="{{route('packages.admin.add')}}" method="POST" id="adminCreatePackage" class="registerEmployeeForm hide">
             @csrf
             <input type="hidden" id="userNameEmployee" name="userId" value="{{$user->id}}">
             <label for="course" class="formLabel">Course Name</label>
@@ -15,16 +57,16 @@
             <input type="number" id="userEmailEmployee" name="quantity" class="formInputProfile" placeholder="Type the quantity" required>
             <button type="submit" class="adminButton">Add</button>
         </form>
-        <table class="styled-table">
+        <table class="styled-table hide">
             <thead>
             <tr>
                 <th>Action Id</th>
                 <th>Package Id</th>
-                <th>Purchase Date</th>
+                <th class="hiddenRows">Purchase Date</th>
                 <th>Course Name</th>
                 <th>Status</th>
                 <th>Certificate</th>
-                <th>Expiration Date</th>
+                <th class="hiddenRows">Expiration Date</th>
                 <th>Generate Certificate</th>
             </tr>
             </thead>
@@ -33,7 +75,7 @@
             @foreach($packages as $package)
                 <tr>
                     <td class="actionRow">
-                        <form action="{{route('package.delete', $package->package_id)}}" method="POST">
+                        <form action="{{route('packages.admin.delete', $package->package_id)}}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button class="removeButton">
@@ -41,12 +83,12 @@
                             </button>
                         </form>
                         @if($package->certificate_id === null)
-                        <a href="{{route('package.edit', $package->package_id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>
-                        <a href="{{route('package.owner', $package->package_id)}}" class="editLink"><img src="{{asset('images/icons/star.png')}}" alt=""></a>
+                        <a href="{{route('packages.admin.edit', $package->package_id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>
+                        <a href="{{route('packages.admin.owner', $package->package_id)}}" class="editLink"><img src="{{asset('images/icons/star.png')}}" alt=""></a>
                         @endif
                     </td>
                     <td>{{$package->package_id}}</td>
-                    <td>{{$package->created_at}}</td>
+                    <td class="hiddenRows">{{$package->created_at}}</td>
                     <td>{{$package->course_name}}</td>
                     <td>{{$package->status}}</td>
                     @if($package->certificate_id !== null)
@@ -55,9 +97,9 @@
                     <td>No certificate</td>
                     @endif
                     @if($package->certificate_id !== null)
-                    <td>{{$package->expiration_date}}</td>
+                    <td class="hiddenRows">{{$package->expiration_date}}</td>
                     @else
-                        <td>No certificate</td>
+                        <td class="hiddenRows">No certificate</td>
                     @endif
 
                         @if($package->status === 'practice' && $package->certificate_id === null)
@@ -86,9 +128,25 @@
             </tbody>
         </table>
 
-        <div class="titleText" style="font-size: 23px">Employees Owned By: {{$user->email}}</div>
-        <div href="" class="addEmployee" id="addEmployee">Add employee</div>
-        <form action="{{route('register.employee.store')}}" method="POST" id="adminRegisterEmployee" class="registerEmployeeForm">
+        <div class="titleText hide" style="font-size: 23px">Employees Owned By: {{$user->email}}</div>
+        <div class="addEmployeeContainer">
+            <button class="addEmployee hide" id="addEmployee">Add New employee</button>
+            <button class="addEmployeeEx hide" id="existsButton">Add Existing employee</button>
+        </div>
+        <form action="{{route('user.admin.exist')}}" method="POST" class="formShare" id="existsForm">
+            @csrf
+            @method('POST')
+            <input type="hidden" name="companyId" value="{{$user->id}}">
+            <input type="text" class="formInputShare" x-model="query" x-on:keyup.debounce.500ms="getUsers" placeholder="Type the email of the user">
+            <select x-show="showResult" name="employeeId" id="shareTo" @change="checkIfSelected" style="height: 200px;width: 100%" x-model="selectedEmployee" multiple>
+                <template x-for="user in users" >
+                    <option  x-text="user.email" :value="user.id" class="textShare"></option>
+                </template>
+            </select>
+            <div class="shareMesage" x-text="message" x-show="showMessage"></div>
+            <button class="adminButton" type="submit" x-show="showSubmitButton">Add</button>
+        </form>
+        <form action="{{route('register.employee.store')}}" method="POST" id="adminRegisterEmployee" class="registerEmployeeForm hide">
             @csrf
             <label for="userNameEmployee" class="formLabel">Employee Full Name</label>
             <input type="text" id="userNameEmployee" name="name" class="formInputProfile">
@@ -101,7 +159,7 @@
 
             <button type="submit" class="adminButton">Add</button>
         </form>
-        <table class="styled-table">
+        <table class="styled-table hide">
             <thead>
             <tr>
                 <th>Action Id</th>
@@ -149,8 +207,10 @@
             showRegisterEmployee = !showRegisterEmployee;
             if(showRegisterEmployee === true){
                 form.style.display = 'flex';
+                addEmployeeExists.disabled = true
             }else{
                 form.style.display = 'none';
+                addEmployeeExists.disabled = false
             }
         })
 
@@ -165,5 +225,21 @@
                 formPackage.style.display = 'none';
             }
         })
+
+        let addEmployeeExists = document.getElementById('existsButton');
+        const formExists = document.getElementById('existsForm');
+        let showExists = false;
+        addEmployeeExists.addEventListener('click', function (){
+            console.log('click')
+            showExists = !showExists;
+            if(showExists === true){
+                formExists.style.display = 'flex';
+                addEmployee.disabled = true;
+            }else{
+                formExists.style.display = 'none';
+                addEmployee.disabled = false;
+            }
+        })
+
     </script>
 @endsection

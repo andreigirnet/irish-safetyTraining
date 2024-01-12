@@ -1,7 +1,7 @@
 const errorDiv = document.getElementById('errorDiv');
 const success = document.getElementsByClassName('success-message');
+const registered = document.getElementById('')
 const errorMessage = document.getElementsByClassName('error-message');
-console.log(success);
 function hideDiv(){
     errorDiv.style.display = 'none';
 }

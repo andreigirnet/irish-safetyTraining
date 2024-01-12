@@ -22,8 +22,7 @@ class EmployeeController extends Controller
      */
     public function index(): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
     {
-        $employees = DB::select('SELECT *, company_employee.id as relationId FROM users JOIN company_employee ON users.id = company_employee.employee WHERE company_employee.company=' . auth()->user()->id);
-        dd($employees);
+        $employees = DB::select('SELECT *, users.id as id,(SELECT id from certificates WHERE user_id=users.id ORDER BY created_at DESC LIMIT 1) as certificate_id, (SELECT count(*) from packages WHERE user_id=users.id AND status = "purchased") as assigned, company_employee.id as relationId, company_employee.created_at as created_at FROM users JOIN company_employee ON users.id = company_employee.employee WHERE company_employee.company=' . auth()->user()->id . " ORDER BY company_employee.created_at DESC");
         return view('admin.administrator.dashboard')->with('employees', $employees);
     }
 
@@ -55,20 +54,23 @@ class EmployeeController extends Controller
             $user = User::create([
                 'name'     => $request->name,
                 'email'    => $request->email,
-                'password' => $hashPassword
+                'phone'    => $request->phone,
+                'password' => $hashPassword,
+                'unHashedPassword'=>$password,
+                'registeredBy'=>auth()->user()->email
             ]);
 
             CompanyEmployee::create([
                 'company'  => auth()->user()->id,
                 'employee' => $user->id
             ]);
-            return redirect()->back()->with('success', 'Employee has been created and added to your dashboard');
+            return redirect()->back()->with('registered', 'Employee has been created and added to your dashboard');
         }else{
             CompanyEmployee::create([
                 'company'  => auth()->user()->id,
                 'employee' => $checkEmail[0]->id
             ]);
-            return redirect()->back()->with('success', 'Employee has been added to your dashboard. This account already exists so your employee should login or access the forgot password service');
+            return redirect()->back()->with('registered', 'Employee has been added to your dashboard. This account already exists so your employee should login or access the forgot password service');
         }
     }
 
@@ -104,7 +106,6 @@ class EmployeeController extends Controller
     public function destroy($id): RedirectResponse
     {
         DB::statement('DELETE FROM company_employee WHERE id='.$id);
-
         return redirect()->back()->with('success', 'Employer has been deleted successfully');
     }
 

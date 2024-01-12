@@ -6,27 +6,35 @@
             <table class="styled-table">
                 <thead>
                 <tr>
-                    <th>Action</th>
-                    <th>Employee Date Of Registration</th>
+                    <th class="hiddenRows">Action</th>
+                    <th class="hiddenRows">Employee Date Of Registration</th>
                     <th>Employee Name</th>
                     <th>Employee email</th>
+                    <th>Assigned Course</th>
+                    <th>Certificate</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($employees as $employee)
                     <tr>
+                        <td class="hiddenRows">
+                            <form action="{{route('delete.employer', $employee->id)}}" method="POST"> @csrf @method('DELETE')<button class="submitDeleteOrder"><img class="deleteFormOrders" src="{{asset('images/icons/bin.png')}}" alt=""></button></form>
 
-                        <td>
-                            @if(auth()->user()->is_admin === 1)
-                                <form action="{{route('delete.employer',$employee->employee)}}" method="POST"> @csrf @method('DELETE')<button class="submitDeleteOrder"><img class="deleteFormOrders" src="{{asset('images/icons/bin.png')}}" alt=""></button>
-                                </form>
-                            @endif
-                            <a href="{{route('employer.info', $employee->employee)}}" class="editLink"><img src="{{asset('images/icons/info.png')}}" alt=""></a>
+{{--                                <a href="{{route('employer.info', $employee->employee)}}" class="editLink"><img src="{{asset('images/icons/info.png')}}" alt=""></a>--}}
                         </td>
-
-                        <td>{{$employee->created_at}}</td>
+                        <td class="hiddenRows">{{$employee->created_at}}</td>
                         <td>{{$employee->name}}</td>
                         <td>{{$employee->email}}</td>
+                        @if($employee->assigned)
+                            <td><img class="invoiceLink" src="{{asset('images/icons/assign.png')}}" alt=""></td>
+                        @else
+                            <td>-</td>
+                        @endif
+                        @if($employee->certificate_id)
+                            <td><a href="{{route('certificate.download', $employee->certificate_id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
+                        @else
+                            <td>-</td>
+                        @endif
                     </tr>
                 @endforeach
                 {{--        <tr class="active-row">--}}

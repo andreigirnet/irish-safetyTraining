@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('product_id')->nullable()->constrained('products')->cascadeOnDelete()->cascadeOnUpdate();
             $table->text('course_name')->nullable();
             $table->text('status')->nullable();
             $table->foreignId('certificate_id')->nullable()->constrained('certificates')->cascadeOnDelete()->cascadeOnUpdate();;

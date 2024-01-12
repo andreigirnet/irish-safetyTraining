@@ -16,7 +16,6 @@
 }
 .adminHomePageInformation{
     width: 80%;
-    display: flex;
     column-gap: 5px;
     font-size: 17px;
     margin-top: 20px;
@@ -95,4 +94,52 @@
     flex-direction: column;
     row-gap: 20px;
 }
-
+.homeActionButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.homeStartCourseButton{
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    background: #fce001;
+    color: var(--textTitle);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.homeDownloadButton{
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    background: #fce001;
+    color: var(--textTitle);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice{
+    background: #f1dedd;
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.noticeTitle{
+    color: #a22457;
+    font-size: 18px;
+    font-weight: 600;
+}
+.noticeText{
+    color: #714748;
+    font-size: 18px;
+    padding: 10px 0;
+}

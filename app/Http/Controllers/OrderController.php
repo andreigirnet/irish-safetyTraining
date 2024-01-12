@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Stripe\Invoice;
@@ -19,14 +20,24 @@ class OrderController extends Controller
      */
     public function index(): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
     {
-        $orders = DB::select("SELECT * FROM orders WHERE user_id=" . auth()->user()->id . " ORDER BY created_at DESC");
+        $orders = Order::latest()->where('user_id', auth()->user()->id)->simplePaginate(10);
         return view('admin.administrator.orders')->with('orders',$orders);
     }
 
-    public function allOrders(): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+    public function allOrders(Request $request): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
     {
         $orders = DB::select("SELECT *, orders.user_id as owner_id, (SELECT email FROM users WHERE id=owner_id) as owner_email FROM orders ORDER BY created_at DESC");
-        return view('admin.admin.orders.index')->with('orders',$orders);
+        $page = $request->input('page', 1);
+        $size = 30;
+        $collectedData = collect($orders);
+        $paginationData = new LengthAwarePaginator(
+            $collectedData->forPage($page, $size),
+            $collectedData->count(),
+            $size,
+            $page
+        );
+        $paginationData->setPath('/admin/orders');
+        return view('admin.admin.orders.index')->with('orders',$paginationData);
     }
 
     public function searchOrder(Request $request)

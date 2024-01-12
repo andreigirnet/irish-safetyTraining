@@ -236,7 +236,8 @@
                 "content": "There are four areas you should assess for risk before performing a manual handling task.\nSome people find it useful to use the acronym  when referring to these different domains:\n We will now look at each of these four areas in detail.:",
                 "bullets": [
                     "Task",
-                    "Individual (Individual) Load (Load)",
+                    "Individual (Individual)",
+                    "Load (Load)",
                     "Environment"
                 ]
             },
@@ -266,7 +267,7 @@
             "slide_8": {
                 "img" : "/images/curs/step3/c8.webp",
                 "title": "Activity",
-                "content": "If you cannot completely eliminate the need to involve manual handling, the next priority is to look at ways to reduce the risk.\nFor example, a task that involves twisting, bending, stretching the muscles, presents a greater risk because these movements put additional stress on the body.\nWe will now look at some of the risk factors associated with pregnancy and what you can do to avoid these risks.",
+                "content": "If you cannot completely eliminate the need to involve manual handling, the next priority is to look at ways to reduce the risk.\nFor example, a task that involves twisting, bending, stretching the muscles, presents a greater risk because these movements put additional stress on the body.\nWe will now look at some of the risk factors associated with loads and what you can do to avoid these risks.",
                 "bullets": [
                 ]
             },
@@ -280,7 +281,7 @@
             "slide_10": {
                 "img" : "/images/curs/step3/c10.webp",
                 "title": "Activity: Does the task involve stretching?",
-                "content": "Uncomfortable movements, such as stretching, which increase the risk of injury.\nTo reduce the stretch, avoid lifting from shoulder height, especially if the load is heavy.\nHeavy weights should be stored at waist height, where they can be handled comfortably.\nThere is an increased risk whenever the pregnancy is below mid-thigh height or above shoulder level.",
+                "content": "Uncomfortable movements, such as stretching, which increase the risk of injury.\nTo reduce the stretch, avoid lifting from shoulder height, especially if the load is heavy.\nHeavy weights should be stored at waist height, where they can be handled comfortably.\nThere is an increased risk whenever the load is below mid-thigh height or above shoulder level.",
                 "bullets": [
                 ]
             },
@@ -313,94 +314,87 @@
                 ]
             },
             "slide_15": {
-                "img" : "/images/curs/step3/c15.webp",
-                "title": "Activity: Have you planned to move or transport?",
-                "content": "Try to avoid repetitive manipulation because it involves using the same muscles over and over to complete a task. In these situations, it is important to rotate or vary the load. Varying the load allows some muscles to rest while other muscles are being used.\n\nIf you cannot change the activities, allow enough time for rest or recovery.",
+                "img" : "/images/curs/step3/c16.webp",
+                "title": "Test your knowledge True or False",
+                "content": "There are 4 areas of risk assessment in manual handling activities; task, individual, load and environment.\nA manual handling task should be examined to see if the implementation of manual handling can be eliminated and, if not, for ways to reduce the risk.\nTasks that involve twisting, bending, or stretching the body pose a greater risk of injury. It is better to twist your body when lifting or carrying a weight instead of turning your legs and body in the direction you want to go.",
                 "bullets": [
                 ]
             },
             "slide_16": {
-                "img" : "/images/curs/step3/c16.webp",
-                "title": "Test your knowledge True or False",
-                "content": "There are 4 areas of risk assessment in manual handling activities; load, individual, load and environment.\nA manual handling task should be examined to see if the implementation of manual handling can be eliminated and, if not, for ways to reduce the risk.\nTasks that involve twisting, bending, or stretching the body pose a greater risk of injury. It is better to twist your body when lifting or carrying a weight instead of turning your legs and body in the direction you want to go.",
-                "bullets": [
-                ]
-            },
-            "slide_17": {
                 "img" : "/images/curs/step3/c17.webp",
                 "title": "Individual factors",
                 "content": "Consideration should be given to the individual ability of the person performing the manual handling task. For example, a person's age, general health and fitness level all affect the ability to lift a weight. Never lift a weight if you are unsure of your capabilities. You should only lift what can be done comfortably. Due to individual factors, it is difficult to specify the exact maximum weight that a person can carry. However, there are some guidelines on the following screen that you can use to determine whether or not you should be lifting a certain load .",
                 "bullets": [
                 ]
             },
-            "slide_18": {
+            "slide_17": {
                 "img" : "/images/curs/step3/c18.webp",
                 "title": "Study the image",
                 "content": "",
                 "bullets": [
                 ]
             },
-            "slide_19": {
+            "slide_18": {
                 "img" : "/images/curs/step3/c19.webp",
                 "title": "Individual factors",
                 "content": "Health problems\nIf you have a particular health problem (for example, a pre-existing back injury) or if you are taking any medication that could affect your ability to perform manual handling, you should inform your manager. Never lift a load from a cart\nyou are not sure that you are able to perform it without damage.\nLet your manager know if you need specialized training.",
                 "bullets": [
                 ]
             },
-            "slide_20": {
+            "slide_19": {
                 "img" : "/images/curs/step3/c20.webp",
                 "title": "Individual factors",
                 "content": "Appropriate footwear, personal protective equipment and clothing What factors should be considered?",
                 "bullets": [
                 ]
             },
-            "slide_21": {
+            "slide_20": {
                 "img" : "/images/curs/step3/c21.webp",
                 "title": "Shoes",
                 "content": "In general, flat shoes with non-slip soles\nshould be worn. If necessary\npushing or pulling a load,\nthe footwear must be slip-resistant. Where there is a risk of foot injury, suitable shoes/boots can be provided.",
                 "bullets": [
                 ]
             },
-            "slide_22": {
+            "slide_21": {
                 "img" : "/images/curs/step3/c22.webp",
                 "title": "HANDS",
                 "content": "If there is a risk of injury to your hands, suitable gloves may be provided and must be worn.",
                 "bullets": [
                 ]
             },
-            "slide_23": {
+            "slide_22": {
                 "img" : "/images/curs/step3/c23.webp",
                 "title": "WEAR",
                 "content": "Clothing should be enough\nloose enough to allow free movement of the body, but not too loose to be attached to something that would cause danger. Coveralls or similar clothing can be provided if required\nprotection to help you keep loads close to your body.",
                 "bullets": [
                 ]
             },
-            "slide_24": {
+            "slide_23": {
                 "img" : "/images/curs/step3/c24.webp",
                 "title": "Individual factors",
                 "content": "Back care\nTo prevent back pain, take care of your back by keeping it in shape and exercising it correctly. Weak muscles are often the cause of back pain, especially lower back pain. The muscles of the back, abdomen and buttocks all support the spine. These muscles are called core muscles and by exercising them correctly you can strengthen and reduce the risk of back pain. Strong quadriceps (front of the thigh muscles) and hamstrings (back of the thigh muscles) are important to prevent back injuries when lifting.\nProper lifting techniques involve using your legs and if your legs are weak, you might end up using your back.",
                 "bullets": [
                 ]
             },
-            "slide_25": {
+            "slide_24": {
                 "img" : "/images/curs/step3/c25.webp",
                 "title": "The task",
                 "content": "You should always check the weight of the load before lifting.\nThe weight of a load may be clearly marked, but if it is not, or the load is unknown, there are some techniques you can use to estimate the weight of a load.",
                 "bullets": [
                 ]
             },
-            "slide_26": {
+            "slide_25": {
                 "img" : "/images/curs/step3/c26.webp",
                 "title": "Weight",
                 "content": "One technique you can use to assess weight is to move the load back and forth.\nYou should also check if it exists\na heavier side (if the center of gravity is off-center).\nYou can also gradually apply force to the load (weight) and stop lifting it if the lifting becomes uncomfortable.",
                 "bullets": [
                 ]
             },
-            "slide_27": {
+            "slide_26": {
                 "img" : "/images/curs/step3/c27.webp",
                 "title": "Task",
                 "answer": "All of these factors affect your ability to handle the load safely and increase the risk of injury.",
-                "content": "What other factors could cause difficulty while lifting a weight? Apart from weight, the pregnancy should be examined to check if:",
+                "content": "What other factors could cause difficulty while lifting a weight? Apart from weight, the load should be examined to check if:",
                 "bullets": [
                     "is bulky or difficult to contain for transport, has sharp or broken edges",
                     "is hot, wet, dirty or slippery",
@@ -409,10 +403,10 @@
                     "this will block your view."
                 ]
             },
-            "slide_28": {
+            "slide_27": {
                 "img" : "/images/curs/step3/c28.webp",
                 "title": "The working environment",
-                "content": "After assessing your pregnancy and its weight\nfor possible risks, it is important to immediately assess the work environment. Before moving/transporting anything, consider the following:",
+                "content": "After assessing your load and its weight\nfor possible risks, it is important to immediately assess the work environment. Before moving/transporting anything, consider the following:",
                 "bullets": [
                     "Is there enough space available to maneuver comfortably?",
                     "Are the floors stable and at the same level?",
@@ -420,7 +414,7 @@
                     "Is there enough lighting to clearly see what you are doing?"
                 ]
             },
-            "slide_29": {
+            "slide_28": {
                 "img" : "/images/curs/step3/c29.webp",
                 "title": "Work Environment - Hazards",
                 "content": "This work environment presents a number of hazards that include a risk for manual handling deployment tasks.",
@@ -429,70 +423,70 @@
                     "Always make sure you are working in a well-lit room, as poor lighting limits your ability to identify any hazards and obstacles."
                 ]
             },
-            "slide_30": {
+            "slide_29": {
                 "img" : "/images/curs/step3/c30.webp",
                 "title": "The working environment",
                 "content": "Always check that the floors are dry and at the same level. Slippery, uneven or unstable floors increase the risk of accidents and injuries to the back and other body parts. Inform your manager if you are aware of any defects in the floors.",
                 "bullets": [
                 ]
             },
-            "slide_31": {
+            "slide_30": {
                 "img" : "/images/curs/step3/c31.webp",
                 "title": "Correct",
                 "content": "Be aware of your route and any hazards that may be present. Additionally, make sure you have adequate room to maneuver during a task. Working in a confined space prevents good posture and maneuverability and forces you to make awkward movements that expose you to a higher risk of injury.",
                 "bullets": [
                 ]
             },
-            "slide_32": {
+            "slide_31": {
                 "img" : "/images/curs/step3/c33.webp",
                 "title": "Question",
                 "answer": "In this example, risk is related to individual capabilities.\nThe person is pregnant, which affects her ability to implement manual handling.\n",
                 "content": "In this situation, to which of the four areas below does the risk apply? In this example, risk is related to individual capabilities.\nThe person is pregnant, which affects her ability to implement manual handling.",
                 "bullets": [
-                    "Entourage",
+                    "Load",
                     "Task",
                     "Work environment",
                     "Individual capacities",
                     "Correct"
                 ]
             },
-            "slide_33": {
+            "slide_32": {
                 "img" : "/images/curs/step3/c34.webp",
                 "title": "Question",
                 "answer": "Task. In this example, the risk is related to the weight of the task. The load is poorly packed, which could affect its safe transport.",
                 "content": "In this situation, to which of those\nfour areas below does the risk apply? ",
                 "bullets": [
-                    "Entourage",
+                    "Load",
                     "Task",
                     "Work environment",
                     "Individual abilities"
                 ]
             },
-            "slide_34": {
+            "slide_33": {
                 "img" : "/images/curs/step3/c36.webp",
                 "title": "Question",
-                "answer": "Entourage. In this example, the risk is related to the environment. Uncomfortable movements, such as stretching, which increase the risk of injury. \n To reduce the risk of injury, the load should be stored at waist height, \n where stretching can be avoided and the load can be handled comfortably.",
+                "answer": "In this example, the risk is related to the environment. Uncomfortable movements, such as stretching, which increase the risk of injury. \n To reduce the risk of injury, the load should be stored at waist height, \n where stretching can be avoided and the load can be handled comfortably.",
                 "content": "In this situation, to which of the four areas below does the risk apply?",
                 "bullets": [
-                    "Entourage",
-                    "Pregnancy",
+                    "Task",
+                    "Load",
                     "Work environment",
                     "Individual abilities"
                 ]
             },
-            "slide_35": {
+            "slide_34": {
                 "img" : "/images/curs/step3/c37.webp",
                 "title": "Question",
                 "answer": "In this example, the risk is related to the working environment. Working in poor light prevents you from seeing clearly and makes it difficult to spot any hazards. Please continue.",
                 "content": "In this situation, to which of the four areas below does the risk apply?",
                 "bullets": [
-                    "Entourage",
-                    "Pregnancy",
+                    "Task",
+                    "Load",
                     "Working environment",
                     "Individual abilities"
                 ]
             },
-            "slide_36": {
+            "slide_35": {
                 "img" : "/images/curs/step3/c39.webp",
                 "title": "SUMMARY",
                 "answer": "",
@@ -614,7 +608,7 @@
                 ]
             },
             "slide_14": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw.webp",
                 "title": "The Seesaw Principle",
                 "answer": "",
                 "content": "When you sit on a swing with someone of the same weight, you will be in balance. What happens when you are heavier than the person you are sitting with, for example with a child?",
@@ -640,7 +634,7 @@
                 ]
             },
             "slide_17": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw2.webp",
                 "title": "Correct",
                 "img_additional": "/images/curs/step4/seesaw.png",
                 "answer": "",
@@ -656,14 +650,14 @@
                 "bullets": [
                     "We should try to stand close to the object we are picking up before picking it up.",
                     "We should try to keep the load close to our body when lifting, lowering, pushing or pulling.",
-                    "We should find someone lighter (in weight) to perform a manual handling task."
+                    "We should find something lighter (in weight) to perform a manual handling task."
                 ]
             },
             "slide_19": {
                 "img" : "/images/curs/step4/d19.webp",
                 "title": "Correct",
-                "answer": "We should find someone lighter (in weight) to perform a manual handling task.",
-                "content": "If you start the manual handling procedure close to the load and try to keep it close to the body, you reduce the effort required to perform it. Please continue. ✓ We should try to stand close to the object we are picking up before picking it up. We should try to keep the load close to our body when lifting, lowering, pushing or pulling.",
+                "answer": "We should try to keep the load close to our body when lifting, lowering, pushing or pulling.",
+                "content": "If you start the manual handling procedure close to the load and try to keep it close to the body, you reduce the effort required to perform it. We should try to keep the load close to our body when lifting, lowering, pushing or pulling.",
                 "bullets": [
                 ]
             },
@@ -1586,7 +1580,7 @@
                 ]
             },
             "slide_14": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw.webp",
                 "title": "Zasada huśtawki",
                 "answer": "",
                 "content": "Kiedy siedzisz na huśtawce z kimś o tej samej wadze, będziesz w równowadze.Co się dzieje, gdy jesteś cięższy od osoby, z którą siedzisz, na przykład z dzieckiem?",
@@ -1612,7 +1606,7 @@
                 ]
             },
             "slide_17": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw2.webp",
                 "title": "Prawidłowy",
                 "img_additional": "/images/curs/step4/seesaw.png",
                 "answer": "",
@@ -2193,7 +2187,7 @@
                 "img" : "/images/curs/step3/c10.webp",
                 "title": "Задание Включает ли задание растяжку?",
                 "answer": "",
-                "content": "Неудобные движения, такие как растяжка, которые повышают риск получения травмы.\nЧтобы уменьшить растяжение, избегайте подъема с уровня плеч, особенно если это тяжелый груз.\nТяжелые грузы следует хранить на уровне талии, чтобы с ними можно было удобно обращаться.\nСуществует повышенный риск, если беременность находится ниже середины бедра или выше уровня плеч.",
+                "content": "Неудобные движения, такие как растяжка, которые повышают риск получения травмы.\nЧтобы уменьшить растяжение, избегайте подъема с уровня плеч, особенно если это тяжелый груз.\nТяжелые грузы следует хранить на уровне талии, чтобы с ними можно было удобно обращаться.\nСуществует повышенный риск, если тяжесть находится ниже середины бедра или выше уровня плеч.",
                 "bullets": [
                 ]
             },
@@ -2547,7 +2541,7 @@
                 ]
             },
             "slide_14": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw.webp",
                 "title": "Принцип качелей",
                 "answer": "",
                 "content": "Когда вы сидите на качелях с кем-то такого же веса, вы будете в равновесии.Что происходит, когда вы тяжелее человека, с которым сидите, например, ребенка?",
@@ -2573,7 +2567,7 @@
                 ]
             },
             "slide_17": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw2.webp",
                 "title": "Правильный",
                 "img_additional": "/images/curs/step4/seesaw.png",
                 "answer": "",
@@ -3111,7 +3105,8 @@
                 "content": "Există patru domenii pe care ar trebui să le evaluați pentru riscuri înainte de a efectua o sarcină de manual handling.\nUnele persoane consideră că este util să se utilizeze acronimul  atunci când vă amintiți aceste domenii diferite, \n Vom analiza acum fiecare dintre aceste patru domenii în detaliu:",
                 "bullets": [
                     "Sarcina (Task)",
-                    "Individuale (Individual) Încărca (Load)",
+                    "Individuale (Individual)",
+                    "Încărca (Load)",
                     "Mediu (Environment)"
                 ]
             },
@@ -3512,7 +3507,7 @@
                 ]
             },
             "slide_14": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw.webp",
                 "title": "Principiul Seesaw",
                 "answer": "",
                 "content": "Când stai pe un balansoar cu cineva de aceeaşi greutate, vei fi in echilibru.Ce se întâmplă când eşti mai greu decât persoana cu care stai, de exemplu cu un copil?",
@@ -3538,7 +3533,7 @@
                 ]
             },
             "slide_17": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw2.webp",
                 "title": "Corect",
                 "additional_image": "seesaw.png",
                 "answer": "",
@@ -4474,7 +4469,7 @@
                 ]
             },
             "slide_14": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw.webp",
                 "title": "El principio del balancín",
                 "answer": "",
                 "content": "Cuando te sientas en un columpio con alguien del mismo peso, estarás en equilibrio ¿Qué sucede cuando pesas más que la persona con la que estás sentado, por ejemplo, con un niño?",
@@ -4500,7 +4495,7 @@
                 ]
             },
             "slide_17": {
-                "img" : "/images/curs/step4/d14.webp",
+                "img" : "/images/curs/step4/seesaw2.webp",
                 "title": "Correcto",
                 "additional_image": "/images/curs/step4/seesaw.png",
                 "answer": "",

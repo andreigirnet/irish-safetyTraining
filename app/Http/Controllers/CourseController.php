@@ -14,12 +14,7 @@ class CourseController extends Controller
     public function index($id)
     {
         $packagesOwnedByUser = DB::select('SELECT * FROM packages WHERE user_id=' . auth()->user()->id . ' AND id=' . $id);
-        if($packagesOwnedByUser){
-            if ($packagesOwnedByUser[0]->certificate_id === null){
-                return view('admin.administrator.course')->with('packagesOwnedByUser',$packagesOwnedByUser);
-            }
-        }
-        return redirect(route('package.index'))->with('success', 'Buy a package to complete a course or choose the right course')->with('packagesOwnedByUser', $packagesOwnedByUser);
+        return view('admin.administrator.course')->with('packagesOwnedByUser',$packagesOwnedByUser);
     }
 
     /**

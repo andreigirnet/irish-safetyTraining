@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
+    <link rel="stylesheet" href="{{asset("css/front/register.css")}}">
 </head>
 <body>
         <main>

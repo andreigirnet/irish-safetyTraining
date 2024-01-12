@@ -18,8 +18,8 @@ return [
     'name' => env('APP_NAME'),
     'address'=>'115 Cherrywood Park',
     'town'=>'Dubin',
-    'telephone'=>'892777333',
-    'email'=>'info@irish_safetytraining.com',
+    'telephone'=>'899706050',
+    'email'=>'info@irish-safetytraining.com',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -72,7 +72,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Dublin',
 
     /*
     |--------------------------------------------------------------------------

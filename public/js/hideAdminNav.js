@@ -5,7 +5,6 @@ let navBar = document.getElementById('side');
 // Add click event listener to the slider span element
 showHideButton.querySelector('.slider').addEventListener('click', function() {
     showNavState = !showNavState;
-    console.log(showNavState)
     if (showNavState === true) {
         navBar.style.display = 'block';
         showNavState = true;

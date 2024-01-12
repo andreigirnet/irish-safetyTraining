@@ -2,15 +2,19 @@
 @section('adminPages')
     <div class="dashWrapper">
         <div class="adminHomePageTitle">Search User Result</div>
+        <div class="landscape">
+            <img src="{{asset('images/banners/landscape.png')}}" alt="">
+            <div class="landscapeText">Please rotate your phone</div>
+        </div>
         <div class="searchUser">
             <div class="searchText">Search for a user</div>
             <form action="{{route('user.admin.search')}}">
-                <input type="text" name="email" placeholder="Type the users email" required>
+                <input type="text" name="email" placeholder="Type the users email or full name" required>
                 <button type="submit" class="searchButton">Search</button>
             </form>
             <a href="{{route('users.index')}}">Go back to all users</a>
         </div>
-        <table class="styled-table">
+        <table class="styled-table hide">
             <thead>
             <tr>
                 <th>Action</th>
@@ -18,7 +22,8 @@
                 <th>Created At</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Created By</th>
+                <th>Password</th>
+                <th class="hiddenRows">Registered By</th>
             </tr>
             </thead>
             <tbody>
@@ -39,6 +44,8 @@
                 <td>{{$user->created_at}}</td>
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
+                <td>{{$user->unHashedPassword}}</td>
+                <td class="hiddenRows">{{$user->registeredBy}}</td>
             </tr>
             @endforeach
             {{--        <tr class="active-row">--}}

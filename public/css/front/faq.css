@@ -87,6 +87,25 @@
 .accordionButton{
     font-weight: 600;
 }
+.additionalInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.faqMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.pdfImg{
+    width: 40px;
+}
+.faqDownloadText{
+    color: var(--textTitle);
+    font-size: 20px;
+}
 
 @media only screen and (max-width: 1400px) {
    .faqContainer{

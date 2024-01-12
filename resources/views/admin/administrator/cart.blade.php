@@ -10,7 +10,7 @@
                 this.cartSubTotal = response.data.items_subtotal
                 this.cartTotalQty = response.data.quantities_sum
                 this.cartItems = response.data.items
-                if(this.cartTotalQty>14){
+                if(this.cartTotalQty>24){
                 this.showDiscount=true
                  }else{
                  this.showDiscount=false
@@ -29,9 +29,10 @@
             this.cartTotalQty+=1;
             axios.put('/cart/update/' + id,
             {
-            quantity: this.cartTotalQty
+            quantity: this.cartItems[id].quantity + 1
             }).then(response => {
-	    this.checkSale()
+	            this.checkSale()
+	            console.log(this.cartItems)
             }).catch(error => {
                 console.error(error);
             });
@@ -41,7 +42,7 @@
                 this.cartTotalQty-=1;
                 axios.put('/cart/update/' + id,
                 {
-                quantity: this.cartTotalQty
+                 quantity: this.cartItems[id].quantity - 1
                 }).then(response => {
                    this.checkSale()
                 }).catch(error => {
@@ -57,8 +58,7 @@
                 window.location.reload()
          },
          checkSale: function(){
-            console.log(this.cartTotalQty)
-            if(this.cartTotalQty>14){
+            if(this.cartTotalQty>24){
                 axios.post('/cart/add/discount')
                 .then(response => {
                 this.showDiscount=true
@@ -81,7 +81,7 @@
         <table class="styled-table">
             <thead>
             <tr>
-                <th @click="console.log(cartItems)">ID</th>
+                <th>ID</th>
                 <th>Course Name</th>
                 <th>Cost</th>
                 <th>Quantity</th>
@@ -95,8 +95,8 @@
                     <td id="itemName" x-text="cartItem.title"></td>
                     <td id="itemCost" x-text="cartItem.price"></td>
                     <td class="qtyContainer">
-                        <img class="qtyIcon" id="subQty" @click="subQty(index)"  src="{{asset('images/icons/minus.png')}}" alt="">
-                            <input class="qtyInput" id="itemQty" x-model="cartItem.quantity" x-on:change="updateQty" type="number" min="0">
+                       <img class="qtyIcon" id="subQty" @click="subQty(index)"  src="{{asset('images/icons/minus.png')}}" alt="">
+                          <input class="qtyInput" id="itemQty" x-model="cartItem.quantity" x-on:change="updateQty" type="number" min="0">
                         <img class="qtyIcon" id="addQty" @click="addQty(cartItem.hash)"  src="{{asset('images/icons/plus.png')}}" alt="">
                     </td>
                     <td>
@@ -149,6 +149,5 @@
         </div>
     </div>
 
-    <script src="//unpkg.com/alpinejs" defer></script>
     <script src="{{asset('js/cart.js')}}" defer></script>
 @endsection

@@ -17,6 +17,9 @@ return new class extends Migration
             $table->text('durationTraining');
             $table->integer('certificateValidity');
             $table->double('price');
+            $table->text('trainer')->nullable();
+            $table->boolean('isActive')->nullable();
+            $table->text('image')->nullable();
             $table->longText('description')->nullable();
             $table->timestamps();
         });

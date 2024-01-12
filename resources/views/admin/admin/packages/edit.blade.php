@@ -14,13 +14,13 @@
     }">
         <div class="adminHomePageTitle">Edit Package</div>
         <div class="formEdit">
-            <form action="{{route('package.update', $package->id)}}" method="POST" class="registerEmployeeForm">
+            <form action="{{route('packages.admin.update', $package->id)}}" method="POST" class="registerEmployeeForm">
                 @csrf
                 @method('PUT')
                 <label class="formLabel" for="course_name">Course Name</label>
                 <input class="formInputProfile" type="text" id="course_name" name="course_name" value="{{$package->course_name}}">
                 <label class="formLabel" for="status">Statuts: Change</label>
-                <select name="status" id="status" style="height: 40px" id="">
+                <select name="status" id="status" style="height: 40px">
                         <option value="purchased">purchased</option>
                         <option value="theory">theory</option>
                         <option value="practice">practice</option>

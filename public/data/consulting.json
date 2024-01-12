@@ -1,0 +1,72 @@
+{
+    "en": {
+        "title": "Consulting Services for Safety",
+        "services": "Our Services",
+        "line1": "Our extensive experience positions us as leaders in staying updated with the latest corporate safety standards aimed at accident prevention.",
+        "dublin": "Safety Consultancy Services in Dublin",
+        "line3": "We conduct Health & Safety Consultancy across Dublin, utilizing field experts to deliver training and guidance across various company profiles.",
+        "line4": "Furthermore, we specialize in investigating accidents and their root causes, implementing necessary preventive measures to avoid recurrence within the workplace.",
+        "list": ["Safe-T-Cert management systems", "Workplace inspections", "Comprehensive safety audits", "Setting up cloud safety file documentation", "Creating health and safety policies", "Conducting risk, noise, and COSHH assessments", "Developing company safety statements", "Crafting health and safety plans", "Creating method statements", "Performing risk assessments", "Investigating accident incidents", "Assessing training requirements and providing seminars, toolbox talks, and training courses", "PAT testing"],
+        "line5": "We work collaboratively with you to determine your objectives, and apply our expertise to develop a culture of workplace health and safety.\n",
+        "line6": "We offer assistance to employers seeking third-party support to meet their workplace health and safety goals, whether on an ongoing basis or for specific projects.\n",
+        "line7": "Through our collaborative discovery process, we identify your unique objectives and needs, establishing key benchmarks to align our efforts with your definition of success.",
+        "line8": "At Irish Safety Training we partner with organizations to continuously implement health and safety programs. This involves conducting audits and inspections, developing policies and procedures tailored to specific hazards, and offering outsourced health and safety management as necessary.",
+        "line9": "For inquiries about our Advisory services or clarifications regarding compliance with workplace regulations and legislation, feel free to schedule a consultation with our team directly at +353899706050."
+    },
+    "sp": {
+        "title": "Servicios de Consultoría para la Seguridad",
+        "services": "Nuestros Servicios",
+        "line1": "Nuestra amplia experiencia nos posiciona como líderes en mantenernos actualizados con las últimas normas de seguridad corporativa orientadas a la prevención de accidentes.",
+        "dublin": "Servicios de Consultoría de Seguridad en Dublín",
+        "line3": "Realizamos Consultoría de Salud y Seguridad en toda Dublín, utilizando expertos de campo para brindar capacitación y orientación en diversos perfiles de empresas.",
+        "line4": "Además, nos especializamos en investigar accidentes y sus causas fundamentales, implementando las medidas preventivas necesarias para evitar la recurrencia en el lugar de trabajo.",
+        "list": ["Sistemas de gestión Safe-T-Cert", "Inspecciones en el lugar de trabajo", "Auditorías exhaustivas de seguridad", "Configuración de documentación de archivos de seguridad en la nube", "Creación de políticas de salud y seguridad", "Realización de evaluaciones de riesgos, ruido y COSHH", "Desarrollo de declaraciones de seguridad de la empresa", "Elaboración de planes de salud y seguridad", "Creación de declaraciones de método", "Realización de evaluaciones de riesgos", "Investigación de incidentes de accidentes", "Evaluación de requisitos de capacitación y provisión de seminarios, charlas de caja de herramientas y cursos de formación", "Pruebas PAT"],
+        "line5": "Colaboramos contigo para identificar tus objetivos y aprovechamos nuestra experiencia para fomentar una cultura de salud y seguridad en el lugar de trabajo.",
+        "line6": "Ofrecemos asistencia a los empleadores que buscan apoyo de terceros para alcanzar sus objetivos de salud y seguridad en el lugar de trabajo, ya sea de forma continua o para proyectos específicos.",
+        "line7": "A través de nuestro proceso de descubrimiento colaborativo, identificamos sus objetivos y necesidades únicos, estableciendo puntos de referencia clave para alinear nuestros esfuerzos con su definición de éxito.",
+        "line8": "En Irish Safety Training colaboramos con organizaciones para implementar continuamente programas de salud y seguridad. Esto implica realizar auditorías e inspecciones, desarrollar políticas y procedimientos adaptados a peligros específicos y ofrecer gestión externalizada de salud y seguridad según sea necesario.",
+        "line9": "Para consultas sobre nuestros servicios de asesoramiento o aclaraciones sobre el cumplimiento de las regulaciones y legislación laboral, no dude en programar una consulta con nuestro equipo directamente al +353899706050."
+    },
+    "ro": {
+        "title": "Servicii de Consultanță pentru Siguranță",
+        "services": "Serviciile Noastre",
+        "line1": "Experiența noastră extinsă ne poziționează ca lideri în menținerea actualizării cu cele mai recente standarde de siguranță corporativă orientate spre prevenirea accidentelor.",
+        "dublin": "Servicii de Consultanță pentru Siguranță în Dublin",
+        "line3": "Desfășurăm Consultanță în Sănătate și Siguranță în Dublin, utilizând experți de teren pentru a oferi training și îndrumare în diverse profiluri de companii.",
+        "line4": "În plus, ne specializăm în investigarea accidentelor și a cauzelor lor fundamentale, implementând măsurile preventive necesare pentru a evita recurența în cadrul locului de muncă.",
+        "list": ["Sisteme de gestionare Safe-T-Cert", "Inspecții la locul de muncă", "Audituri exhaustive de siguranță", "Configurarea documentației de fișiere de siguranță în cloud", "Crearea politicilor de sănătate și securitate", "Efectuarea evaluărilor de risc, zgomot și COSHH", "Dezvoltarea declarațiilor de securitate ale companiei", "Elaborarea planurilor de sănătate și securitate", "Crearea declarațiilor de metodă", "Efectuarea evaluărilor de risc", "Investigarea incidentelor de accidente", "Evaluarea cerințelor de formare și furnizarea de seminarii, discuții de cutie cu instrumente și cursuri de formare", "Testarea PAT"],
+        "line5": "Colaborăm cu tine pentru a-ți identifica obiectivele și valorificăm expertiza noastră pentru a promova o cultură a sănătății și securității la locul de muncă.",
+        "line6": "Oferim asistență angajatorilor care caută sprijin din partea terților pentru a-și atinge obiectivele de sănătate și securitate la locul de muncă, fie pe o bază continuă, fie pentru proiecte specifice.",
+        "line7": "Prin procesul nostru colaborativ de descoperire, identificăm obiectivele și nevoile dumneavoastră unice, stabilind repere cheie pentru a alinia eforturile noastre cu definiția dumneavoastră a succesului.",
+        "line8": "La Irish Safety Training colaborăm cu organizațiile pentru a implementa în mod continuu programe de sănătate și securitate. Acest lucru implică efectuarea de audituri și inspecții, elaborarea de politici și proceduri adaptate la riscuri specifice și oferirea de servicii externalizate de gestionare a sănătății și securității atunci când este necesar.",
+        "line9": "Pentru întrebări despre serviciile noastre de consultanță sau clarificări cu privire la conformitatea cu reglementările și legislația privind locul de muncă, nu ezitați să programați o consultație cu echipa noastră direct la +353899706050."
+    },
+    "pl": {
+        "title": "Usługi Doradcze w Zakresie Bezpieczeństwa",
+        "services": "Nasze Usługi",
+        "line1": "Nasze rozległe doświadczenie stawia nas w roli liderów w śledzeniu najnowszych standardów bezpieczeństwa korporacyjnego mających na celu zapobieganie wypadkom.",
+        "dublin": "Usługi Doradcze w Zakresie Bezpieczeństwa w Dublinie",
+        "line3": "Przeprowadzamy doradztwo w zakresie zdrowia i bezpieczeństwa w całym Dublinie, korzystając z ekspertów terenowych do prowadzenia szkoleń i udzielania porad w różnych profilach firm.",
+        "line4": " Ponadto specjalizujemy się w dochodzeniu w sprawie wypadków i ich przyczyn, wdrażając niezbędne środki zapobiegawcze w celu uniknięcia ich powtarzalności w miejscu pracy.",
+        "list": ["Systemy zarządzania Safe-T-Cert", "Inspekcje miejsc pracy", "Kompleksowe audyty bezpieczeństwa", "Konfiguracja dokumentacji plików bezpieczeństwa w chmurze", "Tworzenie polityk zdrowia i bezpieczeństwa", "Przeprowadzanie ocen ryzyka, hałasu i COSHH", "Tworzenie oświadczeń o bezpieczeństwie firmy", "Tworzenie planów zdrowia i bezpieczeństwa", "Tworzenie oświadczeń metodycznych", "Przeprowadzanie ocen ryzyka", "Badanie wypadków", "Ocena wymagań szkoleniowych i dostarczanie seminarów, rozmów z pudełką narzędziową i kursów szkoleniowych", "Testowanie PAT"],
+        "line5": "Współpracujemy z Tobą, aby zidentyfikować Twoje cele i wykorzystujemy nasze doświadczenie, aby promować kulturę zdrowia i bezpieczeństwa w miejscu pracy.",
+        "line6": "Oferujemy pomoc pracodawcom, którzy szukają wsparcia zewnętrznego w realizacji celów zdrowia i bezpieczeństwa w miejscu pracy, zarówno na bieżącej zasadzie, jak i w ramach konkretnych projektów.",
+        "line7": "Poprzez nasz proces wspólnego odkrywania identyfikujemy unikalne cele i potrzeby, ustalając kluczowe punkty odniesienia, aby dostosować nasze działania do Państwa definicji sukcesu.",
+        "line8": "W Irish Safety Training współpracujemy z organizacjami, aby ciągle wdrażać programy zdrowia i bezpieczeństwa. Obejmuje to przeprowadzanie audytów i inspekcji, opracowywanie polityk i procedur dostosowanych do konkretnych zagrożeń oraz oferowanie zarządzania zdrowiem i bezpieczeństwem outsourcowanego w miarę potrzeb.",
+        "line9": "W razie pytań dotyczących naszych usług doradczych lub wyjaśnień dotyczących zgodności z przepisami i ustawodawstwem dotyczącym miejsca pracy, zapraszamy do umówienia się na konsultację z naszym zespołem pod numerem +353899706050."
+    },
+    "ru": {
+        "title": "Консультационные услуги по безопасности",
+        "services": "Наши услуги",
+        "line1": "Наше обширное опыт позиционирует нас как лидеров в поддержании актуальности последних корпоративных стандартов безопасности, направленных на предотвращение несчастных случаев.",
+        "dublin": "Услуги консалтинга по безопасности в Дублине",
+        "line3": "Мы проводим консультации по охране труда и безопасности в Дублине, используя экспертов в области для проведения обучения и консультирования в различных профилях компаний.",
+        "line4": "Кроме того, мы специализируемся на расследовании несчастных случаев и их коренных причин, внедряя необходимые профилактические меры для предотвращения их повторения на рабочем месте.",
+        "list": ["Системы управления Safe-T-Cert", "Проверки места работы", "Комплексные аудиты безопасности", "Настройка документации об облачной безопасности", "Создание политик здоровья и безопасности", "Проведение оценок рисков, шума и COSHH", "Разработка заявлений о безопасности компании", "Составление планов здоровья и безопасности", "Создание методических заявлений", "Проведение оценок рисков", "Расследование инцидентов с происшествиями", "Оценка потребностей в обучении и проведение семинаров, брифингов и курсов обучения", "Тестирование PAT"],
+        "line5": "Мы сотрудничаем с вами для выявления ваших целей и используем наш опыт для формирования культуры здоровья и безопасности на рабочем месте.",
+        "line6": "Мы предоставляем помощь работодателям, ищущим поддержку со стороны третьих лиц для достижения целей по охране здоровья и безопасности на рабочем месте, как на постоянной основе, так и для конкретных проектов.",
+        "line7": "Через наш совместный процесс обнаружения мы идентифицируем ваши уникальные цели и потребности, устанавливая ключевые ориентиры для согласования наших усилий с вашим определением успеха.",
+        "line8": "В Irish Safety Training мы сотрудничаем с организациями для непрерывной реализации программ здоровья и безопасности. Это включает в себя проведение аудитов и инспекций, разработку политик и процедур, адаптированных к конкретным опасностям, а также предоставление услуг по внешнему управлению здоровьем и безопасностью по мере необходимости.",
+        "line9": "По вопросам наших консультационных услуг или уточнения вопросов соблюдения нормативов и законодательства в сфере труда, не стесняйтесь назначить консультацию с нашей командой напрямую по номеру +353899706050."
+    }
+}

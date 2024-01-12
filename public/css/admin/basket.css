@@ -97,3 +97,19 @@ th{
 .linkCheckOut{
     width: 100px;
 }
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+   .dashWrapper{
+        padding-bottom: 100px;
+   }
+}
+@media screen and (max-width: 481px) and (min-width: 250px){
+    .qtyContainer{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .dashWrapper{
+        padding-bottom: 100px;
+    }
+}

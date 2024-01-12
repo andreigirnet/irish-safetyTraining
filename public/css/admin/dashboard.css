@@ -39,3 +39,13 @@
     color: #009879;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 768px){
+   .hiddenRows{
+       display: none;
+   }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .hiddenRows{
+        display: none;
+    }
+}

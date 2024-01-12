@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Basket;
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
@@ -47,12 +48,11 @@ class BasketController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        $product = DB::select("SELECT * FROM products WHERE id=".$request->productId);
-
+        $product = Product::find($request->productId);
         $this->cart->addItem([
             'id'      =>$request->productId,
-            'title'   =>$product[0]->name,
-            'price'   =>$product[0]->price,
+            'title'   =>$product->name,
+            'price'   =>$product->price,
             'quantity'=>1
         ]);
 

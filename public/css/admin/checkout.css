@@ -64,7 +64,7 @@
     margin-top: 20px;
     color: red;
 }
-#payment-element {
+#card-element {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.30) 0px 0px 0px 1px;
     padding: 20px;
     border-radius: 5px;
@@ -77,7 +77,7 @@
     font-weight: 600;
     opacity: 0.8;
 }
-#payment-form input{
+.formInput{
     height: 40px;
     padding-left: 10px;
     border: none;
@@ -99,4 +99,101 @@
 .checkoutImage{
     width: 120%;
 }
-
+.cardS{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.30) 0px 0px 0px 1px;
+    border-radius: 7px;
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    column-gap: 20px;
+    align-items: center;
+    color: gray;
+    font-weight: 600;
+    justify-content: space-between;
+}
+.cardS img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.inpPay{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+#cn{
+    width: 60%;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.5;
+}
+#mn{
+    width: 15%;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#yy{
+    width: 15%;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#ss{
+    width: 20%;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.sep{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.monthYear{
+    display: flex;
+    justify-content: end;
+}
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .checkoutWrap{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .checkoutLeftSide{
+        width: 90%;
+    }
+    .checkoutLeftSide img{
+        width: 90%;
+    }
+    .checkoutRightSide{
+        width: 90%;
+    }
+    #payment-form input{
+       border: 1px solid gray;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .checkoutWrap{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .checkoutLeftSide{
+        width: 90%;
+    }
+    .checkoutLeftSide img{
+        width: 90%;
+    }
+    .checkoutRightSide{
+        width: 90%;
+    }
+    #payment-form input{
+        border: 1px solid gray;
+    }
+}

@@ -24,12 +24,14 @@
     <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body>
+<body x-data="app()">
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
-
+@include("frontIncludes/subNav")
 @yield('content')
 <script>
 window.replainSettings = { id: 'c80878c4-2fae-43e0-9c25-b83f75ab8a61' };
@@ -43,6 +45,8 @@ var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 <script src="{{asset("js/hamburgerAction.js")}}"></script>
 <script src="{{asset("js/brandSwiper.js")}}"></script>
 <script src="{{asset("js/accordion.js")}}"></script>
+<script src="{{asset("js/review.js")}}"></script>
+<script src="{{asset("js/mainScript.js")}}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

@@ -8,6 +8,79 @@
     --mainWidth: 1178px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.language-picker {
+    position: absolute;
+    top: 79px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.langText{
+    font-size: 18px;
+}
+#swiperSubNav {
+    display: none;
+}
+.subNavImg{
+    width: 30px;
+}
+.subNavElement{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-weight: 600;
+}
+.subNavContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+
+.subInnerNav{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+}
+.langPicker{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.langPicker img{
+    width: 45px;
+    cursor: pointer;
+    transition: 1s;
+}
+.langPicker img:hover{
+    transform: scale(1.1);
+
+}
+.subNavMobile{
+    display: none;
+}
+.flag-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.language-picker label {
+    margin-right: 10px;
+}
+
+.language-picker select {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #163020 ;
+    color: white;
+}
 a{
     text-decoration: none;
     color: white;
@@ -46,6 +119,14 @@ a .navItem{
 }
 #googleIcon img{
     width: 60px;
+}
+#googleIcon{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+#cpd{
+    height: 44px;
 }
 #hamButton{
     position: fixed;
@@ -185,5 +266,11 @@ a .navItem{
         justify-content: end;
         column-gap: 10px;
         padding: 9px;
+    }
+    #cpd, #rospa{
+        display: none;
+    }
+    .langText{
+        display: none;
     }
 }

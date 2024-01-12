@@ -5,6 +5,7 @@ namespace App\Mail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
@@ -13,13 +14,15 @@ class CertificateMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $url;
+    public $pdfFilePath;
 
     /**
      * Create a new message instance.
      */
-    public function __construct($url)
+    public function __construct($url,$pdfFilePath)
     {
         $this->url = $url;
+        $this->pdfFilePath = $pdfFilePath;
     }
 
     /**
@@ -49,6 +52,10 @@ class CertificateMail extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromPath($this->pdfFilePath)
+                ->as('certificate.pdf')
+                ->withMime('application/pdf'),
+        ];
     }
 }

@@ -6,6 +6,7 @@ use App\Models\Certificate;
 use App\Models\Package;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
 
 class PackageController extends Controller
@@ -15,7 +16,7 @@ class PackageController extends Controller
      */
     public function index()
     {
-        $packages = DB::select("SELECT * FROM `packages` WHERE user_id=" . auth()->user()->id);
+        $packages = Package::latest()->where('user_id',auth()->user()->id)->simplePaginate(10);
         return view('admin.administrator.package')->with('packages', $packages);
     }
 
@@ -31,12 +32,22 @@ class PackageController extends Controller
         DB::statement('INSERT INTO user_package(`sharing_from`, `sharing_to`, `package_id`) VALUES(' . auth()->user()->id . ',' . $request->shareToEmployee . ','.$id.')');
         DB::statement('UPDATE packages SET user_id=' . $request->shareToEmployee . ' WHERE id=' . $id);
         $userShareTo = DB::select('SELECT name FROM users WHERE id=' . $request->shareToEmployee);
-        return(redirect(route('package.index')))->with('success', 'The course has been shared to ' . $userShareTo[0]->name);
+        return(redirect(route('package.index')))->with('success', 'The course was sent successfully to your employee/candidate');
     }
 
-    public function getAllPackages(){
+    public function getAllPackages(Request $request){
         $packages =  DB::select("SELECT *, packages.user_id as user_id, (SELECT email FROM users WHERE id = user_id) AS userPackageHolder FROM packages ORDER BY created_at DESC");
-        return view('admin.admin.packages.index')->with('packages', $packages);
+        $page = $request->input('page', 1);
+        $size = 30;
+        $collectedData = collect($packages);
+        $paginationData = new LengthAwarePaginator(
+            $collectedData->forPage($page, $size),
+            $collectedData->count(),
+            $size,
+            $page
+        );
+        $paginationData->setPath('/admin/packages');
+        return view('admin.admin.packages.index')->with('packages', $paginationData);
     }
 
     public function searchPackage(Request $request){
@@ -125,7 +136,7 @@ class PackageController extends Controller
         $order->update([
             'user_id'=>$request->user_id,
         ]);
-        return redirect(route('packages.index'))->with('success','Owner of the package has been updated');
+        return redirect(route('packages.admin.index'))->with('success','Owner of the package has been updated');
     }
 
     /**

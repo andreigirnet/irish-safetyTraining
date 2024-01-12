@@ -2,6 +2,10 @@
 @section('adminPages')
     <div class="dashWrapper">
         <div class="adminHomePageTitle">All Orders</div>
+        <div class="landscape">
+            <img src="{{asset('images/banners/landscape.png')}}" alt="">
+            <div class="landscapeText">Please rotate your phone</div>
+        </div>
         <div class="searchUser">
             <div class="searchText">Search for an Order by Id</div>
             <form action="{{route('order.search')}}">
@@ -9,21 +13,21 @@
                 <button type="submit" class="searchButton">Search</button>
             </form>
         </div>
-        <table class="styled-table">
+        <table class="styled-table hide">
             <thead>
             <tr>
-                <th>Acton</th>
+                <th>Action</th>
                 <th>Order Id</th>
-                <th>Created At</th>
+                <th class="hiddenRows">Created At</th>
                 <th>Owner</th>
                 <th>Product Name</th>
                 <th>Quantity</th>
                 <th>Paid</th>
                 <th>Status</th>
-                <th>Address</th>
-                <th>County</th>
-                <th>City</th>
-                <th>Country</th>
+                <th class="hiddenRows">Address</th>
+                <th class="hiddenRows">County</th>
+                <th class="hiddenRows">City</th>
+                <th class="hiddenRows">Country</th>
                 <th>Invoice</th>
             </tr>
             </thead>
@@ -42,16 +46,16 @@
                         <a href="{{route('order.edit', $order->id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>
                     </td>
                     <td>{{$order->id}}</td>
-                    <td>{{$order->created_at}}</td>
+                    <td class="hiddenRows">{{$order->created_at}}</td>
                     <td>{{$order->owner_email}}</td>
                     <td>{{$order->product_name}}</td>
                     <td>{{$order->quantity}}</td>
                     <td>{{$order->paid}}</td>
                     <td>{{$order->status}}</td>
-                    <td>{{$order->address}}</td>
-                    <td>{{$order->county}}</td>
-                    <td>{{$order->city}}</td>
-                    <td>{{$order->country}}</td>
+                    <td class="hiddenRows">{{$order->address}}</td>
+                    <td class="hiddenRows">{{$order->county}}</td>
+                    <td class="hiddenRows">{{$order->city}}</td>
+                    <td class="hiddenRows">{{$order->country}}</td>
                     <td><a href="{{route('invoice.download',$order->id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
                 </tr>
             @endforeach
@@ -65,5 +69,6 @@
             {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
+        {{$orders->links('paginator.paginator')}}
     </div>
 @endsection

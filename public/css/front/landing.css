@@ -10,6 +10,35 @@
     justify-content: center;
     background-size: cover;
 }
+.webman{
+    background-color: #262626;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.webman p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+.ButtonBase__Ellipsis-sc-p43e7i-5{
+    font-size: 16px;
+}
+#customerReviewsMob{
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+.customerReviewsMobWrap{
+    width: 80%;
+}
+#customersReviews{
+
+}
 .opacityLayer{
     position: absolute;
     width: 100%;
@@ -46,7 +75,7 @@
 }
 
 .pulse-button{
-    margin-top: 50px;
+    margin-top: 25px;
     position: relative;
     display: flex;
     align-items: center;
@@ -154,6 +183,7 @@
     align-items: center;
     justify-content: center;
     row-gap: 20px;
+    padding: 0px 0px 10px 0;
 }
 .titleText{
     font-size: 45px;
@@ -252,12 +282,12 @@
     color: #474747;
 }
 
-span {
-    display: inline-block;
-    height: 50px;
-    font-family: 'Suranna', serif;
-    font-size: 34px;
-}
+/*span {*/
+/*    display: inline-block;*/
+/*    height: 50px;*/
+/*    font-family: 'Suranna', serif;*/
+/*    font-size: 34px;*/
+/*}*/
 
 .buttonInfo:hover{
     text-decoration: underline;
@@ -459,6 +489,12 @@ span {
 }
 
 @media only screen and (max-width: 1200px) {
+    #customersReviews{
+        display: none;
+    }
+    #customerReviewsMob{
+        display: flex;
+    }
     .benefitsWrapper{
         flex-direction: column;
         row-gap: 50px;

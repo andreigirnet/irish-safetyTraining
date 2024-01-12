@@ -8,8 +8,8 @@
             <tr>
                 <th>Certificate Id</th>
                 <th>Course Passed</th>
-                <th>Valid From</th>
-                <th>Valid To</th>
+                <th class="hiddenRows">Valid From</th>
+                <th class="hiddenRows">Valid To</th>
                 <th>Downloand</th>
             </tr>
             </thead>
@@ -19,10 +19,10 @@
 {{--                    <td class="actionOrder">--}}
 {{--                        <form class="deleteFormOrders" action="{{route('order.delete', $order->id)}}" method="POST">@csrf @method('DELETE')<button class="submitDeleteOrder"><img src="{{asset('images/icons/bin.png')}}" alt=""></button></form>--}}
 {{--                    </td>--}}
-                    <td>#{{$certificate->unique_id}}</td>
+                    <td>{{$certificate->unique_id}}</td>
                     <td>{{$certificate->course_name}}</td>
-                    <td>{{$certificate->valid_from}}</td>
-                    <td>{{$certificate->expiration_date}}</td>
+                    <td class="hiddenRows">{{$certificate->valid_from}}</td>
+                    <td class="hiddenRows">{{$certificate->expiration_date}}</td>
                     <td><a href="{{route('certificate.download', $certificate->id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
                 </tr>
             @endforeach

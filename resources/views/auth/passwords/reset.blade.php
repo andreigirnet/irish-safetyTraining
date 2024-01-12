@@ -11,7 +11,7 @@
         <input type="hidden" name="token" value="{{ $token }}">
         <input id="email" type="email" class=" inputLogin @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
         @error('email')
-        <span class="invalid-feedback" role="alert">
+        <span class="greenMessageLogin" role="alert">
             <strong>{{ $message }}</strong>
         </span>
         @enderror

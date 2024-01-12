@@ -1,6 +1,44 @@
 @extends('admin.administrator.layout')
 @section('adminPages')
-    <div class="dashWrapper">
+    <div class="dashWrapper" x-data="{
+        query:'',
+        showResult: false,
+        showMessage: false,
+        selectedEmployee:'',
+        message: '',
+        showSubmitButton: false,
+        users: [],
+        checkIfSelected: function(){
+            this.showSubmitButton = true
+        },
+        getUsers: function(){
+            if(this.query !== ''){
+                axios.get('/search/employees?q=' + this.query)
+                .then(response => {
+                    this.users = response.data
+
+                    if(this.users.length === 0){
+                        this.showResult = false
+                        this.showSubmitButton = false
+                        this.showMessage = true
+                        this.message = 'No employee has been found with this email'
+                    }else
+                    {
+                        this.showResult = true;
+                        this.showMessage = false
+                        this.message = ''
+                    }
+                })
+                .catch(error => console.log(error));
+            }else{
+                this.users = [];
+                this.showResult = false;
+                this.showSubmitButton = false;
+                this.showMessage = false
+                this.message = ''
+            }
+        }
+    }">
         <div class="adminHomePageTitle">Share a package</div>
         <div class="shareContainer">
             <div class="textShare">Package to Share:
@@ -8,16 +46,18 @@
             </div>
             @if($employeesToShare)
             <div class="selectContainer">
-                <div class="selectTitle">Select an employee from below list</div>
-                <form action="{{route('package.share.store',$packageToShare[0]->id)}}" method="POST" class="formShare">
+                <div class="selectTitle">Type the email to search the employee</div>
+                <form action="{{route('package.share.store',$packageToShare[0]->id)}}" method="POST" class="formShare" id="formShare">
                     @csrf
                     @method('POST')
-                    <select class="box" name="shareToEmployee" required="required">
-                        @foreach($employeesToShare as $employee)
-                        <option class="option" value="{{$employee->employee}}">{{$employee->name}} - {{$employee->email}}</option>
-                        @endforeach
+                    <input type="text" class="formInputShare" x-model="query" x-on:keyup.debounce.500ms="getUsers" placeholder="Type the email of the user">
+                    <select x-show="showResult" name="shareToEmployee" id="shareTo" @change="checkIfSelected" style="height: 200px;width: 100%" x-model="selectedEmployee" multiple>
+                        <template x-for="user in users" >
+                            <option  x-text="user.email" :value="user.id" class="textShare"></option>
+                        </template>
                     </select>
-                    <button class="adminButton" type="submit">Share</button>
+                    <div class="shareMesage" x-text="message" x-show="showMessage"></div>
+                    <button class="adminButton" type="submit" x-show="showSubmitButton" id="shareSubmit">Share</button>
                 </form>
             </div>
             @else
@@ -28,5 +68,13 @@
             @endif
         </div>
     </div>
+
+    <script>
+        document.getElementById('formShare').addEventListener('keydown', function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault(); // prevent the "enter" key event
+            }
+        });
+    </script>
     <script src="//unpkg.com/alpinejs" defer></script>
 @endsection

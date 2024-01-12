@@ -7,9 +7,9 @@
             <thead>
             <tr>
                 <th>Action</th>
-                <th>Package ID</th>
+                <th class="hiddenRows">Package ID</th>
                 <th>Course Name</th>
-                <th>Status</th>
+                <th class="hiddenRows">Status</th>
                 <th>Certificate</th>
             </tr>
             </thead>
@@ -26,9 +26,9 @@
                             <a href="{{route('course.index',$package->id)}}" class="startCourseButton">View Course</a>
                         @endif
                     </td>
-                    <td>{{$package->id}}</td>
+                    <td class="hiddenRows">{{$package->id}}</td>
                     <td>{{$package->course_name}}</td>
-                    <td>{{$package->status}}</td>
+                    <td class="hiddenRows">{{$package->status}}</td>
                     @if($package->certificate_id)
                     <td><a href="{{route('certificate.download', $package->certificate_id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
                     @else
@@ -43,6 +43,9 @@
             {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
+        <div class="paginationContainer">
+            {{ $packages->links() }}
+        </div>
         @else
             <div class="textAdmin">No Packages at the moment</div>
         @endif

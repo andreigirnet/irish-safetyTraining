@@ -30,3 +30,11 @@
 
     <div id="swiper-button-next"><img class="navArrow" src="{{asset("images/arrows/right.png")}}" alt=""></div>
 </div>
+<div class="webman">
+    <p style="color: white;">
+        Copyright © 2023
+        <a href="https://irish-safetytraining.com/" target="_blank" style="color: #448a26; text-decoration: none;">Irish-safetytraining.com</a>
+        | Crafted with ❤️ by
+        <a href="https://webman.md/en/elaborare-site-uri-in-chisinau-si-moldova-3/" target="_blank" style="color: #448a26; text-decoration: none;">WEBMAN.md</a>
+    </p>
+</div>

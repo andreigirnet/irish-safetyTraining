@@ -28,31 +28,34 @@
                         <div class="orderDetailRight">{{$cartDetails->total}} €</div>
                     </div>
                 </div>
-                <form id="payment-form" action="{{route('checkout.store')}}" method="POST">
+                <form id="payment-form"  method="POST">
                     @csrf
-                    <input type="hidden" name="cartTotal" value="{{$cartDetails->total}}">
-                    <input type="hidden" name="cartQty" value="{{$cartDetails->quantities_sum}}">
+                    <input type="hidden" name="_token" value="{!! csrf_token() !!}">
+                    <div id="link-authentication-element">
+                        <!--Stripe.js injects the Link Authentication Element-->
+                    </div>
+                    <input type="hidden" name="cartTotal" id="cartTotal" value="{{$cartDetails->total}}">
+                    <input type="hidden" name="cartQty" id="qty" value="{{$cartDetails->quantities_sum}}">
+                    <input type="hidden" name="cartQty" id="userId" value="{{auth()->user()->id}}">
                     <label for="address">Adress:</label>
-                    <input type="text" id="address" name="address" required>
+                    <input type="text" class="formInput" id="address" name="address" required>
                     <div class="input-row">
                         <label for="county">County:</label>
-                        <input type="text" id="county" name="county" required>
+                        <input type="text" class="formInput" id="county" name="county" required>
                         <label for="city">City:</label>
-                        <input type="text" id="city" name="city" required>
+                        <input type="text" class="formInput" id="city" name="city" required>
                     </div>
                     <label for="country">Country:</label>
-                    <input type="text" id="country" name="country" required>
+                    <input type="text" id="country" class="formInput" name="country" required>
 
-                    <div id="payment-element">
-                        <!-- Elements will create form elements here -->
-                    </div>
-                    <button id="complete-order" style="margin-top: 20px" class="adminButton">Pay</button>
-                    <div id="card-errors">
-                        <!-- Display error message to your customers here -->
-                    </div>
+                    <div id="card-element"></div>
+                    <div id="card-errors" style="color: red" role="alert"></div>
+                    <button type="submit" id="submit" class="adminButton">Pay now</button>
+                    <div id="payment-message" class="hidden"></div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="https://js.stripe.com/v3/"></script>
     <script src="{{asset('js/stripe.js')}}"></script>
 @endsection

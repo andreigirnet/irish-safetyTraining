@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Invoice - #123</title>
+    <title>Certificate</title>
 
     <style type="text/css">
         #image{
@@ -44,15 +44,14 @@
             color: #4a4e4d;
         }
     </style>
-
 </head>
 <body>
 
 <div>
     <div id="container">
-        <img src="images/certificate/certificate.png" id="image"    style="width: 100%" alt="">
+        <img src="images/certificate/certificate.jpg" id="image" style="width: 100%" alt="">
         <div id="holder">{{$holder->name}}</div>
-        <div id="id">#{{$certificate[0]->unique_id}}</div>
+        <div id="id">{{$certificate[0]->unique_id}}</div>
         <div id="valid">{{$certificate[0]->valid_from}}</div>
         <div id="expiration">{{$certificate[0]->expiration_date}}</div>
     </div>

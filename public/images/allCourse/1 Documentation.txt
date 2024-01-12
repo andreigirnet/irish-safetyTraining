@@ -1,0 +1,38 @@
+1) AB - Abrasive Wheels 
+2) FE - Fire Extinguisher
+3) WFA - Workplace First Aid Course
+4) WICS - Working in Confined Spaces
+5) FSA - Fire Safety Awareness
+6) OS - Office Safety 
+7) HACCP - Food Safety: HACCP for Catering and Retail Level 1&2
+8) AA - Asbestos Awareness
+9) WAH - Woking at Heights
+10) FW - Fire Warden (Fire Marshal)
+11) PPE - PPE
+12) Manual Handling (deja care e la Irish Safety)
+
+
+Pe front să fie afișate cum e lista de mai jos
+-------------------------------------------------------------
+- 1) Manual Handling (30eu)
+- 2) Woking at Heights (30eu) (Cristian) 
+- 3) Abrasive Wheels (30eu) (Cristian)
+- 4) Fire Warden (Fire Marshal) (30eu)  (Cristian)
+- 5) Fire Extinguisher (30eu)    (Cristian)
+- 6) Asbestos Awareness (30eu)  (Cristian)
+- 7) Emergency First Aid at Workplace (60eu)
+- 8) Office Health & Safety Training (30eu) 
+- 9) PPE (30eu) 
+- 10) Food Safety: HACCP for Catering and Retail Level 1&2 (60Eu)
+- 11) Working in Confined Spaces 39eu  (Cristian)
+- 12) Fire Safety Awareness (39eu) (Cristian)
+
+--Doar listate pe Front precum “coming soon”
+
+13) Safeguarding Children Level 1&2 - 39eu
+14) Safeguarding Adults Level 1&2  - 39eu
+15) Food Safety:HACCP  Level 3 - 100eu 
+16) Supervising Food Safety Level 3 - 120eu 
+17) Workplace Health & Safety - 39eu
+18) Allergen Awareness  30eu
+19) Electrical Safety   30eu

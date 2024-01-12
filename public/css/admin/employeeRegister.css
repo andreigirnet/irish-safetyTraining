@@ -23,3 +23,43 @@
     row-gap: 10px;
     margin-top: 20px;
 }
+#modalRegisterEmployer{
+    display: flex;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .registerEmployeeWrapper{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .rightRegisterEmployee{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .leftRegisterEmployee{
+        width: 90%;
+    }
+    .adminHomePageTitle{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 250px){
+    .registerEmployeeWrapper{
+        flex-direction: column-reverse;
+        row-gap: 50px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .rightRegisterEmployee{
+        margin-top: 20px;
+        width: 90%;
+    }
+    .adminHomePageTitle{
+        width: 100%;
+    }
+    .leftRegisterEmployee{
+        width: 90%;
+    }
+}
