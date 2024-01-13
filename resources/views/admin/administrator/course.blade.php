@@ -5,6 +5,7 @@
             showModal: false,
             showHideLang: true,
             stageCount: null,
+            packageId: '{{ $packagesOwnedByUser[0]->id }}',
             productId: '{{ $packagesOwnedByUser[0]->product_id }}',
             courseName: '{{ $packagesOwnedByUser[0]->course_name}}',
             status: '{{$packagesOwnedByUser[0]->status}}',
@@ -16,7 +17,7 @@
             showSlider: true,
             submittedAnswers: [],
             showHideContent: true,
-            showStartTest: true,
+            showStartTest: false,
             message: '',
             testAnswers: 0,
             tryAgainButton: false,
@@ -36,7 +37,7 @@
                 }
             },
             showNavButton: function(){
-                if(this.stage !== 'test'){
+                if(this.stage !== this.stageCount){
                     this.showNav = true
                 }else{
                      this.showNav = false
@@ -74,7 +75,7 @@
             },
             resetTest: function()
             {
-                this.setStage(5)
+                this.setStage(this.stageCount)
                 this.submittedAnswers = [];
                 let slider = document.getElementById('courseSlider');
                 this.slideCounter = 0;
@@ -126,7 +127,7 @@
                 const stageKey = stage === this.stageCount ? 'test' : `stage_${stage}`;
                 return Object.keys(this.courses[stageKey]).length;
             },
-             nextSlide: function()
+            nextSlide: function()
              {
                 this.answer = false
                 let slider = document.getElementById('courseSlider');
@@ -169,7 +170,7 @@
                 this.isActive = stage
                 let slider = document.getElementById('courseSlider');
                 slider.style.right = 0 + 'px';
-                if(stage === 'test'){
+                if(stage === this.stageCount){
                     this.showStartTest = true;
                     this.tryAgainButton = false;
                 }
@@ -183,6 +184,7 @@
                  this.containerWidth = containerWidth;
             },
             selectCourse: function(){
+                console.log(this.productId)
                 if(this.productId === '1'){
                     if(this.language === 'english')
                     {
@@ -246,6 +248,62 @@
                          });
                     }else if(this.productId === '4'){
                          axios.get('../data/fw.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '5'){
+                         axios.get('../data/fe.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '6'){
+                         axios.get('../data/aa.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '7'){
+                         axios.get('../data/wfa.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '8'){
+                         axios.get('../data/os.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '9'){
+                         axios.get('../data/ppe.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '10'){
+                         axios.get('../data/haccp.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '11'){
+                         axios.get('../data/wics.json').then(response => {
+                                this.courses = response.data.english;
+                                this.setStageCount();
+                            }).catch(error => {
+                                console.error(error);
+                         });
+                    }else if(this.productId === '12'){
+                         axios.get('../data/fsa.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
                             }).catch(error => {
@@ -376,16 +434,30 @@
                                 <div class="slide" x-bind:style="'background-image: url(../..' + slide.img + '); background-size: cover; background-repeat: no-repeat; width: ' + containerWidth + 'px;'">
                                     <div class="slideAnswer" x-show="answer" x-text="slide.answer"></div>
                                     <div class="slideContent" x-show="showHideContent">
-                                        <div class="slideTitle" x-text="slide.title"></div>
+                                    <div class="slideTitle" x-text="slide.title"></div>
                                         <div class="slideSubText" x-text="slide.content"></div>
-                                        <template x-for="bullet in slide.bullets">
-                                            <div class="bulletPoint">
-                                                <img src="{{asset('images/arrows/right-yellow-arrow.png')}}" alt="">
-                                                <div class="bulletText" x-text="bullet"></div>
-                                            </div>
-                                        </template>
+                                        <div x-show="currentStage !== 'test'">
+                                            <template x-for="bullet in slide.bullets">
+                                                <div class="bulletPoint">
+                                                    <img src="{{asset('images/arrows/right-yellow-arrow.png')}}" alt="">
+                                                    <div class="bulletText" x-text="bullet"></div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                        <div x-show="currentStage === 'test'">
+                                            <template x-for="(bullet, index) in slide.bullets" >
+                                                <div class="bulletPoint">
+                                                    <input type="radio" name="answer" x-on:click="selectedAnswer = index + 1">
+                                                    <div class="bulletText" x-text="bullet" ></div>
+                                                </div>
+                                            </template>
+                                        </div>
                                     </div>
-                                    <div class="showAnswer" x-show="slide.answer" @click="toggleAnswer">Show Answer</div>
+                                    <div x-show="currentStage === 'test' && !showStartTest" @click="submitAnswer()" class="showAnswer">Next</div>
+                                    <div x-show="showStartTest" @click="startTest" class="showAnswer">Start Test</div>
+                                    <template x-if="currentStage !== 'test'">
+                                        <div class="showAnswer" x-show="slide.answer" @click="toggleAnswer">Show Answer</div>
+                                    </template>
                                 </div>
                             </template>
                         </div>

@@ -14,6 +14,7 @@ class CourseController extends Controller
     public function index($id)
     {
         $packagesOwnedByUser = DB::select('SELECT * FROM packages WHERE user_id=' . auth()->user()->id . ' AND id=' . $id);
+        dd($packagesOwnedByUser);
         return view('admin.administrator.course')->with('packagesOwnedByUser',$packagesOwnedByUser);
     }
 

@@ -1,0 +1,136 @@
+{
+    "english": {
+        "stage_1": {
+            "slide_1": {
+                "img": "/images/allCourse/FE-1-1.jpg"
+            },
+            "slide_2": {
+                "img": "/images/allCourse/FE-1-2.jpg"
+            },
+            "slide_3": {
+                "img": "/images/allCourse/FE-1-3.jpg"
+            },
+            "slide_4": {
+                "img": "/images/allCourse/FE-1-4.jpg"
+            },
+            "slide_5": {
+                "img": "/images/allCourse/FE-1-5.jpg"
+            },
+            "slide_6": {
+                "img": "/images/allCourse/FE-1-6.jpg"
+            },
+            "slide_7": {
+                "img": "/images/allCourse/FE-1-7.jpg"
+            },
+            "slide_8": {
+                "img": "/images/allCourse/FE-1-8.jpg"
+            },
+            "slide_9": {
+                "img": "/images/allCourse/FE-1-9.jpg"
+            },
+            "slide_10": {
+                "img": "/images/allCourse/FE-1-10.jpg"
+            },
+            "slide_11": {
+                "img": "/images/allCourse/FE-1-11.jpg"
+            },
+            "slide_12": {
+                "img": "/images/allCourse/FE-1-12.jpg"
+            },
+            "slide_13": {
+                "img": "/images/allCourse/FE-1-13.jpg"
+            },
+            "slide_14": {
+                "img": "/images/allCourse/FE-1-14.jpg"
+            },
+            "slide_15": {
+                "img": "/images/allCourse/FE-1-15.jpg"
+            },
+            "slide_16": {
+                "img": "/images/allCourse/FE-1-16.jpg"
+            }
+        },
+        "stage_2": {
+            "slide_1": {
+                "img": "/images/allCourse/FE-2-1.jpg"
+            },
+            "slide_2": {
+                "img": "/images/allCourse/FE-2-2.jpg"
+            },
+            "slide_3": {
+                "img": "/images/allCourse/FE-2-3.jpg"
+            },
+            "slide_4": {
+                "img": "/images/allCourse/FE-2-4.jpg"
+            },
+            "slide_5": {
+                "img": "/images/allCourse/FE-2-5.jpg"
+            },
+            "slide_6": {
+                "img": "/images/allCourse/FE-2-6.jpg"
+            },
+            "slide_7": {
+                "img": "/images/allCourse/FE-2-7.jpg"
+            },
+            "slide_8": {
+                "img": "/images/allCourse/FE-2-8.jpg"
+            },
+            "slide_9": {
+                "img": "/images/allCourse/FE-2-9.jpg"
+            },
+            "slide_10": {
+                "img": "/images/allCourse/FE-2-10.jpg"
+            }
+        },
+        "stage_3": {
+            "slide_1": {
+                "img": "/images/allCourse/FE-3-1.jpg"
+            },
+            "slide_2": {
+                "img": "/images/allCourse/FE-3-2.jpg"
+            },
+            "slide_3": {
+                "img": "/images/allCourse/FE-3-3.jpg"
+            },
+            "slide_4": {
+                "img": "/images/allCourse/FE-3-4.jpg"
+            },
+            "slide_5": {
+                "img": "/images/allCourse/FE-3-5.jpg"
+            },
+            "slide_6": {
+                "img": "/images/allCourse/FE-3-6.jpg"
+            },
+            "slide_7": {
+                "img": "/images/allCourse/FE-3-7.jpg"
+            },
+            "slide_8": {
+                "img": "/images/allCourse/FE-3-8.jpg"
+            },
+            "slide_9": {
+                "img": "/images/allCourse/FE-3-9.jpg"
+            },
+            "slide_10": {
+                "img": "/images/allCourse/FE-3-10.jpg"
+            },
+            "slide_11": {
+                "img": "/images/allCourse/FE-3-11.jpg"
+            },
+            "slide_12": {
+                "img": "/images/allCourse/FE-3-12.jpg"
+            },
+            "slide_13": {
+                "img": "/images/allCourse/FE-3-13.jpg"
+            },
+            "slide_14": {
+                "img": "/images/allCourse/FE-3-14.jpg"
+            },
+            "slide_15": {
+                "img": "/images/allCourse/FE-3-15.jpg"
+            },
+            "slide_16": {
+                "img": "/images/allCourse/FE-3-16.jpg"
+            }
+        }
+    }
+}
