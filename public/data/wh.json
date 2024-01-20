@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [2, 1, 1, 1, 2, 1, 2, 3, 2, 3, 3, 3, 3, 3, 3, 2, 3, 1, 2, 3],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -183,7 +184,214 @@
             }
         },
         "test": {
-
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the final step in a risk assessment?",
+                "answer": "b. Review and update the assessment",
+                "bullets": [
+                    "a. Identify the hazards",
+                    "b. Review and update the assessment",
+                    "c. Decide who might be harmed and how"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When does it become a legal requirement for your business to record its risk assessment findings?",
+                "answer": "a. When it employs more than 5 people",
+                "bullets": [
+                    "a. When it employs more than 5 people",
+                    "b. Once it employs more than 50 people",
+                    "c. When more than 3 accidents occur"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How many points of contact must you maintain when using a ladder or stepladder?",
+                "answer": "a. 3",
+                "bullets": [
+                    "a. 3",
+                    "b. 1",
+                    "c. 5"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How many rungs should you leave at the top of a ladder as a handhold?",
+                "answer": "a. 3",
+                "bullets": [
+                    "a. 3",
+                    "b. 2",
+                    "c. 1"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When hiring a tower scaffold, who has the responsibility to ensure that all employees using it are appropriately trained?",
+                "answer": "b. The employer",
+                "bullets": [
+                    "a. The company renting out the equipment",
+                    "b. The employer",
+                    "c. The employee"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is a suitable surface to rest your ladder against?",
+                "answer": "a. A brick wall",
+                "bullets": [
+                    "a. A brick wall",
+                    "b. A window",
+                    "c. Plastic guttering"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should you review your risk assessment?",
+                "answer": "b. Regularly and whenever there is a change of circumstances",
+                "bullets": [
+                    "a. Only when the HSA/HSE visit your premises",
+                    "b. Regularly and whenever there is a change of circumstances",
+                    "c. Every day"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What type of equipment is a telescopic boom?",
+                "answer": "c. A MEWP",
+                "bullets": [
+                    "a. A mobile tower",
+                    "b. A ladder",
+                    "c. A MEWP"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is an example of a fragile surface?",
+                "answer": "b. Asbestos-cement roof sheets",
+                "bullets": [
+                    "a. Soil",
+                    "b. Asbestos-cement roof sheets",
+                    "c. Cement"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When you are positioning a stepladder, what must you ensure?",
+                "answer": "c. It’s positioned on a firm, level, clean, non-slip surface",
+                "bullets": [
+                    "a. It’s positioned facing away from the work activity",
+                    "b. Someone can foot on stepladder",
+                    "c. It’s positioned on a firm, level, clean, non-slip surface"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is an example of fall restraint equipment?",
+                "answer": "c. Belts with short lanyards",
+                "bullets": [
+                    "a. Airbags",
+                    "b. Netting",
+                    "c. Belts with short lanyards"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Mobile towers are an example of what kind of control measure?",
+                "answer": "c. Collective protective equipment that reduces the distance and consequences of fall",
+                "bullets": [
+                    "a. PPE (Personal Protective Equipment)",
+                    "b. Collective protective equipment that prevent falls",
+                    "c. Collective protective equipment that reduces the distance and consequences of fall"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "The HSA/HSE recommends that you should use a ladder or stepladder for up to how many minutes?",
+                "answer": "c. 30 minutes",
+                "bullets": [
+                    "a. 45 minutes",
+                    "b. 60 minutes",
+                    "c. 30 minutes"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the maximum safe working height of a low level platform?",
+                "answer": "c. 1.5 m",
+                "bullets": [
+                    "a. 10 m",
+                    "b. 15.5 m",
+                    "c. 1.5 m"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the first step in the hierarchy of control measures?",
+                "answer": "c. Use collective work equipment",
+                "bullets": [
+                    "a. Provide additional training",
+                    "b. Issue PPE (personal protective equipment)",
+                    "c. Use collective work equipment"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is NOT a safer alternative to a ladder?",
+                "answer": "c. A fall arrest harness",
+                "bullets": [
+                    "a. A mobile tower",
+                    "b. An MEWP",
+                    "c. A fall arrest harness"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How often should checks on MEWP be made?",
+                "answer": "c. Before each use",
+                "bullets": [
+                    "a. Once a month",
+                    "b. Only before their first use",
+                    "c. Before each use"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does MEWP stand for?",
+                "answer": "c. Mobile Elevating Platforms",
+                "bullets": [
+                    "a. Mobile Elevating Platforms",
+                    "b. Moving Elevated Working Places",
+                    "c. Moving Existing Workplace Places"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What angle should you aim to position a ladder?",
+                "answer": "b. 75 degrees",
+                "bullets": [
+                    "a. 35 degrees",
+                    "b. 75 degrees",
+                    "c. 95 degrees"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the main legislation that covers work at height?",
+                "answer": "c. The Work at Height Regulations 2005",
+                "bullets": [
+                    "a. The Health and Safety At Work Act 1974",
+                    "b. The Manual Handling Operations Regulations 1992",
+                    "c. The Work at Height Regulations 2005"
+                ]
+            }
         }
     }
 }

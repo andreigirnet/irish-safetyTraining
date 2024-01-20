@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 3, 2, 3, 4, 4, 2, 2, 4, 3, 3, 1, 1, 1, 1, 1, 3, 4, 2, 4],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -207,6 +208,256 @@
             },
             "slide_8": {
                 "img": "/images/allCourse/AA-4-8.jpg"
+            }
+        },
+        "test": {
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is Asbestos primarily used for?",
+                "answer": "a. Insulation",
+                "content": "",
+                "bullets": [
+                    "a. Insulation",
+                    "b. Stainless steel production",
+                    "c. Plastic manufacturing",
+                    "d. Woodworking"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which type of Asbestos is considered the most hazardous to health?",
+                "answer": "c. Crocidolite",
+                "content": "",
+                "bullets": [
+                    "a. Chrysotile",
+                    "b. Amosite",
+                    "c. Crocidolite",
+                    "d. Anthophyllite"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the main route of asbestos exposure leading to health risks?",
+                "answer": "b. Inhalation",
+                "content": "",
+                "bullets": [
+                    "a. Ingestion",
+                    "b. Inhalation ",
+                    "c. Skin contact",
+                    "d. Ocular exposure"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which regulatory body is responsible for asbestos regulations in Ireland?",
+                "answer": "c. HSA",
+                "content": "",
+                "bullets": [
+                    "a. OSHA",
+                    "b. FDA",
+                    "c. HSA",
+                    "d. CDC"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the purpose of an asbestos management plan?",
+                "answer": "d. Asbestos removal procedures",
+                "content": "",
+                "bullets": [
+                    "a. Emergency response",
+                    "b. Building maintenance",
+                    "c. Public relations",
+                    "d. Asbestos removal procedures"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What type of material is most likely to contain asbestos in a building?",
+                "answer": "d. Thermal insulation",
+                "content": "",
+                "bullets": [
+                    "a. Glass",
+                    "b. Concrete",
+                    "c. Vinyl",
+                    "d. Thermal insulation"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which asbestos-related disease is characterized by scarring of the lung tissue?",
+                "answer": "b. Asbestosis",
+                "content": "",
+                "bullets": [
+                    "a. Mesothelioma",
+                    "b. Asbestosis",
+                    "c. Lung cancer",
+                    "d. Pleural plaques"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "When is asbestos awareness training required for employees?",
+                "answer": "b. Upon initial assignment",
+                "content": "",
+                "bullets": [
+                    "a. Every 10 years",
+                    "b. Upon initial assignment",
+                    "c. Only for maintenance workers",
+                    "d. Only for high-risk occupations"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the purpose of personal protective equipment (PPE) in asbestos work?",
+                "answer": "d. Protection against exposure",
+                "content": "",
+                "bullets": [
+                    "a. Comfort",
+                    "b. Compliance with regulations",
+                    "c. Fashion",
+                    "d. Protection against exposure"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which work activity is most likely to disturb asbestos-containing materials?",
+                "answer": "c. Drilling into walls",
+                "content": "",
+                "bullets": [
+                    "a. Paperwork",
+                    "b. Office meetings",
+                    "c. Drilling into walls",
+                    "d. Planting flowers"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "How should asbestos waste be properly disposed of?",
+                "answer": "c. Specialized asbestos waste containers",
+                "content": "",
+                "bullets": [
+                    "a. Regular trash bins",
+                    "b. Recycling facilities",
+                    "c. Specialized asbestos waste containers",
+                    "d. Composting"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the purpose of an asbestos risk assessment?",
+                "answer": "b. Identifying Asbestos-containing materials",
+                "content": "",
+                "bullets": [
+                    "a. Identifying asbestos-free areas",
+                    "b. Identifying Asbestos-containing materials",
+                    "c. Creating Asbestos publicity",
+                    "d. Marketing Asbestos products"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the first step in responding to an Asbestos release or Emergency?",
+                "answer": "a. Evacuate the area",
+                "content": "",
+                "bullets": [
+                    "a. Evacuate the area",
+                    "b. Call for a meeting",
+                    "c. Document the event",
+                    "d. Ignore it and continue to work"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which agency sets the permissible exposure limits (PELs) for Asbestos?",
+                "answer": "a. HSA",
+                "content": "",
+                "bullets": [
+                    "a. HSA",
+                    "b. EPA",
+                    "c. CDC",
+                    "d. FDA"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the primary purpose of Asbestos training for custodial and maintenance workers?",
+                "answer": "a. Hazard communication",
+                "content": "",
+                "bullets": [
+                    "a. Hazard communication",
+                    "b. Public relations",
+                    "c. Increased vacation days",
+                    "d. Entertainment"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the main reason for conducting Asbestos air monitoring during removal activities?",
+                "answer": "a. Quality control of work",
+                "content": "",
+                "bullets": [
+                    "a. Quality control of work",
+                    "b. Noise measurement",
+                    "c. Temperature regulation",
+                    "d. Energy consumption"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "How should Asbestos-containing materials be labeled in the workplace?",
+                "answer": "c. Labeled as Asbestos",
+                "content": "",
+                "bullets": [
+                    "a. No labeling required",
+                    "b. Labeled with a smiley face",
+                    "c. Labeled as Asbestos",
+                    "d. Labeled with random codes"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "What is the primary risk associated with asbestos-containing flooring materials?",
+                "answer": "c. Inhalation exposure",
+                "content": "",
+                "bullets": [
+                    "a. Slippery surfaces",
+                    "b. Fire hazard",
+                    "c. Inhalation exposure",
+                    "d. Allergies"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Which action is recommended when asbestos is discovered in good condition?",
+                "answer": "b. Periodic surveillance and monitoring",
+                "content": "",
+                "bullets": [
+                    "a. Immediate removal",
+                    "b. Periodic surveillance and monitoring",
+                    "c. Ignoring it until it becomes a problem",
+                    "d. Painting over it"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test.webp",
+                "title": "Who should be notified before starting any work that may disturb asbestos-containing materials?",
+                "answer": "d. The person responsible for health and safety",
+                "content": "",
+                "bullets": [
+                    "a. Coworkers",
+                    "b. Family members",
+                    "c. Local authority",
+                    "d. The person responsible for health and safety"
+                ]
             }
         }
     }

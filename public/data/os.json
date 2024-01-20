@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 3, 1, 3, 3, 1, 3, 2, 2, 3, 3, 1, 2, 2, 3, 3, 3, 3, 2, 3],6*
     "english": {
         "stage_1": {
             "slide_1": {
@@ -156,6 +157,216 @@
             },
             "slide_15": {
                 "img": "/images/allCourse/OS-4-15.jpg"
+            }
+        },
+        "test":{
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If you notice a danger to your health and safety, what should you do?",
+                "answer": "a. Report it to your manager or employer",
+                "bullets": [
+                    "a. Leave it alone so as not to cause yourself harm",
+                    "b. Do whatever’s needed to remove the danger",
+                    "c. Report it to your manager or employer"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If you identify a frayed cable on an appliance, what should you do?",
+                "answer": "c. Stop using the appliance, remove it from use, and report it straight away to your manager/employer",
+                "bullets": [
+                    "a. Repair the frayed cable with tape and continue to use it",
+                    "b. Attempt to repair the cable yourself",
+                    "c. Stop using the appliance, remove it from use, and report it straight away to your manager/employer"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Who is responsible for providing protective work clothing?",
+                "answer": "a. Your employer",
+                "bullets": [
+                    "a. The local authority",
+                    "b. The HSA",
+                    "c. Your employer"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When carrying a heavy or unbalanced object, what should you do?",
+                "answer": "c. Place the heaviest side closest to your body",
+                "bullets": [
+                    "a. Transport the object as quickly as possible",
+                    "b. Bend to pick the object using your knees only",
+                    "c. Place the heaviest side closest to your body"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When sitting in a desk chair, how should your legs and feet be positioned?",
+                "answer": "c. With your knees at a 90-degree angle and feet flat on the floor",
+                "bullets": [
+                    "a. With your knees higher than your hips and feet off the floor",
+                    "b. With your knees at a 90-degree angle and the feet off the floor",
+                    "c. With your knees at a 90-degree angle and feet flat on the floor"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of these is a source of fuel for a fire?",
+                "answer": "a. Waste paper and packaging",
+                "bullets": [
+                    "a. Oxygen in the air",
+                    "b. Electric heaters",
+                    "c. Waste paper and packaging"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Hazardous substances, such as cleaning chemicals, can cause:",
+                "answer": "c. Itchy rashes or dermatitis",
+                "bullets": [
+                    "a. Musculoskeletal disorders (MSDs)",
+                    "b. Repetitive strain injuries",
+                    "c. Itchy rashes or dermatitis"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When is it most appropriate to use a ladder?",
+                "answer": "b. For short duration tasks",
+                "bullets": [
+                    "a. For long-duration tasks",
+                    "b. For short duration tasks",
+                    "c. When a height is inaccessible by standing on something else"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "To prevent discomfort, your computer screen should be positioned:",
+                "answer": "b. Roughly an arm’s length away from you",
+                "bullets": [
+                    "a. Well above your eye-line",
+                    "b. Roughly an arm’s length away from you",
+                    "c. Exactly a metre away from you"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If you almost injure yourself at work, what should you do?",
+                "answer": "c. Make a record of it in the accident book as a near miss",
+                "bullets": [
+                    "a. Nothing, no action is needed",
+                    "b. Make a record in the accident book as if the injury has occurred",
+                    "c. Make a record of it in the accident book as a near miss"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What color is a fire alarm call point sign?",
+                "answer": "c. Red and White",
+                "bullets": [
+                    "a. Red and Black",
+                    "b. Blue and White",
+                    "c. Red and White"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What do Human Hazards relate to?",
+                "answer": "a. The behavior of workers",
+                "bullets": [
+                    "a. The behavior of workers",
+                    "b. The work activity",
+                    "c. The working environment"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "All office workplaces must have:",
+                "answer": "b. A first Aid Box",
+                "bullets": [
+                    "a. A nominated paramedic",
+                    "b. A first Aid Box",
+                    "c. A defibrillator on-site"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should you do in the event of a fire in the office?",
+                "answer": "b. Exit the building calmly using the nearest stairwell",
+                "bullets": [
+                    "a. Stay at your desk and continue working",
+                    "b. Exit the building calmly using the nearest stairwell",
+                    "c. Hide in the restroom until the alarm stops"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of emergency exits in the office?",
+                "answer": "c. They are designated escape routes in case of emergencies",
+                "bullets": [
+                    "a. They are decorative elements",
+                    "b. They are used for smoking breaks",
+                    "c. They are designated escape routes in case of emergencies"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How often should you inspect and test office fire extinguishers?",
+                "answer": "c. Monthly, as part of routine checks",
+                "bullets": [
+                    "a. Once a year",
+                    "b. Every 5 years",
+                    "c. Monthly, as part of routine checks"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "In case of a power outage, what should you do to avoid accidents in the office?",
+                "answer": "c. Use a flashlight and follow established safety procedures",
+                "bullets": [
+                    "a. Use candles for lighting",
+                    "b. Stay at your desk until the power is restored",
+                    "c. Use a flashlight and follow established safety procedures"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should you do if you discover a spilled liquid on the office floor?",
+                "answer": "c. Report it to the maintenance team",
+                "bullets": [
+                    "a. Ignore it",
+                    "b. Walk around it",
+                    "c. Report it to the maintenance team"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When using a computer for an extended period, what can help prevent eye strain?",
+                "answer": "b. Taking short breaks and looking away",
+                "bullets": [
+                    "a. Staring at the screen continuously",
+                    "b. Taking short breaks and looking away",
+                    "c. Lowering the screen brightness"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the correct way to handle confidential documents when not in use?",
+                "answer": "c. Shred or store them securely",
+                "bullets": [
+                    "a. Leave them on your desk",
+                    "b. Throw them in the regular trash bin",
+                    "c. Shred or store them securely"
+                ]
             }
         }
     }

@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 3, 2, 3, 3, 2, 3, 1, 3, 2, 3, 3, 3, 2, 2, 3, 3, 1, 3, 2],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -243,6 +244,216 @@
             },
             "slide_25": {
                 "img": "/images/allCourse/PPE-4-25.jpg"
+            }
+        },
+        "test": {
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does PPE stand for?",
+                "answer": "a. Personal Protective Equipment",
+                "bullets": [
+                    "a. Professional Safety Equipment",
+                    "b. Personal Productive Equipment",
+                    "c. Personal Protective Equipment"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is a type of respiratory protection?",
+                "answer": "c. Dust mask",
+                "bullets": [
+                    "a. Earplugs",
+                    "b. Safety glasses",
+                    "c. Dust mask"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should PPE be worn?",
+                "answer": "b. When hazards cannot be eliminated or adequately controlled",
+                "bullets": [
+                    "a. Only when convenient",
+                    "b. When hazards cannot be eliminated or adequately controlled",
+                    "c. Only during emergencies"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which body part is commonly protected by safety boots?",
+                "answer": "c. Foot",
+                "bullets": [
+                    "a. Elbow",
+                    "b. Head",
+                    "c. Foot"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which type of glove is appropriate for handling chemicals?",
+                "answer": "c. Chemical-resistant gloves",
+                "bullets": [
+                    "a. Leather gloves",
+                    "b. Cut-resistant gloves",
+                    "c. Chemical-resistant gloves"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the primary purpose of a helmet?",
+                "answer": "b. Impact protection for the head",
+                "bullets": [
+                    "a. Protection against chemical exposure",
+                    "b. Impact protection for the head",
+                    "c. Protection against loud noises"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should safety glasses be worn?",
+                "answer": "c. Whenever there is a risk of eye injury",
+                "bullets": [
+                    "a. Only in extreme weather conditions",
+                    "b. When working in an office setting",
+                    "c. Whenever there is a risk of eye injury"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What type of PPE is designed to protect against falls from heights?",
+                "answer": "a. Safety harness",
+                "bullets": [
+                    "a. Safety harness",
+                    "b. Steel-toed boots",
+                    "c. Respirator"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which glass of fire extinguisher is suitable for electrical fires?",
+                "answer": "c. Class C",
+                "bullets": [
+                    "a. Class A",
+                    "b. Class B",
+                    "c. Class C"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should you do if your gloves are damaged during use?",
+                "answer": "b. Replace them as soon as possible",
+                "bullets": [
+                    "a. Ignore it and continue working",
+                    "b. Replace them as soon as possible",
+                    "c. Wait until the end of the day to replace them"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of earplugs?",
+                "answer": "c. Hearing protection",
+                "bullets": [
+                    "a. Protection against chemical exposure",
+                    "b. Impact protection against wind",
+                    "c. Hearing protection"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When working with loud machinery, what type of hearing protection is recommended?",
+                "answer": "c. Both A and B",
+                "bullets": [
+                    "a. Earplugs",
+                    "b. Earmuffs",
+                    "c. Both A and B"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is a type of fall protection equipment?",
+                "answer": "c. Safety harness",
+                "bullets": [
+                    "a. Safety glasses",
+                    "b. Hard hat",
+                    "c. Safety harness"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does the term “fit testing” refer to in respiratory protection?",
+                "answer": "b. Ensuring PPE fits properly",
+                "bullets": [
+                    "a. Ensuring PPE is the right colour",
+                    "b. Ensuring PPE fits properly",
+                    "c. Testing PPE durability"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of a face shield?",
+                "answer": "c. Protecting the face from chemical exposure",
+                "bullets": [
+                    "a. Protecting the eyes from impact",
+                    "b. Protecting the face from chemical exposure",
+                    "c. Protecting the ears from the loud noises"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When is it appropriate to remove PPE during a task?",
+                "answer": "c. When there is no immediate hazard",
+                "bullets": [
+                    "a. Whenever you feel uncomfortable",
+                    "b. Only in designated break areas",
+                    "c. When there is no immediate hazard"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does the term “hazard assessment” mean in the context of PPE?",
+                "answer": "a. Identifying and evaluating workplace hazards",
+                "bullets": [
+                    "a. Identifying and evaluating workplace hazards",
+                    "b. Assessing the durability of PPE",
+                    "c. Checking the expiration date of PPE"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which type of PPE is designed to protect against flying debris and particles?",
+                "answer": "a. Safety Glasses",
+                "bullets": [
+                    "a. Safety Glasses",
+                    "b. Earplugs",
+                    "c. Earmuffs"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is a primary purpose of using Personal Protective Equipment (PPE)?",
+                "answer": "c. Reducing the risk of injury",
+                "bullets": [
+                    "a. Enhancing comfort",
+                    "b. Enhancing appearance",
+                    "c. Reducing the risk of injury"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should you replace your safety gloves?",
+                "answer": "b. When they are torn or damaged",
+                "bullets": [
+                    "a. When they are dirty",
+                    "b. When they are torn or damaged",
+                    "c. At the end of the month"
+                ]
             }
         }
     }

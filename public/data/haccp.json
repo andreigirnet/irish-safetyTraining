@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 3, 2, 3, 3, 2, 3, 3, 2, 3, 2, 3, 2, 3, 3, 1, 1, 3, 1, 3, 1],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -390,6 +391,188 @@
             },
             "slide_17": {
                 "img": "/images/allCourse/HACCP-7-17.jpg"
+            }
+        },
+        "test": {
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of these is an example of an allergenic contaminant?",
+                "answer": "Celery",
+                "content": "",
+                "bullets": ["Celery", "Cucumber", "Cleaning chemicals"]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a critical limit is breached at a CCP:",
+                "answer": "The safety of food cannot be guaranteed",
+                "content": "",
+                "bullets": [
+                    "All food involved must be thrown away",
+                    "The corrective action will solve the problem",
+                    "The safety of food cannot be guaranteed"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "A critical control point is a stage in the production process when:",
+                "answer": "Hazards must be prevented, eliminated, or reduced to an acceptable level",
+                "content": "",
+                "bullets": [
+                    "A hazard analysis is carried out",
+                    "Hazards must be prevented, eliminated, or reduced to an acceptable level",
+                    "Nutritional value of food could be destroyed"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following describes an action that prevents or eliminates a food safety hazard, or reduces it to an acceptable level?",
+                "answer": "Control measure",
+                "content": "",
+                "bullets": ["Risk assessment", "Hazard analysis", "Control measure"]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When creating a flow diagram, which of the following is essential?",
+                "answer": "Including steps sequentially",
+                "content": "",
+                "bullets": ["Using the company's software", "Listing only the equipment used", "Including steps sequentially"]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What type of hazard could mouldy fruit pose?",
+                "answer": "Microbial",
+                "content": "",
+                "bullets": ["Allergenic", "Microbial", "Physical"]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Hazard analysis identifies:",
+                "answer": "All potential hazards that are likely to occur",
+                "content": "",
+                "bullets": ["Physical hazards only", "Who is responsible for spotting hazards", "All potential hazards that are likely to occur"]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "A HACCP system is used by food businesses to:",
+                "answer": "Identify and control food safety hazards",
+                "content": "",
+                "bullets": ["Keep the Environmental Health Officers satisfied", "Make tasks easier", "Identify and control food safety hazards"]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When storing leftovers of a pre-cooked chicken risotto, what must be identified as a critical control point?",
+                "answer": "The temperature of the freezer",
+                "content": "",
+                "bullets": ["The height of the freezer shelves", "The temperature of the freezer", "The colour of the cooked chicken"]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "In order for a HACCP plan to be verified, it must be:",
+                "answer": "Proven to be effective",
+                "content": "",
+                "bullets": ["Signed off by an external auditor", "Submitted to the Environmental Health", "Proven to be effective"]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Monitoring procedures are:",
+                "answer": "Observations that are planned and intended to determine whether CCPs are under control",
+                "content": "",
+                "bullets": [
+                    "Part of the hazard analysis process carried out by the HACCP team",
+                    "Observations that are planned and intended to determine whether CCPs are under control",
+                    "Actions taken to reduce the risk of deviation from critical limits"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "A completed HACCP process flow diagram should cover:",
+                "answer": "All the steps involved in the process from purchase of raw materials to the point of sale",
+                "content": "",
+                "bullets": [
+                    "Only the people involved in cooking and cooling a product",
+                    "All the steps involved in the process from purchase of raw materials to the point of sale",
+                    "Just the equipment used in the production process"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "The step in the HACCP plan that confirms the system is working effectively is:",
+                "answer": "Verification",
+                "content": "",
+                "bullets": ["Verification", "Hazard analysis", "Corrective action"]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should a corrective action be carried out?",
+                "answer": "When monitoring shows deviation from the critical limit",
+                "content": "",
+                "bullets": [
+                    "Immediately after the hazard analysis has been completed",
+                    "At the end of the production process",
+                    "When monitoring shows deviation from the critical limit"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Contamination can be defined as:",
+                "answer": "The presence of any objectionable or harmful substance or material in food",
+                "content": "",
+                "bullets": [
+                    "The omission of allergenic information on the product label",
+                    "The presence of any objectionable or harmful substance or material in food",
+                    "The presence of water in food"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "A major benefit of operating HACCP in a food business is:",
+                "answer": "Reduced food wastage",
+                "content": "",
+                "bullets": ["Reduced food wastage", "Staff absenteeism increases", "The cost of training increases"]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What are the four main types of contamination?",
+                "answer": "Chemical, microbial, physical, and allergenic",
+                "content": "",
+                "bullets": [
+                    "Microbial, physical and natural poisons",
+                    "Microbial, chemical, metallic, and physical",
+                    "Chemical, microbial, physical and allergenic"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Before implementing a HACCP system, it is essential that:",
+                "answer": "Prerequisite procedures are in place and are operational",
+                "content": "",
+                "bullets": [
+                    "All stock is counted and use by dates are recorded",
+                    "The business has a rating of 5 in the Food Hygiene Rating Scheme",
+                    "Prerequisite procedures are in place and are operational"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When verifying a HACCP plan, which of the following methods would be used?",
+                "answer": "Monitoring, testing and analyzing",
+                "content": "",
+                "bullets": ["Monitoring, testing and analyzing", "Auditing, meeting and discussing", "Managing, instructing and supervising"]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Who is responsible for developing the HACCP plan?",
+                "answer": "The HACCP team",
+                "content": "",
+                "bullets": ["The HACCP team", "The technical director", "The general manager"]
             }
         }
     }

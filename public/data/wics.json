@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [3, 2, 2, 3, 1, 2, 3, 1, 2, 3, 3, 2, 1, 3, 2, 3, 1, 1, 2, 1],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -346,6 +347,216 @@
             },
             "slide_16": {
                 "img": "/images/allCourse/WICS-6-16.jpg"
+            }
+        },
+        "test": {
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is a confined space?",
+                "answer": "c. A space with limited means for entry or exit, not designed for continuous occupancy",
+                "bullets": [
+                    "a. Any small room",
+                    "b. A space with limited entry and exit",
+                    "c. A space with limited means for entry or exit, not designed for continuous occupancy"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is essential to identify confined spaces in the workplace?",
+                "answer": "b. To access potential hazards and implement safety measures",
+                "bullets": [
+                    "a. To limit access to certain areas",
+                    "b. To access potential hazards and implement safety measures",
+                    "c. To create a restricted zone"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is a potential hazard in confined spaces?",
+                "answer": "b. Toxic gases",
+                "bullets": [
+                    "a. Adequate ventilation",
+                    "b. Toxic gases",
+                    "c. Well-lit environment"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of a confined space entry permit?",
+                "answer": "c. To authorize entry and outline safety measures",
+                "bullets": [
+                    "a. To restrict entry",
+                    "b. To increase productivity",
+                    "c. To authorize entry and outline safety measures"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Before entering a confined space, what should workers do?",
+                "answer": "a. Perform a risk assessment and obtain necessary permits",
+                "bullets": [
+                    "a. Perform a risk assessment and obtain necessary permits",
+                    "b. Enter immediately with caution",
+                    "c. Ignore warning signs"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is a potential atmospheric hazard in confined spaces?",
+                "answer": "b. Oxygen deficiency",
+                "bullets": [
+                    "a. Fresh air",
+                    "b. Oxygen deficiency",
+                    "c. Adequate humidity"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does “Isolation” mean in the context of confined space work?",
+                "answer": "b. Locking or tagging out equipment to prevent unintended operation",
+                "bullets": [
+                    "a. Social distancing",
+                    "b. Locking or tagging out equipment to prevent unintended operation",
+                    "c. Ignoring hazards"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which personal protective equipment (PPE) is essential for confined space entry?",
+                "answer": "a. Respirator, harness, and lifeline",
+                "bullets": [
+                    "a. Respirator, harness, and lifeline",
+                    "b. Sunscreen and sunglasses",
+                    "c. Safety shoes"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of continuous atmospheric monitoring in confined spaces?",
+                "answer": "b. To detect and alert to changes in the atmosphere",
+                "bullets": [
+                    "a. For entertainment",
+                    "b. To detect and alert to changes in the atmosphere",
+                    "c. To save energy"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the primary function of a retrieval system in confined spaces?",
+                "answer": "c. To increase the weight load capacity",
+                "bullets": [
+                    "a. To quickly remove workers in case of an emergency",
+                    "b. To secure tools and equipment",
+                    "c. To increase the weight load capacity"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should workers do if they encounter an unfamiliar hazard in a confined space?",
+                "answer": "c. Stop work, inform the supervisor, and reassess the situation",
+                "bullets": [
+                    "a. Ignore it",
+                    "b. Continue working and report it later",
+                    "c. Stop work, inform the supervisor, and reassess the situation"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the maximum allowable oxygen concentration for safe entry into a confined space?",
+                "answer": "b. 19.5%",
+                "bullets": [
+                    "a. 10%",
+                    "b. 19.5%",
+                    "c. 30%"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does “blinding” mean in the context of confined space work?",
+                "answer": "a. Blocking or covering openings to prevent unauthorized entry",
+                "bullets": [
+                    "a. Blocking or covering openings to prevent unauthorized entry",
+                    "b. Creating a bright environment",
+                    "c. Ignoring hazards"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How often should confined space rescue drills be conducted?",
+                "answer": "c. Periodically, as specified in the confined space entry plan",
+                "bullets": [
+                    "a. Never",
+                    "b. Once a year",
+                    "c. Periodically, as specified in the confined space entry plan"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the role of the entry supervisor in confined space work?",
+                "answer": "c. Managing and controlling the entry, including issuing permits",
+                "bullets": [
+                    "a. Performing tasks inside the confined space",
+                    "b. Overseeing the entire workplace",
+                    "c. Managing and controlling the entry, including issuing permits"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should a confined space be re-evaluated for potential hazards?",
+                "answer": "a. Before entry and periodically during prolonged activities",
+                "bullets": [
+                    "a. Before entry and periodically during prolonged activities",
+                    "b. After an incident occurs",
+                    "c. Only if there is a complaint"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of ventilation in confined spaces?",
+                "answer": "c. To control atmospheric hazards by replacing or diluting the air",
+                "bullets": [
+                    "a. To increase temperature",
+                    "b. To create a comfortable atmosphere",
+                    "c. To control atmospheric hazards by replacing or diluting the air"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the primary purpose of a confined space attendant?",
+                "answer": "a. To monitor and protect workers inside the confined space",
+                "bullets": [
+                    "a. To monitor and protect workers inside the confined space",
+                    "b. To perform tasks inside the confined space",
+                    "c. To supervise all workers in the workplace"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Why is it important to have a written confined space entry plan?",
+                "answer": "b. To ensure a systematic approach to safe entry and work",
+                "bullets": [
+                    "a. It’s a bureaucratic requirement",
+                    "b. To ensure a systematic approach to safe entry and work",
+                    "c. To limit access to certain areas"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "In case of an emergency, what is the first step for rescuing a worker from a confined space?",
+                "answer": "a. Call for help and initiate the rescue plan",
+                "bullets": [
+                    "a. Call for help and initiate the rescue plan",
+                    "b. Ignore the emergency and continue working",
+                    "c. Attempt a solo rescue"
+                ]
             }
         }
     }

@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 3, 2, 3, 3, 2, 3, 1, 3, 3, 3, 3, 2, 3, 2, 3, 3, 3, 3, 3],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -216,7 +217,234 @@
             }
         },
         "test": {
-
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test1.webp",
+                "title": "According to the hierarchy of control measures, what should you try to do first in order to reduce the risks from abrasive wheels?",
+                "answer": "a. Remove the need for using an abrasive wheel",
+                "content": "",
+                "bullets": [
+                    "a. Remove the need for using an abrasive wheel",
+                    "b. Consult workers and ask for their opinions",
+                    "c. Issue PPE to workers"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test2.webp",
+                "title": "How often should you carry out a visual inspection of an abrasive wheel?",
+                "answer": "c. Before each use",
+                "content": "",
+                "bullets": [
+                    "a. At the end of the day",
+                    "b. Every month",
+                    "c. Before each use"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test3.webp",
+                "title": "What is the primary purpose of abrasive wheels training?",
+                "answer": "b. To ensure safe and proper use of abrasive wheels",
+                "content": "",
+                "bullets": [
+                    "a. To learn about different wheel colours",
+                    "b. To ensure safe and proper use of abrasive wheels",
+                    "c. To improve workplace aesthetics"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test4.webp",
+                "title": "Which of the following is a key hazard associated with abrasive wheels?",
+                "answer": "c. Wheel breakage and flying debris",
+                "content": "",
+                "bullets": [
+                    "a. Excessive noise",
+                    "b. Bright lighting",
+                    "c. Wheel breakage and flying debris"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test5.webp",
+                "title": "What is the purpose of the Safety, Health and Welfare at Work Act 2005 in Ireland?",
+                "answer": "c. Ensuring the safety and health of employees",
+                "content": "",
+                "bullets": [
+                    "a. Regulating noise levels in the workplace",
+                    "b. Promoting employee vacations",
+                    "c. Ensuring the safety and health of employees"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test6.webp",
+                "title": "What should you do if you find an abrasive wheel with visible cracks or chips?",
+                "answer": "b. Replace it immediately",
+                "content": "",
+                "bullets": [
+                    "a. Continue using it cautiously",
+                    "b. Replace it immediately",
+                    "c. Ignore it and continue working"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test7.webp",
+                "title": "How does using a steel ring help minimize the risks of an abrasive wheel breaking?",
+                "answer": "c. Steel rings are designed to retain the wheel fragments if wheel breakage occurs",
+                "content": "",
+                "bullets": [
+                    "a. The steel ring stops the wheel from breaking",
+                    "b. The steel allows the wheel to withstand high stress",
+                    "c. Steel rings are designed to retain the wheel fragments if wheel breakage occurs"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test8.webp",
+                "title": "How can you store thin, organic bonded wheels?",
+                "answer": "a. Laid flat on a horizontal surface of steel or similar rigid material",
+                "content": "",
+                "bullets": [
+                    "a. Laid flat on a horizontal surface of steel or similar rigid material",
+                    "b. Upright, face on, held in place with partitions to prevent rolling",
+                    "c. Horizontally in a warm place"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test9.webp",
+                "title": "In which of the following situations would you be obligated to take action to reduce workplace noise?",
+                "answer": "c. When using a pedestal grinding machine operating at 95 dB",
+                "content": "",
+                "bullets": [
+                    "a. When using a cutting machine operating at 75 dB",
+                    "b. When the weekly noise exposure is 110 dB",
+                    "c. When using a pedestal grinding machine operating at 95 dB"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test10.webp",
+                "title": "Why should some grinding machines be fitted with local exhaust ventilation?",
+                "answer": "c. To minimize exposure to dust and harmful debris, which could cause health risks to the user",
+                "content": "",
+                "bullets": [
+                    "a. So they can be used more frequently",
+                    "b. So that the user doesn’t need to wear PPE",
+                    "c. To minimize exposure to dust and harmful debris, which could cause health risks to the user"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test11.webp",
+                "title": "Vibration from hand-held grinding machines can cause what?",
+                "answer": "c. Hand Arm Vibration Syndrome",
+                "content": "",
+                "bullets": [
+                    "a. Tinnitus",
+                    "b. Broken wrists or fingers",
+                    "c. Hand Arm Vibration Syndrome"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test12.webp",
+                "title": "Which of these groups of people are most likely to be at risk of harm from abrasive wheels?",
+                "answer": "c. People who mount, dress and frequently use abrasive wheels",
+                "content": "",
+                "bullets": [
+                    "a. Cleaning staff",
+                    "b. People who use the abrasive wheels infrequently",
+                    "c. People who mount, dress and frequently use abrasive wheels"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test13.webp",
+                "title": "Which PPE item is essential when operating abrasive wheels?",
+                "answer": "c. Safety glasses with side shields",
+                "content": "",
+                "bullets": [
+                    "a. Helmet",
+                    "b. Steel-toed shoes",
+                    "c. Safety glasses with side shields"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test14.webp",
+                "title": "When conducting a wheel dressing operation, what is the purpose?",
+                "answer": "b. To reshape and clean the wheel for improved performance",
+                "content": "",
+                "bullets": [
+                    "a. To add color to the wheel",
+                    "b. To reshape and clean the wheel for improved performance",
+                    "c. To reduce the wheel’s size"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test15.webp",
+                "title": "In case of a fire during abrasive wheel operation, what should you do?",
+                "answer": "b. Attempt to extinguish the fire using an appropriate fire extinguisher",
+                "content": "",
+                "bullets": [
+                    "a. Run away from the fire",
+                    "b. Attempt to extinguish the fire using an appropriate fire extinguisher",
+                    "c. Ignore the fire and continue working"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test16.webp",
+                "title": "Who is responsible for carrying out a risk assessment in the workplace?",
+                "answer": "c. A competent person",
+                "content": "",
+                "bullets": [
+                    "a. The HSA (for Ireland)/HSE (for UK)",
+                    "b. Every employee",
+                    "c. A competent person"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test17.webp",
+                "title": "Which legislation applies to the use of abrasive wheels?",
+                "answer": "b. PUWER 1998",
+                "content": "",
+                "bullets": [
+                    "a. COMAH 2015",
+                    "b. PUWER 1998",
+                    "c. RIDDOR 2013"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test18.webp",
+                "title": "As well as at least annually, when should you review and update your risk assessment?",
+                "answer": "c. When there are any changes in the workplace that may affect your risk assessment",
+                "content": "",
+                "bullets": [
+                    "a. Only when new processes have been introduced",
+                    "b. Only when new staff start working",
+                    "c. When there are any changes in the workplace that may affect your risk assessment"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What illness can directly arise from inhaling harmful dust while using abrasive wheels?",
+                "answer": "c. Development of lung conditions, such as pneumonia",
+                "content": "",
+                "bullets": [
+                    "a. Tinnitus",
+                    "b. Musculoskeletal disorders",
+                    "c. Development of lung conditions, such as pneumonia"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test20.webp",
+                "title": "Legally, you need to write down the findings of your risk assessment when employing a minimum of how many staff?",
+                "answer": "c. 5",
+                "content": "",
+                "bullets": [
+                    "a. 10",
+                    "b. 25",
+                    "c. 5"
+                ]
+            }
         }
     }
 }

@@ -2,14 +2,16 @@
 @section('adminPages')
     <div class="dashWrapper" x-data="{
             containerWidth: 0,
+            slides: {},
             showModal: false,
             showHideLang: true,
             stageCount: null,
+            completedStages: [],
             packageId: '{{ $packagesOwnedByUser[0]->id }}',
             productId: '{{ $packagesOwnedByUser[0]->product_id }}',
             courseName: '{{ $packagesOwnedByUser[0]->course_name}}',
             status: '{{$packagesOwnedByUser[0]->status}}',
-            showProgressBar: 'freeze',
+            showProgressBar: 'navigate',
             correctAnswers: [3,3,2,2,3,2,3,1,3,3],
             certificateButton: false,
             showNav: false,
@@ -88,6 +90,7 @@
                 if(this.selectedAnswer !== '')
                 {
                     this.submittedAnswers.push(this.selectedAnswer)
+                    console.log(this.selectedAnswer)
                     this.nextSlide();
                     this.message = '';
                     this.selectedAnswer = '';
@@ -96,29 +99,23 @@
                     this.message = 'Select an answer to go to next question';
                 }
             },
-            checkResult: function()
-            {
-               if(this.submittedAnswers.length === 10){
-                  let match = 0;
-                  for(let i = 0; i<= this.submittedAnswers.length; i++)
-                  {
-                    if(this.submittedAnswers[i] === this.correctAnswers[i])
-                    {
-                      match++;
+            checkResult: function() {
+                if (this.submittedAnswers.length === this.correctAnswers.length) {
+                    let correctCount = 0;
+                    for (let i = 0; i < this.submittedAnswers.length; i++) {
+                        if (this.submittedAnswers[i] === this.correctAnswers[i]) {
+                            correctCount++;
+                        }
                     }
-                  }
-                  if(match > 7)
-                  {
-                    this.tryAgainButton = false;
-                    this.showModal = true;
-                    match = 0
-                  }
-                  else
-                  {
-                    this.tryAgainButton = true;
-                    match = 0;
-                  }
-               }
+                    const percentageCorrect = (correctCount / this.correctAnswers.length) * 100;
+
+                    if (percentageCorrect >= 70) {
+                        this.tryAgainButton = false;
+                        this.showModal = true;
+                    } else {
+                        this.tryAgainButton = true;
+                    }
+                }
             },
             toggleAnswer: function(){
                 this.answer = !this.answer
@@ -127,8 +124,73 @@
                 const stageKey = stage === this.stageCount ? 'test' : `stage_${stage}`;
                 return Object.keys(this.courses[stageKey]).length;
             },
+
+            setStage: function(stage, navigate)
+            {
+                console.log('setStage' + this.stage)
+                if (navigate){
+                    if (this.showProgressBar === 'freeze' && this.completedStages.includes(stage)) {
+                    console.log('froze' + this.stage)
+                        this.stage = stage
+                        this.getStageSlides(stage)
+                        this.showHideContent = false;
+                        this.showStartTest = false;
+                        this.isActive = stage
+                        let slider = document.getElementById('courseSlider');
+                        slider.style.right = 0 + 'px';
+                        if(stage === this.stageCount){
+                            this.showStartTest = true;
+                            this.showHideContent = true;
+                            this.tryAgainButton = false;
+                        }
+                         this.slideCounter = 0;
+                         slider.style.right = 0 + 'px';
+                         this.showNavButton();
+                    }else if(this.showProgressBar === 'navigate'){
+                    console.log('navigate' + this.stage)
+                        this.stage = stage
+                        this.getStageSlides(stage)
+                        this.showHideContent = false;
+                        this.showStartTest = false;
+                        this.isActive = stage
+                        let slider = document.getElementById('courseSlider');
+                        slider.style.right = 0 + 'px';
+                        if(stage === this.stageCount){
+                            this.showStartTest = true;
+                            this.showHideContent = true;
+                            this.tryAgainButton = false;
+                        }
+                         this.slideCounter = 0;
+                         slider.style.right = 0 + 'px';
+                         this.showNavButton();
+                    }
+                }else{
+                console.log('else' + this.stage)
+                this.stage = stage
+                    this.getStageSlides(stage)
+                        this.showHideContent = false;
+                        this.showStartTest = false;
+                        this.isActive = stage
+                        let slider = document.getElementById('courseSlider');
+                        slider.style.right = 0 + 'px';
+                        if(stage === this.stageCount){
+                            this.showStartTest = true;
+                            this.showHideContent = true;
+                            this.tryAgainButton = false;
+                        }
+                         this.slideCounter = 0;
+                         slider.style.right = 0 + 'px';
+                         this.showNavButton();
+                    }
+
+                    console.log('afterelse' + this.stage)
+            },
+            checkStage: function(){
+                console.log(this.stage)
+            },
             nextSlide: function()
              {
+                console.log(this.stage)
                 this.answer = false
                 let slider = document.getElementById('courseSlider');
                 this.slideCounter += this.containerWidth;
@@ -143,9 +205,13 @@
                         this.checkResult();
                     }
                     if(this.stage < this.stageCount){
+                        this.completedStages.push(this.stage)
+                        console.log(this.stage + ' increment')
                         this.stage++;
+                        this.completedStages.push(this.stage)
                     }
-                    this.setStage(this.stage);
+                    console.log(this.stage + 'fromnextslide')
+                    this.setStage(this.stage, false);
                     this.slideCounter = 0;
                     slider.style.right = 0 + 'px';
                 }
@@ -161,22 +227,7 @@
                 }else{
                     this.slideCounter = 0;
                     slider.style.right = 0 + 'px';
-
                 }
-            },
-            setStage: function(stage)
-            {
-                this.stage = stage
-                this.isActive = stage
-                let slider = document.getElementById('courseSlider');
-                slider.style.right = 0 + 'px';
-                if(stage === this.stageCount){
-                    this.showStartTest = true;
-                    this.tryAgainButton = false;
-                }
-                 this.slideCounter = 0;
-                 slider.style.right = 0 + 'px';
-                 this.showNavButton();
             },
             setScreen: function(){
                  const courseContainer = document.getElementById('courseContainer');
@@ -184,13 +235,13 @@
                  this.containerWidth = containerWidth;
             },
             selectCourse: function(){
-                console.log(this.productId)
                 if(this.productId === '1'){
                     if(this.language === 'english')
                     {
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.english;
                             this.setStageCount();
+                            this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -199,6 +250,7 @@
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.spanish;
                             this.setStageCount();
+                             this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -207,6 +259,7 @@
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.russian;
                             this.setStageCount();
+                             this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -215,6 +268,7 @@
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.romanian;
                             this.setStageCount();
+                             this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -223,6 +277,7 @@
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.polish;
                             this.setStageCount();
+                             this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -235,6 +290,7 @@
                         axios.get('../data/wh.json').then(response => {
                             this.courses = response.data.english;
                             this.setStageCount();
+                             this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -242,7 +298,7 @@
                          axios.get('../data/ab.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
-                                console.log(this.stageCount);
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -250,6 +306,7 @@
                          axios.get('../data/fw.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -257,13 +314,17 @@
                          axios.get('../data/fe.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
                     }else if(this.productId === '6'){
                          axios.get('../data/aa.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
+                                console.log(this.correctAnswers)
                                 this.setStageCount();
+                                this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -271,6 +332,7 @@
                          axios.get('../data/wfa.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -278,6 +340,7 @@
                          axios.get('../data/os.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -285,6 +348,7 @@
                          axios.get('../data/ppe.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -292,6 +356,7 @@
                          axios.get('../data/haccp.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -299,6 +364,7 @@
                          axios.get('../data/wics.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -306,6 +372,7 @@
                          axios.get('../data/fsa.json').then(response => {
                                 this.courses = response.data.english;
                                 this.setStageCount();
+                                 this.getStageSlides(this.stage)
                             }).catch(error => {
                                 console.error(error);
                          });
@@ -317,19 +384,17 @@
             },
             getStageSlides(currentStage) {
                 const stageKey = currentStage === Object.keys(this.courses).length ? 'test' : 'stage_' + currentStage;
-                return this.courses[stageKey] || [];
+                this.slides =  this.courses[stageKey];
             },
             getCourseItems: function()
             {
                 window.matchMedia('(orientation : landscape)').addEventListener('change', e=>{
                     this.setScreen();
                 })
-
                 this.setScreen();
                 this.setShowProgressBar();
                 this.showNavButton();
                 this.selectCourse();
-
             }
         }"
          x-init="getCourseItems">
@@ -354,7 +419,7 @@
             <img src="{{asset('images/banners/landscape.png')}}" alt="">
             <div class="landscapeText">Please rotate your phone</div>
         </div>
-        <div class="coursePage">
+        <div class="coursePage" @click="checkStage">
             <div class="selectLang" x-show="showHideLang">
                 <div class="langText">Pick a language: </div>
                 <div class="langItem" @click="setLanguage('english')"><img src="{{asset('/images/flags/en.png')}}" alt=""></div>
@@ -384,28 +449,24 @@
 {{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 5 }">Test</div>--}}
 {{--            </div>--}}
             <div class="progressBar" x-show="showProgressBar === 'freeze'">
-                <template x-for="(stage, index) in stageCount" :key="index">
-                    <div
-                        class="progresItem"
-                        x-bind:class="{ 'isActiveClass': isActive === stage }"
-                    >
-                        <span x-text="index === stageCount - 1 ? 'Test' : stage"></span>
+                <template x-for="(stageItem, index) in stageCount" :key="index">
+                    <div class="progresItem" @click="setStage(stageItem, true)" x-bind:class="{ 'isActiveClass': isActive === stageItem }">
+                        <span x-text="index === stageCount - 1 ? 'Test' : stageItem"></span>
                     </div>
                 </template>
             </div>
 
             <!-- Navigate ProgressBar -->
             <div class="progressBar" x-show="showProgressBar === 'navigate'">
-                <template x-for="(stage, index) in stageCount" :key="index">
-                    <div
-                        class="progresItem"
-                        @click="setStage(stage)"
-                        x-bind:class="{ 'isActiveClass': isActive === stage }"
-                    >
-                        <span x-text="index === stageCount - 1 ? 'Test' : stage"></span>
+                <template x-for="(stageItem, index) in stageCount" :key="index">
+                    <!-- Check class binding syntax and function call -->
+                    <div class="progresItem" @click="setStage(stageItem, true)"  x-bind:class="{ 'isActiveClass': isActive === stageItem }">
+                        <!-- Check the value of 'stage' and the condition -->
+                        <span x-text="index === stageCount - 1 ? 'Test' : stageItem"></span>
                     </div>
                 </template>
             </div>
+
             <div class="videoContainer" x-cloak x-show="video" >
                 <video autoplay muted controls class="practicalVideo" id="practiceVideo">
                     <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
@@ -428,38 +489,42 @@
             <div class="courseContainer" id="courseContainer" x-on:landscape="setScreen">
                 <img id="eyeIcon" @click="showHideSlide" x-show="showEye" src="{{asset('images/icons/eye.png')}}" alt="Show hide image">
                 <div class="courseSlider" id="courseSlider" x-show="showSlider">
-                    <template x-for="(currentStage,index) in Object.keys(courses)" :key="currentStage">
-                        <div class="courseStage" x-show="stage === index + 1">
-                            <template x-for="slide in getStageSlides(index + 1)">
-                                <div class="slide" x-bind:style="'background-image: url(../..' + slide.img + '); background-size: cover; background-repeat: no-repeat; width: ' + containerWidth + 'px;'">
-                                    <div class="slideAnswer" x-show="answer" x-text="slide.answer"></div>
-                                    <div class="slideContent" x-show="showHideContent">
+                    <template x-for="(slide, index) in slides" :key="index">
+                        <!-- The courseStage container is shown based on the current stage -->
+                        <div class="courseStage" >
+                            <!-- Each slide is rendered inside the courseStage container -->
+                            <div class="slide" x-bind:style="'background-image: url(../..' + slide.img + '); background-size: 100% 100%; background-position-x: center; background-repeat: no-repeat; width: ' + containerWidth + 'px;'">
+                                <div class="slideAnswer" x-show="answer" x-text="slide.answer"></div>
+                                <div class="slideContent" x-show="showHideContent">
                                     <div class="slideTitle" x-text="slide.title"></div>
-                                        <div class="slideSubText" x-text="slide.content"></div>
-                                        <div x-show="currentStage !== 'test'">
-                                            <template x-for="bullet in slide.bullets">
-                                                <div class="bulletPoint">
-                                                    <img src="{{asset('images/arrows/right-yellow-arrow.png')}}" alt="">
-                                                    <div class="bulletText" x-text="bullet"></div>
-                                                </div>
-                                            </template>
-                                        </div>
-                                        <div x-show="currentStage === 'test'">
-                                            <template x-for="(bullet, index) in slide.bullets" >
-                                                <div class="bulletPoint">
-                                                    <input type="radio" name="answer" x-on:click="selectedAnswer = index + 1">
-                                                    <div class="bulletText" x-text="bullet" ></div>
-                                                </div>
-                                            </template>
-                                        </div>
+                                    <div class="slideSubText" x-text="slide.content"></div>
+                                    <div x-show="stage !== stageCount">
+                                        <!-- Bullets for non-test stages -->
+                                        <template x-for="bullet in slide.bullets">
+                                            <div class="bulletPoint">
+                                                <img src="{{asset('images/arrows/right-yellow-arrow.png')}}" alt="">
+                                                <div class="bulletText" x-text="bullet"></div>
+                                            </div>
+                                        </template>
                                     </div>
-                                    <div x-show="currentStage === 'test' && !showStartTest" @click="submitAnswer()" class="showAnswer">Next</div>
-                                    <div x-show="showStartTest" @click="startTest" class="showAnswer">Start Test</div>
-                                    <template x-if="currentStage !== 'test'">
-                                        <div class="showAnswer" x-show="slide.answer" @click="toggleAnswer">Show Answer</div>
-                                    </template>
+                                    <div x-show="stage === stageCount">
+                                        <!-- Radio buttons for the test stage -->
+                                        <template x-for="(bullet, bulletIndex) in slide.bullets" >
+                                            <div class="bulletPoint">
+                                                <input type="radio" name="answer" x-on:click="selectedAnswer = bulletIndex + 1">
+                                                <div class="bulletText" x-text="bullet"></div>
+                                            </div>
+                                        </template>
+                                    </div>
                                 </div>
-                            </template>
+                                <!-- Controls based on stage type -->
+                                <div x-show="stage === stageCount && !showStartTest" @click="submitAnswer()" class="showAnswer">Next</div>
+                                <div x-show="showStartTest" @click="startTest" class="showAnswer">Start Test</div>
+                                <template x-if="stage !== stageCount">
+                                    <!-- Show Answer button for non-test stages -->
+                                    <div class="showAnswer" x-show="slide.answer" @click="toggleAnswer">Show Answer</div>
+                                </template>
+                            </div>
                         </div>
                     </template>
                 </div>

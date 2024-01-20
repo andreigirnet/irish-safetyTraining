@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [1, 1, 2, 2, 3, 3, 2, 3, 2, 2, 3, 1, 3, 2, 1, 3, 1, 3, 2, 2],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -349,7 +350,234 @@
             }
         },
         "test": {
-
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the first action a Fire Warden should take upon discovering a fire?",
+                "answer": "a. Activate the fire alarm",
+                "content": "",
+                "bullets": [
+                    "a. Activate the fire alarm",
+                    "b. Extinguish the fire",
+                    "c. Evacuate the building"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of a fire drill in the workplace?",
+                "answer": "a. To practice emergency evacuation procedures",
+                "content": "",
+                "bullets": [
+                    "a. To practice emergency evacuation procedures",
+                    "b. To test fire extinguishers",
+                    "c. To identify potential fire hazards"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the primary responsibility of a Fire Warden during an evacuation?",
+                "answer": "b. Assisting with the evacuation",
+                "content": "",
+                "bullets": [
+                    "a. Extinguishing the fire",
+                    "b. Assisting with the evacuation",
+                    "c. Calling emergency services"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does the term 'RACE' stand for in fire safety?",
+                "answer": "b. Rescue, Alarm, Contain, Extinguish",
+                "content": "",
+                "bullets": [
+                    "a. Run, Assess, Control, Evacuate",
+                    "b. Rescue, Alarm, Contain, Extinguish",
+                    "c. Remove, Alert, Confine, Extinguish"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How often should fire evacuation drills be conducted in the workplace?",
+                "answer": "c. Annually",
+                "content": "",
+                "bullets": [
+                    "a. Monthly",
+                    "b. Quarterly",
+                    "c. Annually"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which type of fire extinguisher is suitable for electrical fires?",
+                "answer": "c. Class C",
+                "content": "",
+                "bullets": [
+                    "a. Class A",
+                    "b. Class B",
+                    "c. Class C"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should you do if you encounter smoke while evacuating a building?",
+                "answer": "b. Crawl under the smoke",
+                "content": "",
+                "bullets": [
+                    "a. Continue evacuating",
+                    "b. Crawl under the smoke",
+                    "c. Stay in place and call for help"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Where should fire wardens direct occupants to gather during an evacuation?",
+                "answer": "c. Designated assembly point",
+                "content": "",
+                "bullets": [
+                    "a. In the building lobby",
+                    "b. In the nearest stairwell",
+                    "c. Designated assembly point"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of fire doors in a building?",
+                "answer": "b. To prevent the spread of fire and smoke",
+                "content": "",
+                "bullets": [
+                    "a. To enhance ventilation",
+                    "b. To prevent the spread of fire and smoke",
+                    "c. To provide easy access during an emergency"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How should you use a fire extinguisher?",
+                "answer": "b. Aim at the base of the fire",
+                "content": "",
+                "bullets": [
+                    "a. Aim at the top of the flames",
+                    "b. Aim at the base of the fire",
+                    "c. Aim at the person on fire"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What does the acronym 'PSSS' stand for when using a fire extinguisher?",
+                "answer": "c. Pull, Aim, Squeeze, Sweep",
+                "content": "",
+                "bullets": [
+                    "a. Push, Activate, Sweep, Stop",
+                    "b. Pull, Aim, Squeeze, Shoot",
+                    "c. Pull, Aim, Squeeze, Sweep"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of a fire risk assessment?",
+                "answer": "a. To identify potential fire hazards",
+                "content": "",
+                "bullets": [
+                    "a. To identify potential fire hazards",
+                    "b. To test fire alarms",
+                    "c. To evaluate fire drills"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the recommended distance to keep from fire when using a fire extinguisher?",
+                "answer": "c. 6-8 feet",
+                "content": "",
+                "bullets": [
+                    "a. 1-2 feet",
+                    "b. 3-4 feet",
+                    "c. 6-8 feet"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should you do if your escape route is blocked during a fire evacuation?",
+                "answer": "b. Find an alternative route",
+                "content": "",
+                "bullets": [
+                    "a. Wait for help",
+                    "b. Find an alternative route",
+                    "c. Return to your office"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the purpose of fire safety signage in a workplace?",
+                "answer": "b. Information and guidance",
+                "content": "",
+                "bullets": [
+                    "a. Decoration",
+                    "b. Information and guidance",
+                    "c. Emergency lighting"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should fire wardens receive training and updates?",
+                "answer": "c. Regularly and as needed",
+                "content": "",
+                "bullets": [
+                    "a. Every two years",
+                    "b. Only once when appointed",
+                    "c. Regularly and as needed"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the recommended method for notifying emergency services during a fire?",
+                "answer": "a. Call 112/999",
+                "content": "",
+                "bullets": [
+                    "a. Call 112/999",
+                    "b. Use a fire alarm pull station",
+                    "c. Use a fire extinguisher"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the importance of keeping fire exits clear?",
+                "answer": "c. To facilitate swift evacuation",
+                "content": "",
+                "bullets": [
+                    "a. To improve air circulation",
+                    "b. To prevent unauthorized access",
+                    "c. To facilitate swift evacuation"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What should occupants do if they are unable to evacuate during a fire emergency?",
+                "answer": "c. Shelter in place and await rescue",
+                "content": "",
+                "bullets": [
+                    "a. Hide in a closet",
+                    "b. Call for help",
+                    "c. Shelter in place and await rescue"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "How can fire wardens contribute to fire prevention in the workplace?",
+                "answer": "b. By reporting and addressing fire hazards",
+                "content": "",
+                "bullets": [
+                    "a. By conducting regular fire drills",
+                    "b. By reporting and addressing fire hazards",
+                    "c. By operating fire extinguishers"
+                ]
+            }
         }
     }
 }

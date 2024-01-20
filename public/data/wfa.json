@@ -1,4 +1,5 @@
 {
+    "correctAnswers": [3, 1, 3, 3, 3, 1, 3, 1, 3, 2, 3, 1, 1, 1, 2, 2, 1, 3, 1, 3],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -277,6 +278,216 @@
             },
             "slide_14": {
                 "img": "/images/allCourse/WFA-6-14.jpg"
+            }
+        },
+        "test": {
+            "slide_0": {
+                "img" : "/images/curs/step4/test.webp",
+                "title": "Now you will have to pass a Test",
+                "answer": "",
+                "content": "You must answer 17 from 20 questions in order to get the certificate. Please click next slide to start",
+                "bullets": [
+                ]
+            },
+            "slide_1": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a casualty has a burn, what must you never do?",
+                "answer": "c. Remove any clothing that has stuck to the burn",
+                "bullets": [
+                    "a. Cover the burned skin with cling film or a plastic bag",
+                    "b. Cool the affected body part with cool, running water",
+                    "c. Remove any clothing that has stuck to the burn"
+                ]
+            },
+            "slide_2": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Before giving CPR, what should you do?",
+                "answer": "a. Call 999 for emergency help",
+                "bullets": [
+                    "a. Call 999 for emergency help",
+                    "b. Treat any visible injuries",
+                    "c. Put the casualty into the recovery position"
+                ]
+            },
+            "slide_3": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which regulations require employers to provide adequate first aid facilities, equipment, and personnel?",
+                "answer": "c. The Health and Safety (First-Aid) Regulations 1981",
+                "bullets": [
+                    "a. The Health and Safety at Work etc Act 1974",
+                    "b. The Health and Safety Information for Employees Regulations 1989",
+                    "c. The Health and Safety (First-Aid) Regulations 1981"
+                ]
+            },
+            "slide_4": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When feeling for air on your cheek, how long should you wait to confirm that the breathing is rhythmic and normal?",
+                "answer": "c. 10 seconds",
+                "bullets": [
+                    "a. 60 seconds",
+                    "b. 90 seconds",
+                    "c. 10 seconds"
+                ]
+            },
+            "slide_5": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is an auto-injector, such as an EpiPen, used to treat?",
+                "answer": "c. Anaphylaxis",
+                "bullets": [
+                    "a. Asthma",
+                    "b. Migraine",
+                    "c. Anaphylaxis"
+                ]
+            },
+            "slide_6": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is an accident book used for?",
+                "answer": "a. Recording any first aid incidents that happen at work",
+                "bullets": [
+                    "a. Recording any first aid incidents that happen at work",
+                    "b. Recording the details of who the first aiders are",
+                    "c. Keeping track of first aid supplies and equipment"
+                ]
+            },
+            "slide_7": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should you put a casualty in the recovery position?",
+                "answer": "c. If they are breathing normally but are unresponsive",
+                "bullets": [
+                    "a. If they are not breathing normally and are responsive",
+                    "b. If they are not breathing and are unresponsive",
+                    "c. If they are breathing normally but are unresponsive"
+                ]
+            },
+            "slide_8": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Recurrent seizures are a common symptom of which condition?",
+                "answer": "b. Epilepsy",
+                "bullets": [
+                    "a. Asthma",
+                    "b. Epilepsy",
+                    "c. Diabetes"
+                ]
+            },
+            "slide_9": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "During the secondary survey, which parts of the body should you examine for injury?",
+                "answer": "c. Examine the whole body from head to toe",
+                "bullets": [
+                    "a. Just the limbs and joints",
+                    "b. Focus on the abdomen and other soft parts",
+                    "c. Examine the whole body from head to toe"
+                ]
+            },
+            "slide_10": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which one of the following is a common symptom of an asthma attack?",
+                "answer": "c. Severe coughing and wheezing",
+                "bullets": [
+                    "a. Flushed, itchy skin",
+                    "b. Persistent headache",
+                    "c. Severe coughing and wheezing"
+                ]
+            },
+            "slide_11": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "The FAST acronym helps to identify a stroke, but what does FAST stand for?",
+                "answer": "b. Face, Arms, Speech, Time",
+                "bullets": [
+                    "a. Face, Airway, Speech, Tiredness",
+                    "b. Face, Arms, Speech, Time",
+                    "c. Face, Arteries, Speech, Time"
+                ]
+            },
+            "slide_12": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "What is the first step of the primary survey?",
+                "answer": "b. Danger",
+                "bullets": [
+                    "a. Breathing",
+                    "b. Danger",
+                    "c. Response"
+                ]
+            },
+            "slide_13": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which medication can help to thin the blood and reduce the damage to the heart during a heart attack?",
+                "answer": "a. Aspirin",
+                "bullets": [
+                    "a. Aspirin",
+                    "b. Paracetamol",
+                    "c. Ibuprofen"
+                ]
+            },
+            "slide_14": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a casualty has a minor wound and you need to apply a bandage, how can you protect yourself and the casualty from infection?",
+                "answer": "a. By wearing protective gloves",
+                "bullets": [
+                    "a. By wearing protective gloves",
+                    "b. By removing all foreign objects",
+                    "c. By rinsing the wound with warm water"
+                ]
+            },
+            "slide_15": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which of the following is an example of wet heat and which could cause a scald?",
+                "answer": "b. Steam",
+                "bullets": [
+                    "a. Fire",
+                    "b. Steam",
+                    "c. The sun"
+                ]
+            },
+            "slide_16": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "Which type of head injury is least likely to require hospital treatment?",
+                "answer": "a. Concussion",
+                "bullets": [
+                    "a. Concussion",
+                    "b. Cerebral compression",
+                    "c. A severe wound"
+                ]
+            },
+            "slide_17": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a person with diabetes is showing signs of hypoglycemia, what should you do?",
+                "answer": "c. Give them something sugary, preferably a liquid",
+                "bullets": [
+                    "a. Give them a dose of insulin",
+                    "b. Ask them to walk around and keep active",
+                    "c. Give them something sugary, preferably a liquid"
+                ]
+            },
+            "slide_18": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a casualty has a spinal injury, what must you do?",
+                "answer": "c. Support the casualty’s head and prevent them from moving",
+                "bullets": [
+                    "a. Help the casualty to sit up against a wall",
+                    "b. Move the casualty into a more comfortable position",
+                    "c. Support the casualty’s head and prevent them from moving"
+                ]
+            },
+            "slide_19": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "If a person has a sprain and the area is swollen, what should you apply to the injury?",
+                "answer": "a. A cool compress",
+                "bullets": [
+                    "a. A cool compress",
+                    "b. Gentle force with both hands",
+                    "c. A hot compress"
+                ]
+            },
+            "slide_20": {
+                "img": "/images/curs/step4/test19.webp",
+                "title": "When should CPR NOT be given?",
+                "answer": "c. If the casualty has stopped breathing",
+                "bullets": [
+                    "a. If the casualty is breathing normally",
+                    "b. If the casualty isn’t breathing normally",
+                    "c. If the casualty has stopped breathing"
+                ]
             }
         }
     }
