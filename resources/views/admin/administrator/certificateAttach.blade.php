@@ -49,7 +49,8 @@
 
 <div>
     <div id="container">
-        <img src="https://irish-safetytraining.com/images/certificate/certificate.jpg" id="image" style="width: 100%" alt="">
+{{--        <img src="https://irish-safetytraining.com/images/certificate/{{ $image }}.jpg" id="image" style="width: 100%" alt="">--}}
+        <img src="https://irish-safetytraining.com/images/certificate/{{ $image }}.jpg" id="image" style="width: 100%" alt="">
         <div id="holder">{{$holder->name}}</div>
         <div id="id">{{$certificate[0]->unique_id}}</div>
         <div id="valid">{{$certificate[0]->valid_from}}</div>

@@ -109,9 +109,17 @@ class CheckoutController extends Controller
         } else if ($intent->status == 'succeeded') {
             # The payment didn’t need any additional actions and completed!
             # Handle post-payment fulfillment
+            $cartItems = $this->cart->getDetails()->items;
+
+            $orderTitles = '';
+            foreach ($cartItems as $cartItem) {
+                $orderTitles .= $cartItem->title . ', ';
+            }
+            $orderTitles = rtrim($orderTitles, ', ');
+
             Order::create([
                 'user_id' => auth()->user()->id,
-                'product_name' => "Manual Handling",
+                'product_name' => $orderTitles,
                 'quantity' => $this->cart->sumItemsQuantity(),
                 'paid' => $this->cart->getTotal(),
                 'charge_id' => $intent->id,
@@ -122,8 +130,6 @@ class CheckoutController extends Controller
                 'country' => $request->country,
                 'status' => 'paid',
             ]);
-
-            $cartItems = $this->cart->getDetails()->items;
 
             foreach ($cartItems as $cartItem) {
                 for ($i = 0; $i < $cartItem->quantity; $i++) {

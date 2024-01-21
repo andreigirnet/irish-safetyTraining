@@ -10,23 +10,23 @@
         }
         #id{
             position: absolute;
-            bottom: -4px;
-            left: 50%;
+            bottom: 3.2%;
+            left: 48.5%;
             color: #4a4e4d;
             font-weight: 600;
             font-size: 14px;
         }
         #valid{
             position: absolute;
-            bottom: 18%;
-            left: 24%;
+            bottom: 15.5%;
+            left: 29%;
             color: #4a4e4d;
             font-weight: 600;
         }
         #expiration{
             position: absolute;
-            bottom: 2.3%;
-            left: 48.5%;
+            bottom: 2px;
+            left: 46.5%;
             color: #4a4e4d;
             font-weight: 600;
             font-size: 14px;
@@ -36,7 +36,7 @@
         }
         #holder{
             position: absolute;
-            top: 40%;
+            top: 46%;
             width: 100%;
             text-align: center;
             font-size: 30px;
@@ -49,11 +49,11 @@
 
 <div>
     <div id="container">
-        <img src="images/certificate/certificate.jpg" id="image" style="width: 100%" alt="">
-        <div id="holder">{{$holder->name}}</div>
-        <div id="id">{{$certificate[0]->unique_id}}</div>
-        <div id="valid">{{$certificate[0]->valid_from}}</div>
-        <div id="expiration">{{$certificate[0]->expiration_date}}</div>
+        <img src="images/certificate/{{ $image }}.jpg" id="image" style="width: 100%" alt="">
+        <div id="holder">{{ $holder->name }}</div>
+        <div id="id">{{ $certificate[0]->unique_id }}</div>
+        <div id="valid">{{ $certificate[0]->valid_from }}</div>
+        <div id="expiration">{{ $certificate[0]->expiration_date }}</div>
     </div>
 </div>
 </body>

@@ -13,6 +13,11 @@
 .checkoutLeftSide{
     width: 40%;
 }
+.orderItem{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
 .checkoutRightSide{
     width: 40%;
     display: flex;
@@ -28,8 +33,8 @@
 }
 .allItemsInCart{
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    flex-direction: column;
+    row-gap: 10px;
 }
 .orderDetailLeft{
     font-weight: bold;

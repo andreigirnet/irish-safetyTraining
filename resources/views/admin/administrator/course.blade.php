@@ -472,8 +472,8 @@
                     <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
                 </video>
                 <div class="videoText">
-                    <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong><br>
-                    <br>
+                    <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong>
+                    <br><br>
                     You can watch the video demonstration attached on our website and record after that your video showing how to lift up and carry the load safely and send it back to us through this chat and we'll check that for you.
                     No need to explain the steps if you don’t feel confident about that. Also,it’s not mandatory to wear special equipment (such as PPE) during this process.You can record it in any work environment or at home if you wish so.<br><br>
                     The steps required are:<br><br>

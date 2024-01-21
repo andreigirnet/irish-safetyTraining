@@ -87,18 +87,18 @@
 <br/>
 <div class="invoice">
     <h3>Invoice id: #{{$order['id']}}</h3>
-    <table width="100%">
+    <table width="90%">
         <thead>
         <tr>
             <td>Description</td>
-            <td>Quantity</td>
+{{--            <td>Quantity</td>--}}
             <td>Total</td>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td>{{$order['product_name']}}</td>
-            <td>1</td>
+{{--            <td>1</td>--}}
             <td align="left">€ {{$order['paid']}}</td>
         </tr>
         </tbody>

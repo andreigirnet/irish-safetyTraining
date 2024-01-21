@@ -13,9 +13,11 @@
                         <div class="orderDetailLeft">Items:</div>
                         <div class="allItemsInCart">
                         @foreach($cartDetails->items as $item)
+                            <div class="orderItem">
                         <div class="orderDetailRight">{{$item->title}}</div>
                             <div>-</div>
                         <div class="orderDetailRight">{{$item->quantity}}</div>
+                            </div>
                         @endforeach
                         </div>
                     </div>
