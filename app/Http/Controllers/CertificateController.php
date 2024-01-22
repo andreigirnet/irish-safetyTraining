@@ -101,7 +101,11 @@ class CertificateController extends Controller
         $packageToUpdate->update([
             'certificate_id' => $certificateCreated->id
         ]);
-        return redirect()->back()->with('success','Certificate Generated');
+        if ($request->productId === 1 || $request->productId === 2) {
+            return redirect()->back()->with('success', 'Certificate Generated');
+        } else {
+            return redirect()->route('certificate.index')->with('success', 'Certificate Generated');
+        }
     }
 
     //Downloand certificate

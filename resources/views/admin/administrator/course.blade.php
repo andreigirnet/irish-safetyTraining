@@ -39,10 +39,21 @@
                 }
             },
             showNavButton: function(){
-                if(this.stage !== this.stageCount){
-                    this.showNav = true
+                if(this.showProgressBar === 'freeze'){
+                    if(this.stage !== this.stageCount){
+                        this.showNav = true
+                    }else{
+                         this.showNav = false
+                    }
                 }else{
-                     this.showNav = false
+                    this.showNav = true
+                }
+            },
+            showBullets: function(){
+                if(this.showProgressBar === 'freeze'){
+                stage !== stageCount
+                }else{
+                return true
                 }
             },
             showVideo: function(){
@@ -112,6 +123,9 @@
                     if (percentageCorrect >= 70) {
                         this.tryAgainButton = false;
                         this.showModal = true;
+                        this.showProgressBar = false;
+                        this.showHideLang = false;
+
                     } else {
                         this.tryAgainButton = true;
                     }
@@ -127,10 +141,8 @@
 
             setStage: function(stage, navigate)
             {
-                console.log('setStage' + this.stage)
                 if (navigate){
                     if (this.showProgressBar === 'freeze' && this.completedStages.includes(stage)) {
-                    console.log('froze' + this.stage)
                         this.stage = stage
                         this.getStageSlides(stage)
                         this.showHideContent = false;
@@ -147,10 +159,9 @@
                          slider.style.right = 0 + 'px';
                          this.showNavButton();
                     }else if(this.showProgressBar === 'navigate'){
-                    console.log('navigate' + this.stage)
                         this.stage = stage
                         this.getStageSlides(stage)
-                        this.showHideContent = false;
+                        this.showHideContent = true;
                         this.showStartTest = false;
                         this.isActive = stage
                         let slider = document.getElementById('courseSlider');
@@ -165,10 +176,8 @@
                          this.showNavButton();
                     }
                 }else{
-                console.log('else' + this.stage)
                 this.stage = stage
                     this.getStageSlides(stage)
-                        this.showHideContent = false;
                         this.showStartTest = false;
                         this.isActive = stage
                         let slider = document.getElementById('courseSlider');
@@ -190,7 +199,6 @@
             },
             nextSlide: function()
              {
-                console.log(this.stage)
                 this.answer = false
                 let slider = document.getElementById('courseSlider');
                 this.slideCounter += this.containerWidth;
@@ -206,11 +214,9 @@
                     }
                     if(this.stage < this.stageCount){
                         this.completedStages.push(this.stage)
-                        console.log(this.stage + ' increment')
                         this.stage++;
                         this.completedStages.push(this.stage)
                     }
-                    console.log(this.stage + 'fromnextslide')
                     this.setStage(this.stage, false);
                     this.slideCounter = 0;
                     slider.style.right = 0 + 'px';
@@ -235,6 +241,7 @@
                  this.containerWidth = containerWidth;
             },
             selectCourse: function(){
+
                 if(this.productId === '1'){
                     if(this.language === 'english')
                     {
@@ -277,7 +284,7 @@
                         axios.get('../data/course.json').then(response => {
                             this.courses = response.data.polish;
                             this.setStageCount();
-                             this.getStageSlides(this.stage)
+                            this.getStageSlides(this.stage)
                         }).catch(error => {
                             console.error(error);
                         });
@@ -383,7 +390,7 @@
                 this.stageCount = Object.keys(this.courses).length;
             },
             getStageSlides(currentStage) {
-                const stageKey = currentStage === Object.keys(this.courses).length ? 'test' : 'stage_' + currentStage;
+                let stageKey = currentStage === Object.keys(this.courses).length ? 'test' : 'stage_' + currentStage;
                 this.slides =  this.courses[stageKey];
             },
             getCourseItems: function()
@@ -434,20 +441,7 @@
                     <span class="slider round"></span>
                 </label>
             </div>
-{{--            <div class="progressBar" x-show="showProgressBar === 'freeze'">--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 1 }">1</div>--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 2 }">2</div>--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 3 }">3</div>--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 4 }">4</div>--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 5 }">Test</div>--}}
-{{--            </div>--}}
-{{--            <div class="progressBar" x-show="showProgressBar === 'navigate'">--}}
-{{--                <div class="progresItem" @click="setStage(1)" x-bind:class="{ 'isActiveClass': isActive === 1 }">1</div>--}}
-{{--                <div class="progresItem" @click="setStage(2)" x-bind:class="{ 'isActiveClass': isActive === 2 }">2</div>--}}
-{{--                <div class="progresItem" @click="setStage(3)" x-bind:class="{ 'isActiveClass': isActive === 3 }">3</div>--}}
-{{--                <div class="progresItem" @click="setStage(4)" x-bind:class="{ 'isActiveClass': isActive === 4 }">4</div>--}}
-{{--                <div class="progresItem" x-bind:class="{ 'isActiveClass': isActive === 5 }">Test</div>--}}
-{{--            </div>--}}
+
             <div class="progressBar" x-show="showProgressBar === 'freeze'">
                 <template x-for="(stageItem, index) in stageCount" :key="index">
                     <div class="progresItem" @click="setStage(stageItem, true)" x-bind:class="{ 'isActiveClass': isActive === stageItem }">
@@ -459,32 +453,63 @@
             <!-- Navigate ProgressBar -->
             <div class="progressBar" x-show="showProgressBar === 'navigate'">
                 <template x-for="(stageItem, index) in stageCount" :key="index">
-                    <!-- Check class binding syntax and function call -->
-                    <div class="progresItem" @click="setStage(stageItem, true)"  x-bind:class="{ 'isActiveClass': isActive === stageItem }">
-                        <!-- Check the value of 'stage' and the condition -->
+                    <div x-if="index !== stageCount" class="progresItem" @click="setStage(stageItem, true)" x-bind:class="{ 'isActiveClass': isActive === stageItem }">
                         <span x-text="index === stageCount - 1 ? 'Test' : stageItem"></span>
                     </div>
                 </template>
             </div>
 
+
             <div class="videoContainer" x-cloak x-show="video" >
-                <video autoplay muted controls class="practicalVideo" id="practiceVideo">
-                    <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
-                </video>
-                <div class="videoText">
-                    <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong>
-                    <br><br>
-                    You can watch the video demonstration attached on our website and record after that your video showing how to lift up and carry the load safely and send it back to us through this chat and we'll check that for you.
-                    No need to explain the steps if you don’t feel confident about that. Also,it’s not mandatory to wear special equipment (such as PPE) during this process.You can record it in any work environment or at home if you wish so.<br><br>
-                    The steps required are:<br><br>
-                    *Assess the area /*Assess the load/*Get a good stable base, feet flat on the floor in the line with your shoulders/*Bend the knees/*Keep your back straight /*Take the load from the floor with a good palm grip (one palm at the front side and another palm at the bottom)/*Hold the load close to your body/*Turn around with your feet,don’t twist your body<br><br>
-                    It’s important to lift the load from the floor/ground and place it on the table (or any other surface available ) and then back on the floor by following all the steps above.
-                    You can use anything as a load in case you don’t have a box.
-                    Please watch the video demonstration as advised.<br><br>
-                    You can send your video demonstration to our team through the Whatsapp chat on +353{{config('app.telephone')}} and our instructors will evaluate that for you a.s.a.p.
-                    Our team is assisting all our customers with a prompt response during our working hours.Sometimes our team might assist you outside our usual working program but during our fixed hours you will  definitely be assisted without any delay.<br><br>
-                    If you wish to book a live video call with one of our instructors  to complete the self assessment please send a text message with your full name and email address that was used for your training and with your request regarding that. All the certificates are emailed to everyone straight away after the full course is fully completed.
-                </div>
+                <template x-if="productId === '1'">
+                    <div class="testPass">
+                        <video autoplay muted controls class="practicalVideo" id="practiceVideo">
+                            <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
+                        </video>
+                        <div class="videoText">
+                            <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong>
+                            <br><br>
+                            You can watch the video demonstration attached on our website and record after that your video showing how to lift up and carry the load safely and send it back to us through this chat and we'll check that for you.
+                            No need to explain the steps if you don’t feel confident about that. Also,it’s not mandatory to wear special equipment (such as PPE) during this process.You can record it in any work environment or at home if you wish so.<br><br>
+                            The steps required are:<br><br>
+                            *Assess the area /*Assess the load/*Get a good stable base, feet flat on the floor in the line with your shoulders/*Bend the knees/*Keep your back straight /*Take the load from the floor with a good palm grip (one palm at the front side and another palm at the bottom)/*Hold the load close to your body/*Turn around with your feet,don’t twist your body<br><br>
+                            It’s important to lift the load from the floor/ground and place it on the table (or any other surface available ) and then back on the floor by following all the steps above.
+                            You can use anything as a load in case you don’t have a box.
+                            Please watch the video demonstration as advised.<br><br>
+                            You can send your video demonstration to our team through the Whatsapp chat on +353{{config('app.telephone')}} and our instructors will evaluate that for you a.s.a.p.
+                            Our team is assisting all our customers with a prompt response during our working hours.Sometimes our team might assist you outside our usual working program but during our fixed hours you will  definitely be assisted without any delay.<br><br>
+                            If you wish to book a live video call with one of our instructors  to complete the self assessment please send a text message with your full name and email address that was used for your training and with your request regarding that. All the certificates are emailed to everyone straight away after the full course is fully completed.
+                        </div>
+                    </div>
+                 </template>
+                <template x-if="productId === '2'">
+                    <div class="testPass">
+                        <iframe width="80%" height="650" src="https://www.youtube.com/embed/Aza-s-uuaY8" frameborder="0" allowfullscreen></iframe>
+                        <div class="videoText">
+                            <strong>Congratulations on completing the Working at Heights Training.</strong>
+                            You are one step away from your certificate. Please watch the final video that provides a demonstration with brief information on how to wear a harness, front, side and back to secure yourself while working at heights.
+                            <br><br>
+                            Remember :all the information covered by this training it's for your safety first. You have 3 years free access to your course content and feel free to get back and review anytime you need it.
+                        </div>
+                    </div>
+                </template>
+                <template x-if="productId === '3' || productId === '4' || productId === '5' || productId === '6' || productId === '7' || productId === '8' || productId === '9' || productId === '10' || productId === '11' || productId === '12'">
+                    <div class="videoText">
+                        <strong>Congratulations! You have passed the test successfully.</strong>
+                        Congratulations! You have passed the test successfully. Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
+                        <br><br>
+                        Remember, you can access our website anytime by using your personal password and email and download the certificate or review the course content if you wish so.
+                        <br><br>
+                        Best regards,<br>
+                        I.S.T.C Team
+                        <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'">
+                            @csrf
+                            <input type="hidden" name="userId" value="{{auth()->user()->id}}">
+                            <input type="hidden" name="productId"  x-bind:value="productId">
+                            <button type="submit" class="downCertificate">Get Certificate</button>
+                        </form>
+                    </div>
+                </template>
             </div>
             <div class="courseContainer" id="courseContainer" x-on:landscape="setScreen">
                 <img id="eyeIcon" @click="showHideSlide" x-show="showEye" src="{{asset('images/icons/eye.png')}}" alt="Show hide image">
@@ -507,6 +532,7 @@
                                             </div>
                                         </template>
                                     </div>
+
                                     <div x-show="stage === stageCount">
                                         <!-- Radio buttons for the test stage -->
                                         <template x-for="(bullet, bulletIndex) in slide.bullets" >
@@ -516,10 +542,13 @@
                                             </div>
                                         </template>
                                     </div>
+
                                 </div>
                                 <!-- Controls based on stage type -->
                                 <div x-show="stage === stageCount && !showStartTest" @click="submitAnswer()" class="showAnswer">Next</div>
+
                                 <div x-show="showStartTest" @click="startTest" class="showAnswer">Start Test</div>
+
                                 <template x-if="stage !== stageCount">
                                     <!-- Show Answer button for non-test stages -->
                                     <div class="showAnswer" x-show="slide.answer" @click="toggleAnswer">Show Answer</div>
@@ -537,7 +566,7 @@
                         <div class="tryAgainButton" @click="resetTest">Try Again The Test</div>
                     </div>
                 </template>
-                <div class="navButton" x-show="showNav" @click="nextSlide">Next</div>
+                <button class="navButton" x-show="showNav" @click="nextSlide" >Next</button>
             </div>
         </div>
     </div>

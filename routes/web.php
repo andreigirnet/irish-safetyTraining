@@ -63,7 +63,7 @@ Auth::routes();
 
         Route::get('/course/{id}', [App\Http\Controllers\CourseController::class, 'index'])->name('course.index');
         Route::get('/certificates', [App\Http\Controllers\CertificateController::class, 'index'])->name('certificate.index');
-        Route::post('/certificate/create/{id}}', [App\Http\Controllers\CertificateController::class, 'store'])->name('certificate.store');
+        Route::post('/certificate/create/{id}', [App\Http\Controllers\CertificateController::class, 'store'])->name('certificate.store');
         Route::get('/certificate/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownload'])->name('certificate.download');
         Route::get('/certificate/practice/{id}', [App\Http\Controllers\CertificateController::class, 'certificateDownloadPractice'])->name('certificate.download.practice');
 
