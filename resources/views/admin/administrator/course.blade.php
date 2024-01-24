@@ -3,6 +3,7 @@
     <div class="dashWrapper" x-data="{
             containerWidth: 0,
             slides: {},
+            answers: false,
             showModal: false,
             showHideLang: true,
             stageCount: null,
@@ -15,9 +16,12 @@
             correctAnswers: [3,3,2,2,3,2,3,1,3,3],
             certificateButton: false,
             showNav: false,
+            wrongAnswersCount: 0,
+            correctAnswersCount: 0,
             showEye: true,
             showSlider: true,
             submittedAnswers: [],
+            answerFeedback: [],
             showHideContent: true,
             showStartTest: false,
             message: '',
@@ -85,6 +89,7 @@
             {
                this.nextSlide();
                this.showStartTest = false;
+               this.tryAgainButton = false
             },
             resetTest: function()
             {
@@ -113,11 +118,16 @@
             checkResult: function() {
                 if (this.submittedAnswers.length === this.correctAnswers.length) {
                     let correctCount = 0;
+
                     for (let i = 0; i < this.submittedAnswers.length; i++) {
                         if (this.submittedAnswers[i] === this.correctAnswers[i]) {
                             correctCount++;
+                            this.answerFeedback.push({ questionNumber: i + 1, correct: true });
+                        } else {
+                            this.answerFeedback.push({ questionNumber: i + 1, correct: false });
                         }
                     }
+
                     const percentageCorrect = (correctCount / this.correctAnswers.length) * 100;
 
                     if (percentageCorrect >= 70) {
@@ -125,8 +135,13 @@
                         this.showModal = true;
                         this.showProgressBar = false;
                         this.showHideLang = false;
-
+                        // Display correct and wrong answers
+                        console.log('Correct Answers:', this.answerFeedback.filter(answer => answer.correct));
+                        console.log('Wrong Answers:', this.answerFeedback.filter(answer => !answer.correct));
                     } else {
+                        this.correctAnswersCount = this.answerFeedback.filter(feedback => feedback.correct).length;
+                        this.wrongAnswersCount = this.answerFeedback.filter(feedback => !feedback.correct).length;
+                        this.answers = true;
                         this.tryAgainButton = true;
                     }
                 }
@@ -185,7 +200,6 @@
                         if(stage === this.stageCount){
                             this.showStartTest = true;
                             this.showHideContent = true;
-                            this.tryAgainButton = false;
                         }
                          this.slideCounter = 0;
                          slider.style.right = 0 + 'px';
@@ -490,6 +504,12 @@
                             You are one step away from your certificate. Please watch the final video that provides a demonstration with brief information on how to wear a harness, front, side and back to secure yourself while working at heights.
                             <br><br>
                             Remember :all the information covered by this training it's for your safety first. You have 3 years free access to your course content and feel free to get back and review anytime you need it.
+                            <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'" style="margin-top: 20px">
+                                @csrf
+                                <input type="hidden" name="userId" value="{{auth()->user()->id}}">
+                                <input type="hidden" name="productId"  x-bind:value="productId">
+                                <button type="submit" class="downCertificate">Get Certificate</button>
+                            </form>
                         </div>
                     </div>
                 </template>
@@ -502,7 +522,7 @@
                         <br><br>
                         Best regards,<br>
                         I.S.T.C Team
-                        <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'">
+                        <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'"  style="margin-top: 20px">
                             @csrf
                             <input type="hidden" name="userId" value="{{auth()->user()->id}}">
                             <input type="hidden" name="productId"  x-bind:value="productId">
@@ -562,6 +582,17 @@
                 <div class="navButton" x-show="showNav" @click="prevSlide">Previous</div>
                 <template x-if="tryAgainButton">
                     <div class="tryAgainDiv">
+                        <div class="answers">
+                            <div class="answersDiv">
+                                <h2>Correct Answers-</h2>
+                            <div x-text="correctAnswersCount" style="font-size: 20px"></div>
+                            </div>
+                            <div class="answersDiv">
+                            <h2>Wrong Answers-</h2>
+                                <div x-text="wrongAnswersCount" style="font-size: 20px"></div>
+                            </div>
+
+                        </div>
                         <div class="tryAgain">Please try Again you dit not pass:</div>
                         <div class="tryAgainButton" @click="resetTest">Try Again The Test</div>
                     </div>

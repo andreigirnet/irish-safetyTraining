@@ -89,6 +89,7 @@
     display: flex;
     width: 80%;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 .navButton{
     width: 100px;
@@ -277,7 +278,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 1200px;
+    height: auto;
     row-gap: 50px;
     margin-top: 30px;
 }
@@ -353,6 +354,11 @@ input:checked + .slider:before {
 }
 .landscape{
     display: none;
+}
+.answersDiv{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
 }
 
 
