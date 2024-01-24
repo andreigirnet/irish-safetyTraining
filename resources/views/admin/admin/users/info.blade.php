@@ -51,7 +51,9 @@
             <input type="hidden" id="userNameEmployee" name="userId" value="{{$user->id}}">
             <label for="course" class="formLabel">Course Name</label>
             <select name="course" id="course" style="height: 40px" required>
-                <option value="Manual Handling" >Manual Handling</option>
+                @foreach($products as $product)
+                <option value="{{$product->id}}" >{{$product->name}}</option>
+                @endforeach
             </select>
             <label for="userEmailEmployee" class="formLabel">Quantity</label>
             <input type="number" id="userEmailEmployee" name="quantity" class="formInputProfile" placeholder="Type the quantity" required>

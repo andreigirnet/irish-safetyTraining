@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Certificate;
 use App\Models\Package;
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
@@ -78,10 +79,13 @@ class PackageController extends Controller
      */
     public function store(Request $request)
     {
+        $course = Product::find($request->course);
+        $courseName = $course->name;
         for ($i = 0; $i < $request->quantity; $i++) {
             $package = new Package();
             $package->user_id = $request->userId;
-            $package->course_name = $request->course;
+            $package->course_name = $courseName;
+            $package->product_id = $request->course;
             $package->status = "purchased";
             $package->save();
         }

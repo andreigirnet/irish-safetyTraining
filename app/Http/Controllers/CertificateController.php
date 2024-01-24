@@ -65,9 +65,10 @@ class CertificateController extends Controller
     public function store(Request $request, $packageId)
     {
         $uniqueCertificateId = 'CERT' . rand(10000, 1000000);
-        $now                 = new \DateTime();
+        $now = new \DateTime();
         $now->add(new \DateInterval('P3Y'));
         $date_three_years_ahead = $now->format('Y-m-d');
+
 
         $certificateCreated = Certificate::create([
             'user_id'         => $request->userId,
