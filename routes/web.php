@@ -110,6 +110,42 @@ Auth::routes();
         Route::get('/add/product', [App\Http\Controllers\ProductController::class,'create'])->name('admin.create.product');
         Route::post('/add/product', [App\Http\Controllers\ProductController::class,'store'])->name('admin.add.product');
     });
+
+        Route::middleware(['is_trainer'])->group(function () {
+//            Route::get('/search/all/employees', [App\Http\Controllers\UserController::class,'searchAllEmployees'])->name('user.search.all.employees');
+//            Route::get('/admin/users', [App\Http\Controllers\UserController::class,'index'])->name('users.index');
+//            Route::get('/admin/search/user', [App\Http\Controllers\UserController::class,'searchUser'])->name('user.search');
+//            Route::get('/admin/info/user/{id}', [App\Http\Controllers\UserController::class,'show'])->name('user.info');
+//            Route::delete('/admin/delete/user/{id}', [App\Http\Controllers\UserController::class,'destroy'])->name('user.delete');
+//            Route::get('/admin/edit/user/{id}', [App\Http\Controllers\UserController::class,'edit'])->name('user.edit');
+//            Route::put('/admin/update/user/{id}', [App\Http\Controllers\UserController::class,'update'])->name('user.update');
+//            Route::get('/search/user', [App\Http\Controllers\UserController::class,'searchUser'])->name('user.admin.search');
+//            Route::post('/admin/existing/employee', [App\Http\Controllers\UserController::class,'addExistingEmployee'])->name('user.admin.exist');
+//
+            Route::get('/trainer/orders', [App\Http\Controllers\OrderController::class,'trainerOrders'])->name('orders.trainer');
+//            Route::get('/admin/search/order', [App\Http\Controllers\OrderController::class,'searchOrder'])->name('order.search');
+//            Route::delete('/admin/orders/delete/{id}', [App\Http\Controllers\OrderController::class,'adminDeleteOrder'])->name('order.admin.delete');
+//            Route::get('/admin/edit/order/{id}', [App\Http\Controllers\OrderController::class,'edit'])->name('order.edit');
+//            Route::put('/admin/update/order/{id}', [App\Http\Controllers\OrderController::class,'update'])->name('order.update');
+//
+              Route::get('/trainer/packages', [App\Http\Controllers\PackageController::class,'getAllPackagesTrainer'])->name('packages.trainer.index');
+//            Route::delete('/admin/packages/delete/{id}', [App\Http\Controllers\PackageController::class,'destroy'])->name('packages.admin.delete');
+//            Route::post('/admin/add/packages', [App\Http\Controllers\PackageController::class,'store'])->name('packages.admin.add');
+            Route::get('/trainer/search/packages', [App\Http\Controllers\PackageController::class,'searchPackageTrainer'])->name('packages.trainer.search');
+            Route::get('/trainer/edit/package/{id}', [App\Http\Controllers\PackageController::class,'trainerEdit'])->name('packages.trainer.edit');
+//            Route::get('/admin/edit/packageOwner/{id}', [App\Http\Controllers\PackageController::class,'editOwner'])->name('packages.admin.owner');
+            Route::put('/trainer/update/package/{id}', [App\Http\Controllers\PackageController::class,'trainerUpdate'])->name('packages.trainer.update');
+//            Route::put('/admin/updateOwner/package/{id}', [App\Http\Controllers\PackageController::class,'updateOwner'])->name('packages.admin.updateOwner');
+//
+              Route::get('/trainer/certificates', [App\Http\Controllers\CertificateController::class,'getAllCertificatesTrainer'])->name('certificates.trainer.index');
+//            Route::delete('/admin/certificate/delete/{id}', [App\Http\Controllers\CertificateController::class,'destroy'])->name('certificates.admin.delete');
+              Route::get('/trainer/search/certificate', [App\Http\Controllers\CertificateController::class,'searchCertificate'])->name('certificates.trainer.search');
+//
+//            Route::get('/search', [App\Http\Controllers\UserController::class,'search'])->name('user.search');
+//
+//            Route::get('/add/product', [App\Http\Controllers\ProductController::class,'create'])->name('admin.create.product');
+//            Route::post('/add/product', [App\Http\Controllers\ProductController::class,'store'])->name('admin.add.product');
+        });
 });
 
         //Front end routes, User experience

@@ -28,7 +28,7 @@ class OrderController extends Controller
     {
         $orders = DB::select("SELECT *, orders.user_id as owner_id, (SELECT email FROM users WHERE id=owner_id) as owner_email FROM orders ORDER BY created_at DESC");
         $page = $request->input('page', 1);
-        $size = 30;
+        $size = 10;
         $collectedData = collect($orders);
         $paginationData = new LengthAwarePaginator(
             $collectedData->forPage($page, $size),
@@ -39,6 +39,23 @@ class OrderController extends Controller
         $paginationData->setPath('/admin/orders');
         return view('admin.admin.orders.index')->with('orders',$paginationData);
     }
+
+    public function trainerOrders(Request $request): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+    {
+        $orders = DB::select("SELECT *, orders.user_id as owner_id, (SELECT email FROM users WHERE id=owner_id) as owner_email FROM orders ORDER BY created_at DESC");
+        $page = $request->input('page', 1);
+        $size = 10;
+        $collectedData = collect($orders);
+        $paginationData = new LengthAwarePaginator(
+            $collectedData->forPage($page, $size),
+            $collectedData->count(),
+            $size,
+            $page
+        );
+        $paginationData->setPath('/admin/orders');
+        return view('admin.trainer.orders.index')->with('orders',$paginationData);
+    }
+
 
     public function searchOrder(Request $request)
     {

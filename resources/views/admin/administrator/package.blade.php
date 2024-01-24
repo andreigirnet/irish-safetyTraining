@@ -43,9 +43,9 @@
             {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
-        <div class="paginationContainer">
-            {{ $packages->links() }}
-        </div>
+
+            {{ $packages->links('paginator.paginator') }}
+
         @else
             <div class="textAdmin">No Packages at the moment</div>
         @endif

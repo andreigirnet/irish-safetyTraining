@@ -60,8 +60,6 @@
             {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
-        <div class="paginationContainer" >
-        {{ $users->links() }}
-        </div>
+        {{ $users->links('paginator.paginator') }}
     </div>
 @endsection

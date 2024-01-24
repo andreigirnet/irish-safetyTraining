@@ -33,6 +33,8 @@
             {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
+
+            {{ $certificates->links('paginator.paginator') }}
         @else
             <div class="textAdmin">No certificates at the moment</div>
         @endif

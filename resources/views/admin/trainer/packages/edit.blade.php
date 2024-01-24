@@ -13,9 +13,8 @@
         }
     }">
         <div class="adminHomePageTitle">Edit Package</div>
-        <a href="javascript:history.back()">Go back</a>
         <div class="formEdit">
-            <form action="{{route('packages.admin.update', $package->id)}}" method="POST" class="registerEmployeeForm">
+            <form action="{{route('packages.trainer.update', $package->id)}}" method="POST" class="registerEmployeeForm">
                 @csrf
                 @method('PUT')
                 <label class="formLabel" for="course_name">Course Name</label>

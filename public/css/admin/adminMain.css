@@ -11,6 +11,35 @@
     --greenColor: #70bc40;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.pagination li.active {
+    background-color: #333;
+    color: #fff;
+}
+.pagination li a{
+    text-decoration: none;
+    color: black;
+}
 .logo img{
     width: 125px;
 }
@@ -121,6 +150,9 @@ a{
 }
 #adminDrop{
    display: none;
+}
+#trainerAdminDrop{
+    display: none;
 }
 .removeButton{
     background: none;

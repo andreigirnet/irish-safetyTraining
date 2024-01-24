@@ -88,4 +88,28 @@
             </a>
         </div>
     @endif
+    @if(auth()->user()->is_trainer===1)
+        <div class="navLinkAdmin" id="trainerNavButton">
+            <div class="navIconAdmin"><img src="{{asset('images/icons/star-white.png')}}" alt=""></div>
+            <div class="navLinkName">Christian's Dashboard</div>
+        </div>
+        <div class="dropAdminMenu" id="trainerAdminDrop">
+{{--            <a href="{{route('users.index')}}">--}}
+{{--                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">--}}
+{{--                <div class="navLinkDropAdmin">Все пользователи</div>--}}
+{{--            </a>--}}
+            <a href="{{route('orders.trainer')}}">
+                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
+                <div class="navLinkDropAdmin">Все заказы</div>
+            </a>
+            <a href="{{route('packages.trainer.index')}}">
+                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
+                <div class="navLinkDropAdmin">Все пакеты</div>
+            </a>
+            <a href="{{route('certificates.trainer.index')}}">
+                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
+                <div class="navLinkDropAdmin">Все сертификаты</div>
+            </a>
+        </div>
+    @endif
 </div>

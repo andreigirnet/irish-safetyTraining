@@ -1,28 +1,32 @@
-<!-- pagination.blade.php -->
-
-@if ($paginator->hasPages())
-    <div class="paginationSection">
-        {{-- Previous Page Link --}}
+<div class="pagination">
+    <ul>
         @if ($paginator->onFirstPage())
-            <div aria-disabled="true"  aria-label="@lang('pagination.previous')">
-                <div aria-hidden="true"><< Previous</div>
-            </div>
+            <li class="disabled">Previous</li>
         @else
-            <div>
-                <a href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')"> << Previous </a>
-            </div>
+            <li><a href="{{ $paginator->previousPageUrl() }}" rel="prev">Previous</a></li>
         @endif
-        {{--        Display de current page--}}
-        <div>Page {{$paginator->currentPage()}} from {{$paginator->lastPage()}}</div>
-        {{-- Next Page Link --}}
+
+        @foreach ($elements as $element)
+            @if (is_string($element))
+                <li class="disabled">{{ $element }}</li>
+            @endif
+
+            @if (is_array($element))
+                @foreach ($element as $page => $url)
+                    @if ($page == $paginator->currentPage())
+                        <li class="active">{{ $page }}</li>
+                    @else
+                        <a href="{{ $url }}"><li>{{ $page }}</li></a>
+                    @endif
+                @endforeach
+            @endif
+        @endforeach
+
         @if ($paginator->hasMorePages())
-            <div>
-                <a href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')"> Next >> </a>
-            </div>
+            <li><a href="{{ $paginator->nextPageUrl() }}" rel="next">Next</a></li>
         @else
-            <div aria-disabled="true" aria-label="@lang('pagination.next')">
-                <div aria-hidden="true"> Next >> </div>
-            </div>
+            <li class="disabled">Next</li>
         @endif
-    </div>
-@endif
+    </ul>
+</div>
+

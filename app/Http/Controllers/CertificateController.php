@@ -24,7 +24,12 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        $certificates = DB::select('SELECT *, certificates.created_at as valid_from, certificates.id as id FROM certificates JOIN packages ON certificates.package_id = packages.id WHERE certificates.user_id=' . auth()->user()->id . ' ORDER BY valid_from DESC');
+        $certificates =  DB::table('certificates')
+            ->select('certificates.*', 'certificates.created_at as valid_from', 'packages.*')
+            ->join('packages', 'certificates.package_id', '=', 'packages.id')
+            ->where('certificates.user_id', auth()->user()->id)
+            ->orderBy('valid_from', 'DESC')
+            ->paginate(10);
         return view('admin.administrator.certificate')->with('certificates', $certificates);
     }
 
@@ -43,12 +48,47 @@ class CertificateController extends Controller
         return view('admin.admin.certificates.index')->with('certificates',$paginationData);
     }
 
+    public function getAllCertificatesTrainer(Request $request){
+        $certificates = DB::table('certificates')
+            ->select(
+                'certificates.*',
+                'certificates.user_id as user_id',
+                DB::raw('(SELECT email FROM users WHERE id = certificates.user_id) as email'),
+                DB::raw('(SELECT name FROM users WHERE id = certificates.user_id) as holderName')
+            )
+            ->join('packages', 'certificates.package_id', '=', 'packages.id')
+            ->whereIn('packages.product_id', [2, 3, 4, 5, 6, 11, 12])
+            ->orderBy('certificates.created_at', 'DESC')
+            ->get();
+        $page = $request->input('page', 1);
+        $size = 30;
+        $collectedData = collect($certificates);
+        $paginationData = new LengthAwarePaginator(
+            $collectedData->forPage($page, $size),
+            $collectedData->count(),
+            $size,
+            $page
+        );
+        $paginationData->setPath('/admin/certificates');
+        return view('admin.trainer.certificates.index')->with('certificates',$paginationData);
+    }
+
     public function searchCertificate(Request $request){
-        $certificate = DB::select("SELECT *, certificates.user_id as user_id, (SELECT email FROM users WHERE id=user_id) as email, (SELECT name FROM users WHERE id=user_id) as holderName FROM certificates WHERE certificates.unique_id LIKE'" . $request->unique_id . "%'");
-        if ($certificate === []){
+        $certificates = DB::table('certificates')
+            ->select(
+                'certificates.*',
+                'certificates.user_id as user_id',
+                DB::raw('(SELECT email FROM users WHERE id = certificates.user_id) as email'),
+                DB::raw('(SELECT name FROM users WHERE id = certificates.user_id) as holderName')
+            )
+            ->join('packages', 'certificates.package_id', '=', 'packages.id')
+            ->where('certificates.unique_id', 'LIKE', $request->unique_id . '%')
+            ->whereIn('packages.product_id', [2, 3, 4, 5, 6, 11, 12])
+            ->get();
+        if ($certificates->isEmpty()){
             return redirect()->back()->with('success', 'No record has been found with this id');
         }
-        return view('admin.admin.certificates.search')->with('certificate',$certificate[0]);
+        return view('admin.trainer.certificates.search')->with('certificates',$certificates);
     }
 
     /**

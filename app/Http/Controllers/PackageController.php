@@ -17,7 +17,7 @@ class PackageController extends Controller
      */
     public function index()
     {
-        $packages = Package::latest()->where('user_id',auth()->user()->id)->simplePaginate(10);
+        $packages = Package::latest()->where('user_id',auth()->user()->id)->paginate(10);
         return view('admin.administrator.package')->with('packages', $packages);
     }
 
@@ -51,12 +51,46 @@ class PackageController extends Controller
         return view('admin.admin.packages.index')->with('packages', $paginationData);
     }
 
+    public function getAllPackagesTrainer(Request $request){
+        $packages = DB::select("
+            SELECT *,
+                   packages.user_id as user_id,
+                   (SELECT email FROM users WHERE id = user_id) AS userPackageHolder
+            FROM packages
+            WHERE product_id IN (2, 3, 4, 5, 6, 11, 12)
+            ORDER BY created_at DESC
+        ");
+        $page = $request->input('page', 1);
+        $size = 30;
+        $collectedData = collect($packages);
+        $paginationData = new LengthAwarePaginator(
+            $collectedData->forPage($page, $size),
+            $collectedData->count(),
+            $size,
+            $page
+        );
+        $paginationData->setPath('/admin/packages');
+        return view('admin.trainer.packages.index')->with('packages', $paginationData);
+    }
+
     public function searchPackage(Request $request){
         $package= DB::select("SELECT *, packages.user_id as user_id, (SELECT email FROM users WHERE id = user_id) AS userPackageHolder FROM packages WHERE packages.id=" . $request->id);
         if ($package === []){
             return redirect()->back()->with('success', 'No record has been found with this id');
         }
         return view('admin.admin.packages.search')->with('package',$package[0]);
+    }
+
+    public function searchPackageTrainer(Request $request){
+        $package = DB::table('packages')
+            ->select('*', 'packages.user_id as user_id', DB::raw('(SELECT email FROM users WHERE id = packages.user_id) AS userPackageHolder'))
+            ->whereIn('packages.product_id', [2, 3, 4, 5, 6, 11, 12])
+            ->where('packages.id', $request->id)
+            ->first();
+        if ($package === []){
+            return redirect()->back()->with('success', 'No record has been found with this id');
+        }
+        return view('admin.trainer.packages.search')->with('package',$package);
     }
 
     public function changeStatus(Request $request){
@@ -110,6 +144,13 @@ class PackageController extends Controller
         return view('admin.admin.packages.edit')->with('package', $package)->with('employees', $employees);
     }
 
+    public function trainerEdit($id)
+    {
+        $package= Package::find($id);
+        $employees = DB::select("SELECT *, company_employee.id as relationId FROM users JOIN company_employee ON users.id = company_employee.employee WHERE company_employee.company=" . $package->user_id);
+        return view('admin.admin.packages.edit')->with('package', $package)->with('employees', $employees);
+    }
+
     public function editOwner($id)
     {
         $package= Package::find($id);
@@ -120,6 +161,20 @@ class PackageController extends Controller
     /**
      * Update the specified resource in storage.
      */
+    public function trainerUpdate(Request $request, $id)
+    {
+        $request->validate([
+            'course_name' => 'required|max:50',
+            'status'      => 'required',
+        ]);
+        $order = Package::find($id);
+        $order->update([
+            'course_name'=>$request->course_name,
+            'status'     =>$request->status,
+        ]);
+        return redirect()->back()->with('success','Package has been updated');
+    }
+
     public function update(Request $request, $id)
     {
         $request->validate([
