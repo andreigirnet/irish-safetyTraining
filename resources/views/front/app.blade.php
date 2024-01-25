@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{asset("css/front/contact.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
+    <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>

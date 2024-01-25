@@ -37,20 +37,50 @@
     </div>
     <div class="productSection">
         <div class="productWrapper">
-
+            <div class="adminProducts">
+                @foreach($products as $product)
+                    <div class="adminProduct">
+                        <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImage">
+                        <div class="adminProductBottom">
+                            <div class="adminProductName">{{$product->name}}</div>
+                            <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
+                            <hr>
+                            <div class="product-info-icons">
+                                <div class="product-icons">
+                                    <img src="images/icons/back-in-time.png" alt="">
+                                    <div>Duration: {{$product->durationTraining}} hours</div>
+                                </div>
+                                <div class="product-icons">
+                                    <img src="images/icons/certificate.png" alt="">
+                                    <div>Certificate Validity: {{$product->certificateValidity}} Years</div>
+                                </div>
+                                <div class="product-icons">
+                                    <img src="images/icons/money.png" alt="">
+                                    <div style="font-weight: bold">Only {{$product->price}} €</div>
+                                </div>
+                            </div>
+                            <form action="{{route('basket.add')}}" method="POST">
+                                @csrf
+                                <input type="hidden" value="{{$product->id}}" name="productId">
+                                <button type="submit" class="buttonProductAdminAdd">Add To Basket</button>
+                            </form>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </div>
 
-    <div class="langTitle" data-aos="fade-up">
-        <div class="languageText"  x-text="data.landingProduct[5]">When you start the course, you'll have the opportunity to choose from that 6 languages:</div>
-        <div class="languagesSection">
-            <img src="{{asset('images/flags/en.png')}}" alt="">
-            <img src="{{asset('images/flags/pl.png')}}" alt="">
-            <img src="{{asset('images/flags/ro.png')}}" alt="">
-            <img src="{{asset('images/flags/ru.png')}}" alt="">
-            <img src="{{asset('images/flags/sp.png')}}" alt="">
-        </div>
-    </div>
+{{--    <div class="langTitle" data-aos="fade-up">--}}
+{{--        <div class="languageText"  x-text="data.landingProduct[5]">When you start the course, you'll have the opportunity to choose from that 6 languages:</div>--}}
+{{--        <div class="languagesSection">--}}
+{{--            <img src="{{asset('images/flags/en.png')}}" alt="">--}}
+{{--            <img src="{{asset('images/flags/pl.png')}}" alt="">--}}
+{{--            <img src="{{asset('images/flags/ro.png')}}" alt="">--}}
+{{--            <img src="{{asset('images/flags/ru.png')}}" alt="">--}}
+{{--            <img src="{{asset('images/flags/sp.png')}}" alt="">--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="title" data-aos="fade-up">
         <div class="titleText sizeTextMobile" x-text="data.reviewTitle">What Our Customers Say</div>
@@ -77,9 +107,9 @@
     <div class="aboutUs" data-aos="fade-up">
         <div class="aboutWrapper">
             <div x-html="data.homeAboutUs[1]">
-                irish-safetytraining.com was established to provide effective, accessible, and convenient safety training for Irish workers wherever they are located. All courses can be done online.<br>
+                skillcourses.ie was established to provide effective, accessible, and convenient safety training for Irish workers wherever they are located. All courses can be done online.<br>
 
-                irish-safetytraining.com takes great pride in the quality and integrity of its products and services.<br>
+                skillcourses.ie takes great pride in the quality and integrity of its products and services.<br>
 
                 Appropriate safety training can mean the difference between life and death and it is with this belief that we approach our safety training course development and delivery.<br>
 

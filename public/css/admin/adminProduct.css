@@ -26,10 +26,10 @@
     display: flex;
     justify-content: end;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 12px;
 }
 .adminProductName{
-    font-size: 28px;
+    font-size: 19px;
     font-weight: bold;
 }
 .buttonProductAdminAdd{

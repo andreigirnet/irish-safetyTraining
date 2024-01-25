@@ -189,7 +189,7 @@
                     <div class="accordionContent" x-text="faq.aboutFaq[12]">
                         <div class="accText">Certainly! For bulk purchases of 10 or more courses, you'll receive a 10% discount off the original price.
                             This discount is automatically calculated by our payment system when you add the specified number of courses to your cart.
-                            Should you require any further assistance or information, please don't hesitate to contact our team at +353894631967 📲 or email us at info@irish-manualhandling.com.
+                            Should you require any further assistance or information, please don't hesitate to contact our team at +353894631967 📲 or email us at info@skillcourses.ie.
                             We're here to help!
                         </div>
                     </div>
@@ -289,8 +289,8 @@
                     </div>
                     <div class="accordionContent">
                         <div class="accText">
-                            <p  x-html="faq.loginFaq[2]">To activate your course, please click on the following link: <a href="{{route('home')}}" style="color: blue">"https://irish-manualhandling.com/packages"</a>  If you encounter any difficulties during this process, please don't hesitate to reach out to our friendly Support Team. You can contact them by calling +353894631967 or by emailing us at mailto
-                                <a href="mailto:info@irish-manualhandling.com" style="color: blue">info@irish-manualhandling.com</a>
+                            <p  x-html="faq.loginFaq[2]">To activate your course, please click on the following link: <a href="{{route('home')}}" style="color: blue">"https://skillcourses.ie/packages"</a>  If you encounter any difficulties during this process, please don't hesitate to reach out to our friendly Support Team. You can contact them by calling +353894631967 or by emailing us at mailto
+                                <a href="mailto:info@skillcourses.ie" style="color: blue">info@skillcourses.ie</a>
                             </p>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
                             If you encounter difficulties completing your course, we suggest clearing your browser's cache. In many cases, after logging back into your account, you'll be able to proceed without any issues.
 
                             If this solution doesn't resolve the problem and you're still experiencing difficulties, please contact our Support Team. You can reach us by calling +353894631967 or emailing us at mailto:
-                            <a href="mailto:info@irish-manualhandling.com" style="color: blue">mailto:info@irish-manualhandling.com</a></p> For an optimal experience, we recommend completing our training using Google Chrome.
+                            <a href="mailto:info@skillcourses.ie" style="color: blue">mailto:info@skillcourses.ie</a></p> For an optimal experience, we recommend completing our training using Google Chrome.
                         </div>
                     </div>
 
@@ -321,7 +321,7 @@
                         <div class="accText">If you encounter challenges while completing your course, we suggest clearing your browser's cache, which can be done within your browser settings. Often, upon logging back into your account, this resolves most issues.
 
                             Should this solution not resolve the problem and you continue experiencing difficulties, please contact our Support Team.
-                            <a href="mailto:info@irish-manualhandling.com" style="color: blue">mailto:info@irish-manualhandling.com</a>
+                            <a href="mailto:info@skillcourses.ie" style="color: blue">mailto:info@skillcourses.ie</a>
                             For an optimal learning experience, we recommend completing our training using Google Chrome.
                         </div>
                     </div>

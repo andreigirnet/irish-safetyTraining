@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -149,7 +150,10 @@ Auth::routes();
 });
 
         //Front end routes, User experience
-        Route::get('/', function(){return view("front.landing");})->name('home');
+        Route::get('/', function(){
+            $products = Product::latest()->simplePaginate();
+
+            return view("front.landing", compact('products'));})->name('home');
         Route::get('/info/about/admin', [App\Http\Controllers\ProductController::class, 'info'])->name('infoAdmin');
         Route::get('/products', function(){return view("front.products");})->name('front.products');
         Route::get('/team', function(){return view("front.teamTraining");})->name('front.team');

@@ -59,51 +59,82 @@
                 <a href="{{route('certificate.download', $certificateId[0]->id)}}" class="homeDownloadButton">Downloand Certificate</a>
             @endif
         </div>
-        <div class="productSection">
-            <div class="productWrapper">
-                <div class="product-img">
-                    <img src="{{asset("images/products/productSmall.png")}}" height="420" width="327">
-                </div>
-                <div class="product-info">
-                    <div class="product-text">
-                        <h1>Manual Handling</h1>
-                        <h2>By {{env("app_name")}}</h2>
-                        <div class="product-info-icons">
-                            <div class="product-icons">
-                                <img src="images/icons/back-in-time.png" alt="">
-                                <div>Duration: 2-3 hours</div>
+{{--        <div class="productSection">--}}
+{{--            <div class="productWrapper">--}}
+{{--                <div class="product-img">--}}
+{{--                    <img src="{{asset("images/products/productSmall.png")}}" height="420" width="327">--}}
+{{--                </div>--}}
+{{--                <div class="product-info">--}}
+{{--                    <div class="product-text">--}}
+{{--                        <h1>Manual Handling</h1>--}}
+{{--                        <h2>By {{env("app_name")}}</h2>--}}
+{{--                        <div class="product-info-icons">--}}
+{{--                            <div class="product-icons">--}}
+{{--                                <img src="images/icons/back-in-time.png" alt="">--}}
+{{--                                <div>Duration: 2-3 hours</div>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-icons">--}}
+{{--                                <img src="images/icons/certificate.png" alt="">--}}
+{{--                                <div>Certificate Validity: 3 Years</div>--}}
+{{--                            </div>--}}
+{{--                            <div class="product-icons">--}}
+{{--                                <img src="images/icons/money.png" alt="">--}}
+{{--                                <div style="font-weight: bold">Only 30€</div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="product-price-btn">--}}
+{{--                        <a href="{{route('front.product',1)}}"><button type="button" class="buttonInfo" style="background: white;   border: 1px solid var(--yellowColor);color: black;">info</button></a>--}}
+{{--                        <form action="{{route('basket.add')}}" method="POST">--}}
+{{--                            @csrf--}}
+{{--                            <input type="hidden" value="1" name="productId">--}}
+{{--                            <button type="submit">Add To Basket</button>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--            <div class="langTitle">--}}
+{{--                <div class="languageText">Our Course is available in 5 languages:</div>--}}
+{{--                <div class="languagesSection">--}}
+{{--                    <img src="{{asset('images/flags/en.png')}}" alt="">--}}
+{{--                    <img src="{{asset('images/flags/pl.png')}}" alt="">--}}
+{{--                    <img src="{{asset('images/flags/ro.png')}}" alt="">--}}
+{{--                    <img src="{{asset('images/flags/ru.png')}}" alt="">--}}
+{{--                    <img src="{{asset('images/flags/sp.png')}}" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+            <div class="adminProducts">
+                @foreach($products as $product)
+                    <div class="adminProduct">
+                        <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImage">
+                        <div class="adminProductBottom">
+                            <div class="adminProductName">{{$product->name}}</div>
+                            <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
+                            <hr>
+                            <div class="product-info-icons">
+                                <div class="product-icons">
+                                    <img src="images/icons/back-in-time.png" alt="">
+                                    <div>Duration: {{$product->durationTraining}} hours</div>
+                                </div>
+                                <div class="product-icons">
+                                    <img src="images/icons/certificate.png" alt="">
+                                    <div>Certificate Validity: {{$product->certificateValidity}} Years</div>
+                                </div>
+                                <div class="product-icons">
+                                    <img src="images/icons/money.png" alt="">
+                                    <div style="font-weight: bold">Only {{$product->price}} €</div>
+                                </div>
                             </div>
-                            <div class="product-icons">
-                                <img src="images/icons/certificate.png" alt="">
-                                <div>Certificate Validity: 3 Years</div>
-                            </div>
-                            <div class="product-icons">
-                                <img src="images/icons/money.png" alt="">
-                                <div style="font-weight: bold">Only 30€</div>
-                            </div>
+                            <form action="{{route('basket.add')}}" method="POST">
+                                @csrf
+                                <input type="hidden" value="{{$product->id}}" name="productId">
+                                <button type="submit" class="buttonProductAdminAdd">Add To Basket</button>
+                            </form>
                         </div>
                     </div>
-                    <div class="product-price-btn">
-                        <a href="{{route('front.product',1)}}"><button type="button" class="buttonInfo" style="background: white;   border: 1px solid var(--yellowColor);color: black;">info</button></a>
-                        <form action="{{route('basket.add')}}" method="POST">
-                            @csrf
-                            <input type="hidden" value="1" name="productId">
-                            <button type="submit">Add To Basket</button>
-                        </form>
-                    </div>
-                </div>
+                @endforeach
             </div>
-        </div>
-        <div class="langTitle">
-            <div class="languageText">Our Course is available in 5 languages:</div>
-            <div class="languagesSection">
-                <img src="{{asset('images/flags/en.png')}}" alt="">
-                <img src="{{asset('images/flags/pl.png')}}" alt="">
-                <img src="{{asset('images/flags/ro.png')}}" alt="">
-                <img src="{{asset('images/flags/ru.png')}}" alt="">
-                <img src="{{asset('images/flags/sp.png')}}" alt="">
-            </div>
-        </div>
     </div>
     <script src="{{asset('js/showModalRegisterEmployee.js')}}"></script>
 @endsection

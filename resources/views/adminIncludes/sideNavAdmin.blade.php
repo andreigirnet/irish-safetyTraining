@@ -11,12 +11,12 @@
             <div class="navLinkName">Profile</div>
         </div>
     </a>
-    <a href="{{route('admin.products')}}">
-        <div class="navLinkAdmin">
-            <div class="navIconAdmin"><img src="{{asset('images/icons/plus-xl.png')}}" alt=""></div>
-            <div class="navLinkName">Products</div>
-        </div>
-    </a>
+{{--    <a href="{{route('admin.products')}}">--}}
+{{--        <div class="navLinkAdmin">--}}
+{{--            <div class="navIconAdmin"><img src="{{asset('images/icons/plus-xl.png')}}" alt=""></div>--}}
+{{--            <div class="navLinkName">Products</div>--}}
+{{--        </div>--}}
+{{--    </a>--}}
     <div class="navLinkAdmin" id="employersNavButton">
         <div class="navIconAdmin"><img src="{{asset('images/icons/admin.png')}}" alt=""></div>
         <div class="navLinkName">For Employers</div>
