@@ -19,7 +19,7 @@ class ProfileController extends Controller
      */
     public function index(): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
     {
-        $products = Product::latest()->simplePaginate();
+        $products = Product::orderBy('id', 'asc')->get();
         $userPackageId = DB::select("SELECT id FROM packages WHERE user_id=" . auth()->user()->id . " AND status='purchased' ORDER BY created_at DESC LIMIT 1;");
         $certificateId = DB::select("SELECT id FROM certificates WHERE user_id=" . auth()->user()->id . " ORDER BY created_at DESC LIMIT 1;");
         return view('admin.administrator.home')->with('userPackageId', $userPackageId)->with('certificateId', $certificateId)->with('products', $products);

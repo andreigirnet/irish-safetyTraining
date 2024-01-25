@@ -16,7 +16,7 @@ class ProductController extends Controller
      */
     public function index(): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
     {
-        $products = Product::latest()->simplePaginate();
+        $products = Product::orderBy('id', 'asc')->get();
         return view('admin.administrator.products', compact('products'));
     }
 

@@ -151,8 +151,7 @@ Auth::routes();
 
         //Front end routes, User experience
         Route::get('/', function(){
-            $products = Product::latest()->simplePaginate();
-
+            $products = Product::orderBy('id', 'asc')->get();
             return view("front.landing", compact('products'));})->name('home');
         Route::get('/info/about/admin', [App\Http\Controllers\ProductController::class, 'info'])->name('infoAdmin');
         Route::get('/products', function(){return view("front.products");})->name('front.products');
