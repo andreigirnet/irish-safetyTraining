@@ -1,7 +1,7 @@
 <div id="frontNav">
     <a href="{{route('home')}}">
         <div id="mainLogo">
-            <img src="{{asset("images/logo/logomain.png")}}" alt="">
+            <img src="{{asset("images/logo/logoWhite.png")}}" alt="">
         </div>
     </a>
     <div id="navMenu">

@@ -3,7 +3,7 @@
 @section('content')
 <div class="loginContainer">
     <div class="loginFormWrap">
-        <img class="logoMain" src="{{asset("images/logo/logomain.png")}}" alt="">
+        <img class="logoMain" src="{{asset("images/logo/logoWhite.png")}}" alt="">
         <h1 class="loginTitle">Set a new password</h1>
         <div class="registerLink"><a href="{{route("login")}}">Go back to login page</a></div>
         <form method="POST" style="margin-top: 20px" action="{{route('password.update')}}">

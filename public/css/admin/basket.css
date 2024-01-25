@@ -40,6 +40,8 @@ th{
 }
 .deleteIcon{
     border: none;
+    background: white;
+    width: 50px;
 }
 .goToCheckOutContainer{
     width: 100%;
@@ -77,6 +79,7 @@ th{
 }
 .noticeDiscountHeader{
     font-size: 18px;
+    font-weight: bold;
 }
 .cartSubTotal{
     font-size: 20px;

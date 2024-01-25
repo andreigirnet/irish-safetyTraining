@@ -2,7 +2,7 @@
 @section('content')
 <div class="loginContainer">
     <div class="loginFormWrap">
-        <img class="logoMain" src="{{asset("images/logo/logomain.png")}}" alt="">
+        <img class="logoMain" src="{{asset("images/logo/logoWhite.png")}}" alt="">
         <h1 class="loginTitle">System Login</h1>
         <div class="registerLink"><a href="{{route("register")}}">Don't Have an account? Register on this link</a></div>
         <form method="POST" class="loginForm" action="{{ route('login') }}">

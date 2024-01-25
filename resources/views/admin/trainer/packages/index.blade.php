@@ -29,13 +29,13 @@
             @foreach($packages as $package)
                 <tr>
                     <td class="actionRow">
-                        <form action="{{route('packages.admin.delete', $package->id)}}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button class="removeButton">
-                                <img src="{{asset('images/icons/bin.png')}}" alt="">
-                            </button>
-                        </form>
+{{--                        <form action="{{route('packages.admin.delete', $package->id)}}" method="POST">--}}
+{{--                            @csrf--}}
+{{--                            @method('DELETE')--}}
+{{--                            <button class="removeButton">--}}
+{{--                                <img src="{{asset('images/icons/bin.png')}}" alt="">--}}
+{{--                            </button>--}}
+{{--                        </form>--}}
                         <a href="{{route('packages.trainer.edit', $package->id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>
                     </td>
                     <td>{{$package->id}}</td>

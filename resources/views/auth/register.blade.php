@@ -3,7 +3,7 @@
 @section('content')
 <div class="registerContainer">
     <div class="registerFormWrap">
-        <img class="logoMain" src="{{asset("images/logo/logomain.png")}}" alt="">
+        <img class="logoMain" src="{{asset("images/logo/logoWhite.png")}}" alt="">
         <h1 class="loginTitle">System Registration</h1>
         <div class="registerLink"><a href="{{route("login")}}">Have already an account? Login Here</a></div>
         <form method="POST" class="loginForm" action="{{ route('register') }}">

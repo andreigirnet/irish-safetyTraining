@@ -67,24 +67,24 @@
     @if(auth()->user()->is_admin==1)
         <div class="navLinkAdmin" id="adminNavButton">
             <div class="navIconAdmin"><img src="{{asset('images/icons/star-white.png')}}" alt=""></div>
-            <div class="navLinkName">Администратор</div>
+            <div class="navLinkName">Admin</div>
         </div>
         <div class="dropAdminMenu" id="adminDrop">
             <a href="{{route('users.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все пользователи</div>
+                <div class="navLinkDropAdmin">All users</div>
             </a>
             <a href="{{route('orders.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все заказы</div>
+                <div class="navLinkDropAdmin">All orders</div>
             </a>
             <a href="{{route('packages.admin.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все пакеты</div>
+                <div class="navLinkDropAdmin">All packages</div>
             </a>
             <a href="{{route('certificates.admin.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все сертификаты</div>
+                <div class="navLinkDropAdmin">All certificates</div>
             </a>
         </div>
     @endif
@@ -100,15 +100,15 @@
 {{--            </a>--}}
             <a href="{{route('orders.trainer')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все заказы</div>
+                <div class="navLinkDropAdmin">All orders</div>
             </a>
             <a href="{{route('packages.trainer.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все пакеты</div>
+                <div class="navLinkDropAdmin">All packages</div>
             </a>
             <a href="{{route('certificates.trainer.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">Все сертификаты</div>
+                <div class="navLinkDropAdmin">All certificates</div>
             </a>
         </div>
     @endif

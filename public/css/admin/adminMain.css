@@ -1,6 +1,6 @@
 
 *{
-    --navAdminColor: #0a64bf;
+    --navAdminColor: #163020;
     margin: 0;
     padding: 0;
     --primary: #333333;
@@ -41,7 +41,7 @@
     color: black;
 }
 .logo img{
-    width: 125px;
+    width: 200px;
 }
 a{
     text-decoration: none;
@@ -93,9 +93,10 @@ a{
 .navLinkName{
     color: white;
     font-weight: 700;
+    font-size: 20px;
 }
 .navLinkAdmin:hover{
-    background: #053d79;
+    background: #1e452d;
 }
 .adminContent{
     width: 100%;

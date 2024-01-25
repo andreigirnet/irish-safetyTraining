@@ -4,7 +4,7 @@
  font-family: 'PT Sans Narrow', sans-serif;
 }
 .logoMain{
-    width: 100px;
+    width: 200px;
 }
 .loginContainer{
     width: 100%;
@@ -34,6 +34,7 @@
     align-items: center;
 }
 .loginTitle{
+    margin-top: 25px;
     font-family: inherit;
     color: white;
     font-size: 35px;
@@ -73,6 +74,7 @@
     font-weight: 600;
     background: #4cae4c;
     cursor: pointer;
+    font-size: 18px;
 }
 .loginRegisterButton:hover{
     background: #318031;

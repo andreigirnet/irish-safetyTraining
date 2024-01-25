@@ -9,6 +9,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class PackageController extends Controller
 {
@@ -148,7 +149,7 @@ class PackageController extends Controller
     {
         $package= Package::find($id);
         $employees = DB::select("SELECT *, company_employee.id as relationId FROM users JOIN company_employee ON users.id = company_employee.employee WHERE company_employee.company=" . $package->user_id);
-        return view('admin.admin.packages.edit')->with('package', $package)->with('employees', $employees);
+        return view('admin.trainer.packages.edit')->with('package', $package)->with('employees', $employees);
     }
 
     public function editOwner($id)
@@ -172,7 +173,7 @@ class PackageController extends Controller
             'course_name'=>$request->course_name,
             'status'     =>$request->status,
         ]);
-        return redirect()->back()->with('success','Package has been updated');
+        return redirect()->route('packages.trainer.index')->with('success','Package has been updated');
     }
 
     public function update(Request $request, $id)
@@ -186,7 +187,8 @@ class PackageController extends Controller
             'course_name'=>$request->course_name,
             'status'     =>$request->status,
         ]);
-        return redirect()->back()->with('success','Package has been updated');
+
+        return Redirect::to('/admin/info/user/' . $request->user_id)->with('success', 'Package has been updated');
     }
 
     public function updateOwner(Request $request, $id)

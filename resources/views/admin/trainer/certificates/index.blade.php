@@ -16,7 +16,7 @@
         <table class="styled-table hide">
             <thead>
             <tr>
-                <th>Action</th>
+{{--                <th>Action</th>--}}
                 <th>Certificate Id</th>
                 <th class="hiddenRows">Created At</th>
                 <th>Holder name</th>
@@ -31,15 +31,15 @@
             @if($certificates)
                 @foreach($certificates as $certificate)
                     <tr>
-                        <td class="actionRow">
-                            <form action="{{route('certificates.admin.delete', $certificate->id)}}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button class="removeButton">
-                                    <img src="{{asset('images/icons/bin.png')}}" alt="">
-                                </button>
-                            </form>
-                        </td>
+{{--                        <td class="actionRow">--}}
+{{--                            <form action="{{route('certificates.admin.delete', $certificate->id)}}" method="POST">--}}
+{{--                                @csrf--}}
+{{--                                @method('DELETE')--}}
+{{--                                <button class="removeButton">--}}
+{{--                                    <img src="{{asset('images/icons/bin.png')}}" alt="">--}}
+{{--                                </button>--}}
+{{--                            </form>--}}
+{{--                        </td>--}}
                         <td>{{$certificate->id}}</td>
                         <td class="hiddenRows">{{$certificate->created_at}}</td>
                         <td>{{$certificate->holderName}}</td>

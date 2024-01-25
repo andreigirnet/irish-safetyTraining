@@ -120,9 +120,10 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
 }
 #mainLogo img{
-    width: 100px;
+    width: 200px;
 }
 
 #navMenu{
@@ -147,7 +148,7 @@ a .navItem{
     column-gap: 10px;
 }
 #googleIcon img{
-    width: 60px;
+    width: 76px;
 }
 #googleIcon{
     display: flex;
@@ -155,7 +156,7 @@ a .navItem{
     column-gap: 15px;
 }
 #cpd{
-    height: 44px;
+    height: 58px;
 }
 #hamButton{
     position: fixed;
