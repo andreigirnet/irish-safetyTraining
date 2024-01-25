@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Skillcourses.ie | Online Courses</title>
+    <meta property="og:image" content="{{asset('images/logo/metaImage.jpg')}}" />
     <link rel = "icon" href ="{{asset('images/logo/flavicon.png')}}" type = "image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

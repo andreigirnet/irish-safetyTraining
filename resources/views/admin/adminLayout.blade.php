@@ -6,7 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Irish Safety Training - Online Manual Handling Course</title>
+    <title>Skillcourses.ie | Online Courses</title>
+    <meta property="og:image" content="{{asset('images/logo/metaImage.jpg')}}" />
     <link rel = "icon" href ="{{asset('images/logo/flavicon.png')}}" type = "image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
