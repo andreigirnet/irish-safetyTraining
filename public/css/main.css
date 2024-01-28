@@ -150,6 +150,7 @@ a .navItem{
 #googleIcon img{
     width: 76px;
 }
+
 #googleIcon{
     display: flex;
     align-items: center;

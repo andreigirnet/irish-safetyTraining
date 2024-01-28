@@ -74,9 +74,9 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product): Response
+    public function edit(Product $product): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
     {
-        //
+        return view('admin.admin.products.edit', compact('product'));
     }
 
     /**
@@ -84,7 +84,17 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product): RedirectResponse
     {
-        //
+        $product->update([
+            'name' => $request->input('product_name'),
+            'durationTraining' => $request->input('duration'),
+            'certificateValidity' => $request->input('validity'),
+            'trainer' => $request->input('trainer'),
+            'status' => $request->input('status'),
+            'price' => $request->input('price'),
+            'description' => $request->input('description'),
+            // Add other fields as needed
+        ]);
+        return redirect(route('admin.products'))->with('success', 'Product updated successfully!');
     }
 
     /**

@@ -59,6 +59,14 @@ window.replainSettings = { id: 'c80878c4-2fae-43e0-9c25-b83f75ab8a61' };
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js');
 </script>
+<script src="https://cdn.tiny.cloud/1/pgal37qe4cgquwsgonvp0ix3ld3pjrui1uioy8u9v5p02mt9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+</script>
 {{--<script src="{{asset('js/language.js')}}"></script>--}}
 <script src="{{asset('js/dropAdminMenu.js')}}"></script>
 <script src="{{asset('js/errors.js')}}"></script>

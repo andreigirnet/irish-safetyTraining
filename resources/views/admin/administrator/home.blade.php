@@ -126,11 +126,25 @@
                                     <div style="font-weight: bold">Only {{$product->price}} €</div>
                                 </div>
                             </div>
+                            @if(!$product->status)
                             <form action="{{route('basket.add')}}" method="POST">
                                 @csrf
                                 <input type="hidden" value="{{$product->id}}" name="productId">
+                                <div class="productButtons">
                                 <button type="submit" class="buttonProductAdminAdd">Add To Basket</button>
+                                    @if($product->description)
+                                    <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>
+                                    @endif
+                                </div>
                             </form>
+                            @else
+                                <div class="productButtons">
+                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>
+                                    @if($product->description)
+                                    <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>
+                                    @endif
+                                </div>
+                            @endif
                         </div>
                     </div>
                 @endforeach

@@ -110,6 +110,8 @@ Auth::routes();
 
         Route::get('/add/product', [App\Http\Controllers\ProductController::class,'create'])->name('admin.create.product');
         Route::post('/add/product', [App\Http\Controllers\ProductController::class,'store'])->name('admin.add.product');
+        Route::get('/edit/product/{product}', [App\Http\Controllers\ProductController::class, 'edit'])->name('admin.edit.product');
+        Route::post('/update/product/{product}', [App\Http\Controllers\ProductController::class, 'update'])->name('admin.update.product');
     });
 
         Route::middleware(['is_trainer'])->group(function () {

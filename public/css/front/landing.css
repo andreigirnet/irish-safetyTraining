@@ -10,6 +10,20 @@
     justify-content: center;
     background-size: cover;
 }
+.homeStartCourseButton{
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    background: #fce001;
+    color: var(--textTitle);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
 .webman{
     background-color: #262626;
     height: 80px;
