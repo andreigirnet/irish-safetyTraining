@@ -14,7 +14,7 @@
     <a href="{{route('package.index')}}">
         <div class="navLinkAdmin">
             <div class="navIconAdmin"> <img src="{{asset('images/arrows/right-white.png')}}" alt=""></div>
-            <div class="navLinkName">Your Courses</div>
+            <div class="navLinkName">My Courses</div>
         </div>
     </a>
 {{--    <a href="{{route('admin.products')}}">--}}

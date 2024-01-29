@@ -1,7 +1,7 @@
 @extends('admin.administrator.layout')
 @section('adminPages')
     <div class="dashWrapper">
-        <div class="adminHomePageTitle">Your Courses</div>
+        <div class="adminHomePageTitle">My Courses</div>
         @if(count($packages))
         <table class="styled-table">
             <thead>
