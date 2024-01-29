@@ -1,4 +1,3 @@
-@if(request()->is('product/*'))
 <div class="subNavContainer">
     <div class="subInnerNav">
         <div class="langPicker">
@@ -11,5 +10,5 @@
         </div>
     </div>
 </div>
-    @endif
+
 

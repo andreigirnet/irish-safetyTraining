@@ -69,6 +69,7 @@ var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 </script>
 {{--<script src="{{asset('js/language.js')}}"></script>--}}
 <script src="{{asset('js/dropAdminMenu.js')}}"></script>
+<script src="{{asset('js/trainer.js')}}"></script>
 <script src="{{asset('js/errors.js')}}"></script>
 <script src="{{asset('js/hideAdminNav.js')}}"></script>
 <script src="{{asset('js/navAdmin.js')}}"></script>

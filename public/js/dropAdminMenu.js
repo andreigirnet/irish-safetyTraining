@@ -5,9 +5,6 @@ const dropBillingDiv = document.getElementById('billingDrop');
 const adminTriggerNav = document.getElementById('adminNavButton');
 const dropAdminDiv = document.getElementById('adminDrop');
 
-const trainerTriggerNav = document.getElementById('trainerNavButton');
-const dropTrainerAdminDiv = document.getElementById('trainerAdminDrop');
-
 let showEmployer = false;
 let showBilling = false;
 let showAdmin = false;
@@ -43,13 +40,5 @@ adminTriggerNav.addEventListener('click', ()=>{
     }
 })
 
-trainerTriggerNav.addEventListener('click', ()=>{
-    if(showTrainer === false){
-        dropTrainerAdminDiv.style.display = 'flex';
-        showTrainer = true;
-    }else{
-        dropTrainerAdminDiv.style.display = 'none';
-        showTrainer = false;
-    }
-})
+
 
