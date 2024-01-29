@@ -24,6 +24,7 @@
                 <th>Unique Id</th>
                 <th>Expiration Date</th>
                 <th class="hiddenRows">Package Id</th>
+                <th>Certificate</th>
             </tr>
             </thead>
             <tbody>
@@ -46,6 +47,7 @@
                         <td>{{$certificate->unique_id}}</td>
                         <td>{{$certificate->expiration_date}}</td>
                         <td class="hiddenRows">{{$certificate->package_id}}</td>
+                        <td><a href="{{route('certificate.download', $certificate->id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
                     </tr>
                 @endforeach
                 {{--        <tr class="active-row">--}}

@@ -90,6 +90,39 @@ a{
     opacity: 0.5;
     margin-left: 20px;
 }
+.mobileCartContainer{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffd200;
+    position: fixed;
+    bottom: 18px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 44;
+}
+.mobileCartCounter{
+    position: relative;
+}
+.mobileCartItemCounter{
+    position: absolute;
+    top: -39px;
+    right: -50px;
+    background: red;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.mobileCartContainer img{
+    width: 30px;
+}
 .navLinkName{
     color: white;
     font-weight: 700;

@@ -31,6 +31,16 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
+<a href="/cart">
+    <div class="mobileCartContainer">
+        <div class="mobileCartCounter">
+            @if(Cart::getDetails()->items_count)
+                <div class="mobileCartItemCounter">{{Cart::getDetails()->items_count}}</div>
+            @endif
+        </div>
+        <img src="{{asset('images/icons/cartSingle.png')}}" alt="">
+    </div>
+</a>
 <div class="hamButtonAdmin" id="hamButtonAdmin">
     <img src="{{asset("images/logo/hamMenu.png")}}" alt="">
 </div>

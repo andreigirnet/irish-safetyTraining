@@ -116,6 +116,8 @@
                 }
             },
             checkResult: function() {
+            console.log('submitedlen' + this.submittedAnswers.length)
+            console.log('corectlen' +this.correctAnswers.length)
                 if (this.submittedAnswers.length === this.correctAnswers.length) {
                     let correctCount = 0;
 
@@ -213,6 +215,8 @@
             },
             nextSlide: function()
              {
+             console.log(this.stage)
+             console.log(this.stageCount)
                 this.answer = false
                 let slider = document.getElementById('courseSlider');
                 this.slideCounter += this.containerWidth;
@@ -310,6 +314,7 @@
                     if(this.productId === '2'){
                         axios.get('../data/wh.json').then(response => {
                             this.courses = response.data.english;
+                            this.correctAnswers = response.data.correctAnswers
                             this.setStageCount();
                              this.getStageSlides(this.stage)
                         }).catch(error => {
@@ -318,6 +323,7 @@
                     }else if(this.productId === '3'){
                          axios.get('../data/ab.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -326,6 +332,7 @@
                     }else if(this.productId === '4'){
                          axios.get('../data/fw.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -334,6 +341,7 @@
                     }else if(this.productId === '5'){
                          axios.get('../data/fe.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -342,6 +350,7 @@
                     }else if(this.productId === '6'){
                          axios.get('../data/aa.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.correctAnswers = response.data.correctAnswers
                                 console.log(this.correctAnswers)
                                 this.setStageCount();
@@ -352,6 +361,7 @@
                     }else if(this.productId === '7'){
                          axios.get('../data/wfa.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -360,6 +370,7 @@
                     }else if(this.productId === '8'){
                          axios.get('../data/os.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -368,6 +379,7 @@
                     }else if(this.productId === '9'){
                          axios.get('../data/ppe.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -376,6 +388,7 @@
                     }else if(this.productId === '10'){
                          axios.get('../data/haccp.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {
@@ -384,14 +397,17 @@
                     }else if(this.productId === '11'){
                          axios.get('../data/wics.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
+                                 console.log(this.correctAnswers)
                             }).catch(error => {
                                 console.error(error);
                          });
                     }else if(this.productId === '12'){
                          axios.get('../data/fsa.json').then(response => {
                                 this.courses = response.data.english;
+                                this.correctAnswers = response.data.correctAnswers
                                 this.setStageCount();
                                  this.getStageSlides(this.stage)
                             }).catch(error => {

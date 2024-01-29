@@ -74,10 +74,9 @@
                 <h3 style="margin-left: 40px">Irish Safety Training Company</h3>
                 <pre>
                     https://irish-safetytraining.com
-                    Cherrywood Park
-                    Clondalkin
-                    Dublin22
-                    Ireland
+                    Ace Enterprise Park
+                    Bawnogue Rd Clondalkin
+                    Dublin 22
                 </pre>
             </td>
         </tr>

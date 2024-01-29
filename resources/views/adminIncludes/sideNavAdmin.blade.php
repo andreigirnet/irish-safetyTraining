@@ -11,6 +11,12 @@
             <div class="navLinkName">Profile</div>
         </div>
     </a>
+    <a href="{{route('package.index')}}">
+        <div class="navLinkAdmin">
+            <div class="navIconAdmin"> <img src="{{asset('images/arrows/right-white.png')}}" alt=""></div>
+            <div class="navLinkName">Your Courses</div>
+        </div>
+    </a>
 {{--    <a href="{{route('admin.products')}}">--}}
 {{--        <div class="navLinkAdmin">--}}
 {{--            <div class="navIconAdmin"><img src="{{asset('images/icons/plus-xl.png')}}" alt=""></div>--}}
@@ -57,12 +63,7 @@
             <div class="navLinkName">Certificates</div>
         </div>
     </a>
-    <a href="{{route('package.index')}}">
-        <div class="navLinkAdmin">
-            <div class="navIconAdmin"> <img src="{{asset('images/arrows/right-white.png')}}" alt=""></div>
-            <div class="navLinkName">Packages</div>
-        </div>
-    </a>
+
 
     @if(auth()->user()->is_admin==1)
         <div class="navLinkAdmin" id="adminNavButton">

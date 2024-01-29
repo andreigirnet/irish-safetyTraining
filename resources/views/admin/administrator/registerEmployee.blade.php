@@ -8,7 +8,7 @@
                     <p>Please inform that the login details were emailed to him/her that can be used anytime later to access our website and take the course.
                     <br><br>
                     It's important to check the spam and junk mail just in case. If you wish to send the course to your employee please press the link below (<a
-                            href="https://irish-safetytraining.com/packages">https://irish-safetytraining.com/packages</a>).
+                            href="https://www.skillcourses.ie/packages">https://www.skillcourses.ie/packages</a>).
                     <br><br>
                     You must have the course/courses purchased to be able to take this step, otherwise go to the home page and pay for the course / amount of courses you need and after that send it to your employees.
                     </p>
