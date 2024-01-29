@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="{{asset("css/front/register.css")}}">
 </head>
 <body>
+<script>
+    window.replainSettings = { id: '7aeb66a8-f6a4-4c19-9722-78365866f35d' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
         <main>
             @yield('content')
         </main>

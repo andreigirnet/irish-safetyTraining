@@ -30,17 +30,17 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="app()">
+<script>
+    window.replainSettings = { id: '7aeb66a8-f6a4-4c19-9722-78365866f35d' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
 @include("frontIncludes/hamburger")
 @include("frontIncludes/responsiveNav")
 @include("frontIncludes/frontNav")
 @include("frontIncludes/subNav")
 @yield('content')
-<script>
-window.replainSettings = { id: 'c80878c4-2fae-43e0-9c25-b83f75ab8a61' };
-(function(u){var s=document.createElement('script');s.async=true;s.src=u;
-var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
-</script>
 @include("frontIncludes/registerInclude")
 @include("frontIncludes/footer")
 @include("frontIncludes/brandSwiper")

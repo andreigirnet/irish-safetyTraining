@@ -31,6 +31,12 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
+<script>
+    window.replainSettings = { id: '7aeb66a8-f6a4-4c19-9722-78365866f35d' };
+    (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+    })('https://widget.replain.cc/dist/client.js');
+</script>
 <a href="/cart">
     <div class="mobileCartContainer">
         <div class="mobileCartCounter">
@@ -63,12 +69,6 @@
 @include('adminIncludes/navigationAdminMain')
 @yield('adminContent')
 
-<script>
-window.replainSettings = { id: 'c80878c4-2fae-43e0-9c25-b83f75ab8a61' };
-(function(u){var s=document.createElement('script');s.async=true;s.src=u;
-var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
-</script>
 <script src="https://cdn.tiny.cloud/1/pgal37qe4cgquwsgonvp0ix3ld3pjrui1uioy8u9v5p02mt9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
     tinymce.init({
