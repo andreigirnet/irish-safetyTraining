@@ -4,7 +4,7 @@
 Login: {{$email}} <br>
 Password: {{$password}}
 
-<x-mail::button :url="'https://irish-safetytraining.com/login'">
+<x-mail::button :url="'https://skillcourses.ie/login'">
 Login Here
 </x-mail::button>
 

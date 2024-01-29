@@ -14,7 +14,7 @@
 
         https://g.page/r/CTOFtFkt7iOJEBM/review <br> <br>
         Kind Regards <br>
-        Irish Safety Training Team
+        Skillcourses Team
     </div>
 </div>
 

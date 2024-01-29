@@ -1,15 +1,15 @@
 <x-mail::message>
-    # Welcome to [Irish-SafetyTraining.com](https://irish-safetytraining.com/)
+    # Welcome to [Skillcourses.ie](https://skillcourses.ie/)
 
 
    Dear Customer,
    Welcome to our online training service and thanks for choosing our platform.
    This email is just a kind reminder about your registration that was successfully processed, on our website:
 
-   [Irish-SafetyTraining.com](https://irish-safetytraining.com/)
+   [Skillcourses.ie](https://skillcourses.ie/)
 
 
-   You can access our website anytime you wish and take the course at your best convenient time by using the link  [Irish-SafetyTraining.com](https://irish-safetytraining.com/) (use your login details : email and password).
+   You can access our website anytime you wish and take the course at your best convenient time by using the link  [Skillcourses.ie](https://skillcourses.ie/) (use your login details : email and password).
    If you have the course completed already,you can access our website anytime you wish so and get the free access to the course content or to your Certificate in case if lost (we offer 3 years free access to that).
    You can also get an invoice for your payment after it’s done successfully on our website (on the blue bar menu from the left of the screen Open the Billing>Orders>click on the pdf file that will generate your invoice).
 
@@ -21,10 +21,10 @@
    because you will receive an instant password that allows you to get back to our training platform and take the course (please check your spam and junk mail just in case).
 
 
-   [Irish-SafetyTraining.com](https://irish-safetytraining.com/)
+   [Skillcourses.ie](https://skillcourses.ie/)
 
 
-   If you need any additional information or any further assistance feel free to email us at  [Irish-SafetyTraining.com](https://irish-safetytraining.com/) use the chat on our website/ give us a call to 0892777333 / or request a call from our team.
+   If you need any additional information or any further assistance feel free to email us at  [Skillcourses.ie](https://skillcourses.ie/) use the chat on our website/ give us a call to 0892777333 / or request a call from our team.
 
 
    Kind regards,<br>
