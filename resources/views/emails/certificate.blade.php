@@ -1,8 +1,8 @@
 <div style="width: 100%;">
-    <div style="color: #2d3748; font-weight: 600; font-size: 20px">IrishSafetyTraining</div>
+    <div style="color: #2d3748; font-weight: 600; font-size: 20px">Skillcourses.ie</div>
 </div>
 <div style="width: 100%; ">
-    <div style="color: #2d3748; font-weight: 600;margin-top: 20px">Congratulations! You have completed the Manual Handling Course</div>
+    <div style="color: #2d3748; font-weight: 600;margin-top: 20px">Congratulations! You have completed your course</div>
 </div>
 <div style="width: 100%; font-weight: 600; margin-top: 20px">
     <div>Find your certificate attached to this email</div>
