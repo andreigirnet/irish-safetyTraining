@@ -10,23 +10,23 @@
         }
         #id{
             position: absolute;
-            bottom: 65px;
-            left: 50%;
+            bottom: 89px;
+            left: 48%;
             color: #4a4e4d;
             font-weight: 600;
             font-size: 14px;
         }
         #valid{
             position: absolute;
-            bottom: 190px;
-            left: 24%;
+            bottom: 175px;
+            left: 32%;
             color: #4a4e4d;
             font-weight: 600;
         }
         #expiration{
             position: absolute;
-            bottom: 83px;
-            left: 48.5%;
+            bottom: 69px;
+            left: 46.5%;
             color: #4a4e4d;
             font-weight: 600;
             font-size: 14px;
@@ -36,7 +36,7 @@
         }
         #holder{
             position: absolute;
-            top: 35%;
+            top: 42.5%;
             width: 100%;
             text-align: center;
             font-size: 30px;
