@@ -6,5 +6,5 @@
     If you need any additional information or help please use the chat on our website or direct calls on 0892777333
 
     Kind regards,<br>
-    Irish Safety Training Team
+    Skillcourses.ie
 </x-mail::message>

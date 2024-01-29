@@ -14,7 +14,7 @@
 
         https://g.page/r/CTOFtFkt7iOJEBM/review <br> <br>
         Kind Regards <br>
-        Skillcourses Team
+        Skillcourses.ie Team
     </div>
 </div>
 

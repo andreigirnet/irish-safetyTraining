@@ -89,7 +89,7 @@
             </a>
         </div>
     @endif
-    @if(auth()->user()->is_trainer===1)
+    @if(auth()->user()->is_trainer==1)
         <div class="navLinkAdmin" id="trainerNavButton">
             <div class="navIconAdmin"><img src="{{asset('images/icons/star-white.png')}}" alt=""></div>
             <div class="navLinkName">Christian's Dashboard</div>

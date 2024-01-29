@@ -28,7 +28,7 @@
 
 
    Kind regards,<br>
-   Irish Safety Training Team
+    Skillcourses.ie
 
 
 </x-mail::message>
