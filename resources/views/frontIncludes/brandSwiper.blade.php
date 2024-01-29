@@ -32,7 +32,7 @@
 </div>
 <div class="webman">
     <p style="color: white;">
-        Copyright © 2023
+        Copyright © 2024
         <a href="https://www.skillcourses.ie/" target="_blank" style="color: #448a26; text-decoration: none;">skillcourses.ie</a>
         | Crafted with ❤️ by
         <a href="https://webman.md/en/elaborare-site-uri-in-chisinau-si-moldova-3/" target="_blank" style="color: #448a26; text-decoration: none;">WEBMAN.md</a>

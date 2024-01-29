@@ -4,7 +4,7 @@
         @if (session('created'))
             <div class="modalRegisterComplete" id="modalRegisterEmployer">
                 <div class="modalTitle">Hi there</div>
-                <p>Its <a href="{{route('home')}}">irish-safetytraining.com</a> Training Centre here.</p>
+                <p>Its <a href="{{route('home')}}">www.skillcourses.ie</a> Training Centre here.</p>
                 <div class="modalText">
                     <div>
                         If you need any additional information or help pls feel free to contact us anytime through the chat on our website.
@@ -45,20 +45,20 @@
                 <a class="homeDownloadButton" href="{{route('package.index')}}">Link</a>
             </div>
         @endif
-        <div class="homeActionButtons">
-            @if($userPackageId)
-                <a href="{{route('course.index', $userPackageId[0]->id)}}" class="homeStartCourseButton">Start Course</a>
-            @else
-                <form action="{{route('basket.add')}}" method="POST">
-                    @csrf
-                    <input type="hidden" value="1" name="productId">
-                    <button type="submit" class="homeStartCourseButton">Buy a course</button>
-                </form>
-            @endif
-            @if($certificateId)
-                <a href="{{route('certificate.download', $certificateId[0]->id)}}" class="homeDownloadButton">Downloand Certificate</a>
-            @endif
-        </div>
+{{--        <div class="homeActionButtons">--}}
+{{--            @if($userPackageId)--}}
+{{--                <a href="{{route('course.index', $userPackageId[0]->id)}}" class="homeStartCourseButton">Start Course</a>--}}
+{{--            @else--}}
+{{--                <form action="{{route('basket.add')}}" method="POST">--}}
+{{--                    @csrf--}}
+{{--                    <input type="hidden" value="1" name="productId">--}}
+{{--                    <button type="submit" class="homeStartCourseButton">Buy a course</button>--}}
+{{--                </form>--}}
+{{--            @endif--}}
+{{--            @if($certificateId)--}}
+{{--                <a href="{{route('certificate.download', $certificateId[0]->id)}}" class="homeDownloadButton">Downloand Certificate</a>--}}
+{{--            @endif--}}
+{{--        </div>--}}
 {{--        <div class="productSection">--}}
 {{--            <div class="productWrapper">--}}
 {{--                <div class="product-img">--}}

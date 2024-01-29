@@ -56,7 +56,7 @@ class BasketController extends Controller
             'quantity'=>1
         ]);
 
-        return redirect(route('basket.index'))->with('success',"The course has been added to the cart");
+        return back()->with('success', 'The course has been added to the cart');
     }
 
     public function applyDiscount(){
