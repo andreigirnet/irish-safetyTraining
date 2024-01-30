@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 10px;
 }
 .profilePicture img{
     width: 50px;
