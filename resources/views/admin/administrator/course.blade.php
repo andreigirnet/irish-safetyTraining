@@ -133,7 +133,7 @@
 
                     if (percentageCorrect >= 70) {
                         this.tryAgainButton = false;
-                        this.showModal = true;
+                        this.video = true;
                         this.showHideLang = false;
                         // Display correct and wrong answers
                         console.log('Correct Answers:', this.answerFeedback.filter(answer => answer.correct));
@@ -433,23 +433,23 @@
             }
         }"
          x-init="getCourseItems">
-        <div class="modalCourseComplete"  x-show="showModal">
-            <div class="modalTitle" style="text-align: center">Congratulations you passed the test! </div>
-            <div class="modalTitle">IMPORTANT</div>
-            <div class="modalText">Please notice, you must complete your self assessment with our team as required, so you can get the full certificate straight away after that.  This training is covering the full theory and practical part as required by Irish Legislation and regarding that you can use your certificate for any jobs for 3 years after the full course is completed. The self assessment it’s delivered online.
-                <br>
+{{--        <div class="modalCourseComplete"  x-show="showModal">--}}
+{{--            <div class="modalTitle" style="text-align: center">Congratulations you passed the test! </div>--}}
+{{--            <div class="modalTitle">IMPORTANT</div>--}}
+{{--            <div class="modalText">Please notice, you must complete your self assessment with our team as required, so you can get the full certificate straight away after that.  This training is covering the full theory and practical part as required by Irish Legislation and regarding that you can use your certificate for any jobs for 3 years after the full course is completed. The self assessment it’s delivered online.--}}
+{{--                <br>--}}
 
-                <br>
-                It is your responsibility to get in touch with our team as instructed (through WhatsApp chat on +353{{config('app.telephone')}} texts only) to organise the practical part for your Manual Handling Training a.s.a.p ( within 24-48hrs ) and to have your full course done. After that you will receive your certificate via email straight away. Follow the information below regarding the self assessment.
-                <br>
-                <br>
-                Kind Regards
-            </div>
-            <div class="modalTitle">Contact Us Via WhatsApp On this line</div>
-            <div class="modalTitle">+353{{config('app.telephone')}} texts only</div>
-            <div class="modalTitle" style="text-align: center">Press here 👇 to continue</div>
-            <div class="adminButton" style="display: flex; align-items: center; justify-content: center; margin-top: 20px" @click="showVideo">UNDERSTOOD</div>
-        </div>
+{{--                <br>--}}
+{{--                It is your responsibility to get in touch with our team as instructed (through WhatsApp chat on +353{{config('app.telephone')}} texts only) to organise the practical part for your Manual Handling Training a.s.a.p ( within 24-48hrs ) and to have your full course done. After that you will receive your certificate via email straight away. Follow the information below regarding the self assessment.--}}
+{{--                <br>--}}
+{{--                <br>--}}
+{{--                Kind Regards--}}
+{{--            </div>--}}
+{{--            <div class="modalTitle">Contact Us Via WhatsApp On this line</div>--}}
+{{--            <div class="modalTitle">+353{{config('app.telephone')}} texts only</div>--}}
+{{--            <div class="modalTitle" style="text-align: center">Press here 👇 to continue</div>--}}
+{{--            <div class="adminButton" style="display: flex; align-items: center; justify-content: center; margin-top: 20px" @click="showVideo">UNDERSTOOD</div>--}}
+{{--        </div>--}}
         <div class="landscape">
             <img src="{{asset('images/banners/landscape.png')}}" alt="">
             <div class="landscapeText">Please rotate your phone</div>
@@ -494,6 +494,20 @@
                         <video autoplay muted controls class="practicalVideo" id="practiceVideo">
                             <source src="{{asset('video/practical.mp4')}}" type="video/mp4">
                         </video>
+                        <div class="videoTextManual">
+                            <div class="modalTitle">IMPORTANT</div>
+                            <div class="modalText">Please notice, you must complete your self assessment with our team as required, so you can get the full certificate straight away after that.  This training is covering the full theory and practical part as required by Irish Legislation and regarding that you can use your certificate for any jobs for 3 years after the full course is completed. The self assessment it’s delivered online.
+                                <br>
+
+                                <br>
+                                It is your responsibility to get in touch with our team as instructed (through WhatsApp chat on +353{{config('app.telephone')}} texts only) to organise the practical part for your Manual Handling Training a.s.a.p ( within 24-48hrs ) and to have your full course done. After that you will receive your certificate via email straight away. Follow the information below regarding the self assessment.
+                                <br>
+                                <br>
+                                Kind Regards
+                            </div>
+                            <div class="modalTitle">Contact Us Via WhatsApp On this line</div>
+                            <div class="modalTitle">+353{{config('app.telephone')}} texts only</div>
+                        </div>
                         <div class="videoText">
                             <strong>You have two options for completing the self assessment and to get the full certificate that allows you to use it for any job for 3 years.</strong>
                             <br><br>

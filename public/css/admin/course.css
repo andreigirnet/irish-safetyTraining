@@ -290,6 +290,12 @@
     font-size: 1.3em;
     padding-bottom: 50px;
 }
+.videoTextManual{
+    width: 80%;
+    color: var(--textTitle);
+    font-size: 1.3em;
+    padding-bottom: 50px;
+}
 /* The switch - the box around the slider */
 .switch {
     position: relative;
