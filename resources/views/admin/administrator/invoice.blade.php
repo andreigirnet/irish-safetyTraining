@@ -67,16 +67,18 @@
                 </pre>
             </td>
             <td align="center">
-                <img src="images/logo/logomain.png" alt="Logo" width="150" class="logo"/>
+                <img src="images/logo/logoWhite.png" alt="Logo" width="150" class="logo"/>
             </td>
             <td align="center" style="width: 40%;">
                 <h3 style="margin-left: 50px">Ireland</h3>
                 <h3 style="margin-left: 40px">Irish Safety Training Company</h3>
                 <pre>
-                    https://irish-safetytraining.com
-                    Ace Enterprise Park
-                    Bawnogue Rd Clondalkin
-                    Dublin 22
+                    https://www.skillcourses.ie/
+                    ACE Enterprise Park,
+                    Bawnogue Rd,
+                    Clondalkin,
+                    Co. Dublin,
+                    D22 TX92
                 </pre>
             </td>
         </tr>

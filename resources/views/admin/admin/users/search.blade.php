@@ -9,7 +9,7 @@
         <div class="searchUser">
             <div class="searchText">Search for a user</div>
             <form action="{{route('user.admin.search')}}">
-                <input type="text" name="email" placeholder="Type the users email or full name" required>
+                <input type="text" name="email" placeholder="Type the users email or full name or phone" required>
                 <button type="submit" class="searchButton">Search</button>
             </form>
             <a href="{{route('users.index')}}">Go back to all users</a>
@@ -22,6 +22,7 @@
                 <th>Created At</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Phone</th>
                 <th>Password</th>
                 <th class="hiddenRows">Registered By</th>
             </tr>
@@ -44,6 +45,7 @@
                 <td>{{$user->created_at}}</td>
                 <td>{{$user->name}}</td>
                 <td>{{$user->email}}</td>
+                <td>{{$user->phone}}</td>
                 <td>{{$user->unHashedPassword}}</td>
                 <td class="hiddenRows">{{$user->registeredBy}}</td>
             </tr>

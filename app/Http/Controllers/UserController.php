@@ -23,7 +23,14 @@ class UserController extends Controller
 
     public function searchUser(Request $request)
     {
-        $users = DB::select("SELECT * FROM users WHERE email LIKE '" . $request->email . "%' OR name LIKE '" . $request->email . "%'");
+        $users = DB::select("
+                    SELECT *
+                    FROM users
+                    WHERE email LIKE '%" . $request->email . "%'
+                       OR name LIKE '%" . $request->email . "%'
+                       OR phone LIKE '%" . $request->email . "%'
+
+                ");
         if ($users === []){
             return redirect()->back()->with('success', 'No record has been found with this email');
         }

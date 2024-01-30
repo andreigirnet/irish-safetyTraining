@@ -2,11 +2,12 @@
 @section('content')
     <div class="title" data-aos="fade-up">
         <div class="titleText">{{$product->name}}</div>
-        <div class="borderTitle"></div>
+        <div class="borderTitle" style="margin-bottom: 20px"></div>
     </div>
 
     <div class="productSection">
         <div class="productInner">
+            @if($product->id === 1 || $product->id === 2 || $product->id === 3 || $product->id === 4 || $product->id === 5 || $product->id === 6 || $product->id === 7 || $product->id === 8 || $product->id === 9 || $product->id === 10 || $product->id === 11 || $product->id === 12 || $product->id === 17 || $product->id === 18 || $product->id === 19)
             <div class="productIcons">
                 <div class="productItemIcon">
                 <img src="{{asset('images/productIcons/clock.png')}}" alt="" data-aos="fade-right">
@@ -49,7 +50,7 @@
                     <div class="productItemText" data-aos="fade-left">User Management Tools Available</div>
                 </div>
             </div>
-
+            @endif
             <hr>
 
 {{--            <div class="productTitle" data-aos="fade-right">Online {{$product->name}} Training Course</div>--}}

@@ -9,7 +9,7 @@
         <div class="searchUser">
             <div class="searchText">Search for a user</div>
             <form action="{{route('user.admin.search')}}">
-                <input type="text" name="email" placeholder="Type the users email or full name" required>
+                <input type="text" name="email" placeholder="Type the users email or full name or phone" required>
                 <button type="submit" class="searchButton">Search</button>
             </form>
         </div>

@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="accordionContent">
-                        <div class="accText"  x-text="faq.manualFaq[18]">Attached is a PDF file containing comprehensive information and instructions to assist you throughout this process. This feature allows you to monitor your employees' progress, download their certificates upon course completion, and offers various other functionalities. Our system was designed to ensure transparency for all customers, particularly for employers and companies managing their employees' training. For personalized assistance in navigating this process for the first time and experiencing its ease and convenience, please feel free to call us at 0894631967. We're here to assist you.
+                        <div class="accText"  x-text="faq.manualFaq[18]">Attached is a PDF file containing comprehensive information and instructions to assist you throughout this process. This feature allows you to monitor your employees' progress, download their certificates upon course completion, and offers various other functionalities. Our system was designed to ensure transparency for all customers, particularly for employers and companies managing their employees' training. For personalized assistance in navigating this process for the first time and experiencing its ease and convenience, please feel free to call us at 0830800800. We're here to assist you.
                         </div>
                         <div class="faqMessage">
                             <div class="faqDownloadText"  x-text="faq.manualFaq[19]">Download here:</div>

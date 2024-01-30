@@ -113,10 +113,17 @@
                             <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
                             <hr>
                             <div class="product-info-icons">
+                                @if($product->id == 14)
+                                <div class="product-icons">
+                                    <img src="images/icons/back-in-time.png" alt="">
+                                    <div>Duration: {{$product->durationTraining}} Day(Half day)</div>
+                                </div>
+                                @else
                                 <div class="product-icons">
                                     <img src="images/icons/back-in-time.png" alt="">
                                     <div>Duration: {{$product->durationTraining}} hours</div>
                                 </div>
+                                @endif
                                 <div class="product-icons">
                                     <img src="images/icons/certificate.png" alt="">
                                     <div>Certificate Validity: {{$product->certificateValidity}} Years</div>

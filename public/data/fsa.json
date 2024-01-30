@@ -1,5 +1,5 @@
 {
-    "correctAnswers": [2, 6, 5, 7, 1, 2, 8, 2, 3, 2, 2, 3, 1, 3, 2, 3, 1, 2, 3, 2],
+    "correctAnswers": [2, 2, 2, 3, 1, 2, 2, 2, 2, 2, 2, 3, 2, 2, 3, 3, 2, 2, 3, 2, 2],
     "english": {
         "stage_1": {
             "slide_1": {
@@ -241,7 +241,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the first step to take in case of a fire emergency?",
                 "answer": "b. Evacuate immediately",
-                "content": "The first step to take in case of a fire emergency is to evacuate immediately.",
+                "content": "",
                 "bullets": [
                     "a. Call a friend",
                     "b. Evacuate immediately",
@@ -252,7 +252,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the purpose of a fire extinguisher?",
                 "answer": "b. To put out small fires",
-                "content": "The purpose of a fire extinguisher is to put out small fires.",
+                "content": "",
                 "bullets": [
                     "a. To cook food",
                     "b. To put out small fires",
@@ -263,7 +263,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What should you do if your clothes catch fire?",
                 "answer": "b. Stop, drop, and roll",
-                "content": "If your clothes catch fire, you should stop, drop, and roll.",
+                "content": "",
                 "bullets": [
                     "a. Run around in panic",
                     "b. Stop, drop, and roll",
@@ -274,7 +274,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the recommended way to test a doorknob for heat during a fire?",
                 "answer": "c. Use the back of your hand",
-                "content": "The recommended way to test a doorknob for heat during a fire is to use the back of your hand.",
+                "content": "",
                 "bullets": [
                     "a. Use your bare hands",
                     "b. Kick the door",
@@ -285,7 +285,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "In a fire emergency, what does the acronym “PASS” stand for when using a fire extinguisher?",
                 "answer": "a. Pull, Aim, Squeeze, Sweep",
-                "content": "In a fire emergency, the acronym “PASS” stands for Pull, Aim, Squeeze, Sweep when using a fire extinguisher.",
+                "content": "",
                 "bullets": [
                     "a. Pull, Aim, Squeeze, Sweep",
                     "b. Play, Act, Shout, Stop",
@@ -296,7 +296,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "Where should you assemble during a fire drill?",
                 "answer": "b. In the parking lot or designated area",
-                "content": "During a fire drill, you should assemble in the parking lot or designated area.",
+                "content": "",
                 "bullets": [
                     "a. In the elevator",
                     "b. In the parking lot or designated area",
@@ -307,7 +307,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the primary purpose of a smoke alarm?",
                 "answer": "b. To make a loud noise",
-                "content": "The primary purpose of a smoke alarm is to make a loud noise.",
+                "content": "",
                 "bullets": [
                     "a. To detect carbon monoxide",
                     "b. To make a loud noise",
@@ -318,7 +318,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the main cause of kitchen fires?",
                 "answer": "b. Leaving cooking unattended",
-                "content": "The main cause of kitchen fires is leaving cooking unattended.",
+                "content": "",
                 "bullets": [
                     "a. Cooking with too many spices",
                     "b. Leaving cooking unattended",
@@ -329,7 +329,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What should you do if you encounter smoke while trying to escape a building during a fire?",
                 "answer": "c. Crawl under it",
-                "content": "If you encounter smoke while trying to escape a building during a fire, you should crawl under it.",
+                "content": "",
                 "bullets": [
                     "a. Walk through it",
                     "b. Crawl under it",
@@ -340,7 +340,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the purpose of an emergency exit?",
                 "answer": "b. To exit the building safely during emergencies",
-                "content": "The purpose of an emergency exit is to exit the building safely during emergencies.",
+                "content": "",
                 "bullets": [
                     "a. To exit the building quickly",
                     "b. To exit the building safely during emergencies",
@@ -351,7 +351,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the importance of having an emergency evacuation plan?",
                 "answer": "b. To have a plan for fire emergencies",
-                "content": "The importance of having an emergency evacuation plan is to have a plan for fire emergencies.",
+                "content": "",
                 "bullets": [
                     "a. To have a plan for family vacations",
                     "b. To have a plan for fire emergencies",
@@ -362,7 +362,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the recommended method for alerting others about a fire in a public place?",
                 "answer": "c. Activate the fire alarm and call 999/112",
-                "content": "The recommended method for alerting others about a fire in a public place is to activate the fire alarm and call 999/112.",
+                "content": "",
                 "bullets": [
                     "a. Post it on social media",
                     "b. Yell loudly",
@@ -373,7 +373,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the purpose of fire drills?",
                 "answer": "b. To practice emergency procedures",
-                "content": "The purpose of fire drills is to practice emergency procedures.",
+                "content": "",
                 "bullets": [
                     "a. To waste time",
                     "b. To practice emergency procedures",
@@ -384,7 +384,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What should be done if someone is unable to evacuate a building during a fire?",
                 "answer": "b. Call for help and wait for assistance",
-                "content": "If someone is unable to evacuate a building during a fire, they should call for help and wait for assistance.",
+                "content": "",
                 "bullets": [
                     "a. Leave them behind",
                     "b. Call for help and wait for assistance",
@@ -395,7 +395,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the recommended way to use stairs during a fire evacuation?",
                 "answer": "c. Walk calmly down the stairs",
-                "content": "The recommended way to use stairs during a fire evacuation is to walk calmly down the stairs.",
+                "content": "",
                 "bullets": [
                     "a. Run down the stairs",
                     "b. Use the elevator",
@@ -406,7 +406,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "How often should you check and replace smoke alarm batteries?",
                 "answer": "c. Annually",
-                "content": "Smoke alarm batteries should be checked and replaced annually.",
+                "content": "",
                 "bullets": [
                     "a. Every month",
                     "b. Every 6 months",
@@ -417,7 +417,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the role of a Fire Warden?",
                 "answer": "b. To assist with fire drills and evacuations",
-                "content": "The role of a Fire Warden is to assist with fire drills and evacuations.",
+                "content": "",
                 "bullets": [
                     "a. To start fires",
                     "b. To assist with fire drills and evacuations",
@@ -428,7 +428,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the purpose of fire safety signage?",
                 "answer": "b. To provide information about fire hazards and escape routes",
-                "content": "The purpose of fire safety signage is to provide information about fire hazards and escape routes.",
+                "content": "",
                 "bullets": [
                     "a. To decorate the walls",
                     "b. To provide information about fire hazards and escape routes",
@@ -439,7 +439,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "In the event of a fire, when should you use an elevator?",
                 "answer": "c. Never",
-                "content": "In the event of a fire, you should never use an elevator.",
+                "content": "",
                 "bullets": [
                     "a. Always",
                     "b. Only during a fire drill",
@@ -450,7 +450,7 @@
                 "img": "/images/curs/step4/test.webp",
                 "title": "What is the importance of having a designated meeting point during a fire evacuation?",
                 "answer": "b. To reunite with others and account for everyone’s safety",
-                "content": "The importance of having a designated meeting point during a fire evacuation is to reunite with others and account for everyone’s safety.",
+                "content": "",
                 "bullets": [
                     "a. To have a picnic",
                     "b. To reunite with others and account for everyone’s safety",

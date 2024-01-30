@@ -4,6 +4,7 @@
             containerWidth: 0,
             slides: {},
             answers: false,
+            certificateId: null,
             showModal: false,
             showHideLang: true,
             stageCount: null,
@@ -12,6 +13,7 @@
             productId: '{{ $packagesOwnedByUser[0]->product_id }}',
             courseName: '{{ $packagesOwnedByUser[0]->course_name}}',
             status: '{{$packagesOwnedByUser[0]->status}}',
+            currentUser: '{{auth()->user()->id}}',
             showProgressBar: 'navigate',
             correctAnswers: [3,3,2,2,3,2,3,1,3,3],
             certificateButton: false,
@@ -116,8 +118,6 @@
                 }
             },
             checkResult: function() {
-            console.log('submitedlen' + this.submittedAnswers.length)
-            console.log('corectlen' +this.correctAnswers.length)
                 if (this.submittedAnswers.length === this.correctAnswers.length) {
                     let correctCount = 0;
 
@@ -129,13 +129,11 @@
                             this.answerFeedback.push({ questionNumber: i + 1, correct: false });
                         }
                     }
-
                     const percentageCorrect = (correctCount / this.correctAnswers.length) * 100;
 
                     if (percentageCorrect >= 70) {
                         this.tryAgainButton = false;
                         this.showModal = true;
-                        this.showProgressBar = false;
                         this.showHideLang = false;
                         // Display correct and wrong answers
                         console.log('Correct Answers:', this.answerFeedback.filter(answer => answer.correct));
@@ -529,20 +527,20 @@
                         </div>
                     </div>
                 </template>
-                <template x-if="productId === '3' || productId === '4' || productId === '5' || productId === '6' || productId === '7' || productId === '8' || productId === '9' || productId === '10' || productId === '11' || productId === '12'">
+                <template x-if=" productId === '3' || productId === '4' || productId === '5' || productId === '6' || productId === '7' || productId === '8' || productId === '9' || productId === '10' || productId === '11' || productId === '12'">
                     <div class="videoText">
                         <strong>Congratulations! You have passed the test successfully.</strong>
-                        Congratulations! You have passed the test successfully. Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
+                        Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
                         <br><br>
                         Remember, you can access our website anytime by using your personal password and email and download the certificate or review the course content if you wish so.
                         <br><br>
-                        Best regards,<br>
-                        I.S.T.C Team
+                        Best regards<br>
+
                         <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'"  style="margin-top: 20px">
                             @csrf
                             <input type="hidden" name="userId" value="{{auth()->user()->id}}">
                             <input type="hidden" name="productId"  x-bind:value="productId">
-                            <button type="submit" class="downCertificate">Get Certificate</button>
+                            <button type="submit" class="downCertificate">Download Certificate</button>
                         </form>
                     </div>
                 </template>

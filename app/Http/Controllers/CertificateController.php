@@ -24,8 +24,8 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        $certificates =  DB::table('certificates')
-            ->select('certificates.*', 'certificates.created_at as valid_from', 'packages.*')
+        $certificates = DB::table('certificates')
+            ->select('certificates.id as certificateId', 'certificates.*', 'certificates.created_at as valid_from', 'packages.*')
             ->join('packages', 'certificates.package_id', '=', 'packages.id')
             ->where('certificates.user_id', auth()->user()->id)
             ->orderBy('valid_from', 'DESC')
@@ -102,6 +102,7 @@ class CertificateController extends Controller
     /**
      * Store a newly created resource in storage.
      */
+
     public function store(Request $request, $packageId)
     {
         $uniqueCertificateId = 'CERT' . rand(10000, 1000000);
@@ -142,17 +143,16 @@ class CertificateController extends Controller
         $packageToUpdate->update([
             'certificate_id' => $certificateCreated->id
         ]);
-//        if ($request->productId === 2) {
+        if ($request->productId === 1) {
             return redirect()->back()->with('success', 'Certificate Generated');
-//        } else {
-//            return redirect()->route('certificate.index')->with('success', 'Certificate Generated');
-//        }
+        } else {
+            return redirect()->route('certificate.index')->with('success', 'Certificate Generated');
+        }
     }
 
     //Downloand certificate
     public function certificateDownload($id)
     {
-
         $certificate = DB::select("SELECT *, certificates.created_at as valid_from FROM certificates JOIN packages ON certificates.package_id = packages.id WHERE certificates.id =" . $id);
 
         $holder      = User::find($certificate[0]->user_id);

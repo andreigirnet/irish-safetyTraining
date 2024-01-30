@@ -1,7 +1,7 @@
 {
     "en": {
         "contact": "Contact Us",
-        "contactText": "Our working hours are: 10am-7pm Monday - Friday & 10am - 6pm<br>\nWeekend/Bank Holiday or email us to info@skillcourses.ie",
+        "contactText": "Our working hours are: 9am till 9-10pm daily including weekends si Adress : ACE Enterprise Park, Bawnogue Rd, Clondalkin, Co. Dublin, D22 TX92 <br> Email us to:  info@skillcourses.ie",
         "contactTap": "Call Us On 0892777333",
         "contactSwitch": "to switch to our chat instantly.",
         "contactOr": "Or contact us on",
@@ -22,7 +22,7 @@
     },
     "sp": {
         "contact": "Contáctenos",
-        "contactText": "Nuestro horario de trabajo es de 10 a.m. a 7 p.m. de lunes a viernes y de 10 a.m. a 6 p.m.<br> los fines de semana/días festivos o envíenos un correo electrónico a info@skillcourses.ie",
+        "contactText": "Nuestro horario de trabajo es de 9 a.m. hasta las 9-10 p.m. todos los días, incluyendo fines de semana. Dirección: ACE Enterprise Park, Bawnogue Rd, Clondalkin, Co. Dublin, D22 TX92 <br> Envíenos un correo electrónico a: info@skillcourses.ie",
         "contactTap": "Llámanos al 0892777333",
         "contactSwitch": "para cambiar instantáneamente a nuestro chat.",
         "contactOr": "O contáctenos al",
@@ -43,11 +43,11 @@
     },
     "ro": {
         "contact": "Contactați-ne",
-        "contactText": "Programul nostru de lucru este: 10:00 - 19:00 de luni până vineri și 10:00 - 18:00 <br> în weekend/zilele de sărbătoare sau puteți să ne trimiteți un email la info@skillcourses.ie",
+        "contactText": "Orarul nostru de lucru este: 9 a.m. până la 9-10 p.m. zilnic, inclusiv în weekend. Adresa: ACE Enterprise Park, Bawnogue Rd, Clondalkin, Co. Dublin, D22 TX92 <br> Trimiteți-ne un email la: info@skillcourses.ie",
         "contactTap": "Sună-ne la 0892777333",
         "contactSwitch": "pentru a trece instantaneu la chatul nostru.",
         "contactOr": "Sau contactați-ne la",
-        "navigation": ["Acasă", "FAQ's", "ANTRENAMENT ECHIPĂ", "CONSULTARE", "CONTACTEAZĂNE", "BLOG"],
+        "navigation": ["Acasă", "FAQ's", "ANTRENAMENT ECHIPĂ", "CONSULTARE", "Contacte", "BLOG"],
         "login": "Login",
         "subNav": [ "120,960 Cursanți și certificate oferite", "Instruire online 24/7", "Garanție de returnare a banilor", "Curs complet acreditat"],
         "videoTitle": "Convenabil și Eficient <br> Asigurându-vă Întoarcerea în Siguranță la Muncă",
@@ -64,7 +64,7 @@
     },
     "pl": {
         "contact": "Skontaktuj się z nami",
-        "contactText": "Nasze godziny pracy to: 10:00-19:00 od poniedziałku do piątku oraz 10:00-18:00 <br> w weekendy/dni świąteczne, lub napisz do nas na info@skillcourses.ie",
+        "contactText": "Nasze godziny pracy to: od 9:00 do 21:00-22:00 codziennie, włącznie z weekendami. Adres: ACE Enterprise Park, Bawnogue Rd, Clondalkin, Co. Dublin, D22 TX92 <br> Skontaktuj się z nami pod adresem e-mail: info@skillcourses.ie",
         "contactTap": "Zadzwoń do nas pod numer 0892777333",
         "contactSwitch": "aby natychmiast przełączyć się na nasz czat.",
         "contactOr": "Lub skontaktuj się z nami pod numerem",
@@ -85,7 +85,7 @@
     },
     "ru": {
         "contact": "Свяжитесь с нами",
-        "contactText": "Наши часы работы: с 10:00 до 19:00 с понедельника по пятницу и с 10:00 до 18:00 <br> в выходные/праздничные дни. Также вы можете написать нам на электронную почту info@skillcourses.ie",
+        "contactText": "Наш рабочий график: с 9:00 до 21:00-22:00 ежедневно, включая выходные. Адрес: ACE Enterprise Park, Bawnogue Rd, Clondalkin, Co. Dublin, D22 TX92 <br> Напишите нам по адресу: info@skillcourses.ie",
         "contactTap": "Позвоните нам по номеру 0892777333",
         "contactSwitch": "чтобы мгновенно переключиться на наш чат.",
         "contactOr": "Или свяжитесь с нами по телефону",

@@ -18,7 +18,7 @@ return [
     'name' => env('APP_NAME'),
     'address'=>'115 Cherrywood Park',
     'town'=>'Dubin',
-    'telephone'=>'899706050',
+    'telephone'=>'830800800',
     'email'=>'info@irish-safetytraining.com',
     /*
     |--------------------------------------------------------------------------

@@ -102,10 +102,10 @@ class BasketController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id): RedirectResponse
+    public function destroy($item): RedirectResponse
     {
         $this->cart->clearActions();
-        $this->cart->removeItem($id);
+        $this->cart->removeItem($item);
 
         return redirect(route('basket.index'))->with('success', "The course has been deleted");
     }
