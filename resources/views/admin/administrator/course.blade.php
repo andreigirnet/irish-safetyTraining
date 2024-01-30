@@ -532,8 +532,9 @@
                         <strong>Congratulations! You have passed the test successfully.</strong>
                         Please press on the button saying "Download Certificate" and get your certificate straight away by email, please check your spam and junk mail just in case to find it.
                         <br><br>
-                        Remember, you can access our website anytime by using your personal password and email and download the certificate or review the course content if you wish so.
+                        Remember, you can access our website anytime by using your personal password & email address and download the certificate or review the course content if you wish so.
                         <br><br>
+                        Please do get in touch if we can be of any further assistance!<br><br>
                         Best regards<br>
 
                         <form x-bind:action="`/certificate/create/${packageId}`" method="POST" x-show="showProgressBar === 'freeze'"  style="margin-top: 20px">
