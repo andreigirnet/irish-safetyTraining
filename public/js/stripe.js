@@ -1,4 +1,4 @@
-const stripe = Stripe("pk_live_51OSma5LlL46PSqmso8GaPuO0t7TZXdwi1DhkQJStUFnAUKpcWTdw8pcm0Woyy3vcU4nXlUJo4YL2sXaGieJ8EbLf00uV2C6oij");
+const stripe = Stripe("pk_test_51KxpYmETeqURMim8HEksWm1VXx7W9IbvdmnLsmtaaInR2TigYWkWenDYXXLDRGY1K1qjbqgJ0KjeyalduesozX5100wIzxf45h");
 const elements = stripe.elements();
 
 // Set up Stripe.js and Elements to use in checkout form
