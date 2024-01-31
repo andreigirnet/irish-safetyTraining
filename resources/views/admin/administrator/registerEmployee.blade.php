@@ -3,14 +3,14 @@
     <div class="registerEmployeeWrapper">
         @if (session('registered'))
             <div class="modalRegisterComplete" id="modalRegisterEmployer">
-                <div class="modalTitle">You have registered successfully your employee.</div>
+                <div class="modalTitle">You have successfully registered your employee.</div>
                 <div class="modalText">
-                    <p>Please inform that the login details were emailed to him/her that can be used anytime later to access our website and take the course.
+                    <p>Please inform your employee that the login details were emailed to him/her and can be used anytime later to access our website and take the course.
                     <br><br>
-                    It's important to check the spam and junk mail just in case. If you wish to send the course to your employee please press the link below (<a
+                        It's important to check the spam and junk mail just in case. If you wish to send the course to your employee please press the link below(<a
                             href="https://www.skillcourses.ie/packages">https://www.skillcourses.ie/packages</a>).
                     <br><br>
-                    You must have the course/courses purchased to be able to take this step, otherwise go to the home page and pay for the course / amount of courses you need and after that send it to your employees.
+                        You must have the course/courses purchased to be able to take this step, otherwise go to the home page and pay for the course / amount of courses you need and after that send it to your employees.
                     </p>
                 </div>
                 <div class="adminButton" style="display: flex; align-items: center; justify-content: center; margin-top: 20px" id="understoodButton">UNDERSTOOD</div>
