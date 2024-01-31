@@ -28,6 +28,7 @@ Auth::routes();
         Route::put('/profile/store/image',[App\Http\Controllers\ProfileController::class,'storeImage'])->name('store.profileImg');
 
         Route::get('/dashboard/employer', [App\Http\Controllers\EmployeeController::class,'index'])->name('dashboard.employer');
+        Route::get('/info/employer/employee/{id}', [App\Http\Controllers\EmployeeController::class,'showEmployee'])->name('employer.employee');
         Route::get('/info/employer/{id}', [App\Http\Controllers\EmployeeController::class,'show'])->name('employer.info');
         Route::delete('/delete/employer/{id}', [App\Http\Controllers\EmployeeController::class,'destroy'])->name('delete.employer');
         Route::get('/employer/consulting', function(){

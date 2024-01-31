@@ -6,6 +6,7 @@ use App\Mail\RegisterEmployeeMail;
 use App\Models\CompanyEmployee;
 use App\Models\Employee;
 use App\Http\Controllers\Controller;
+use App\Models\Package;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
@@ -82,6 +83,13 @@ class EmployeeController extends Controller
         $user = DB::select("SELECT * FROM users LEFT JOIN certificates ON users.id=certificates.user_id WHERE users.id=" . $id);
         $packages = DB::select("SELECT *,packages.id as package_id,packages.created_at, certificates.id as certificate_id FROM packages LEFT JOIN certificates ON packages.id=certificates.package_id WHERE packages.user_id=" . $id);
         return view('admin.administrator.info')->with('user', $user[0])->with('packages',$packages);
+    }
+
+    public function showEmployee($id): \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
+    {
+       $employee = User::find($id);
+       $employeePackages = Package::all()->where('user_id', $id);
+        return view('admin.administrator.showEmployee', compact('employee', 'employeePackages'));
     }
 
     /**
