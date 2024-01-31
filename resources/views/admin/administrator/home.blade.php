@@ -110,7 +110,9 @@
                         <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImage">
                         <div class="adminProductBottom">
                             <div class="adminProductName">{{$product->name}}</div>
+                            @if (!in_array($product->id, [13, 14, 15, 16]))
                             <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
+                            @endif
                             <hr>
                             <div class="product-info-icons">
                                 @if($product->id == 14)
@@ -133,7 +135,7 @@
                                     <div style="font-weight: bold">Only {{$product->price}} €</div>
                                 </div>
                             </div>
-                            @if(!$product->status)
+                            @if($product->status == 0)
                             <form action="{{route('basket.add')}}" method="POST">
                                 @csrf
                                 <input type="hidden" value="{{$product->id}}" name="productId">
@@ -146,7 +148,7 @@
                             </form>
                             @else
                                 <div class="productButtons">
-                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>
+{{--                                    <button type="submit" class="buttonProductAdminAdd">Coming Soon</button>--}}
                                     @if($product->description)
                                     <a href="{{route('front.product', $product->id)}}" class="homeStartCourseButton">Info</a>
                                     @endif

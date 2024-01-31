@@ -43,7 +43,9 @@
                         <img src="{{asset('images/productAdd/'.$product->image)}}" alt="" class="adminProductImage">
                         <div class="adminProductBottom">
                             <div class="adminProductName">{{$product->name}}</div>
+                            @if (!in_array($product->id, [13, 14, 15, 16]))
                             <div style="color: #397b21; font-weight: bold">e-Learning Course</div>
+                            @endif
                             <hr>
                             <div class="product-info-icons">
                                 @if($product->id == 14)
