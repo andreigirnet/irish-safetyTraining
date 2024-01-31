@@ -76,7 +76,7 @@ class CheckoutController extends Controller
                     'currency' => 'eur',
                     'confirmation_method' => 'manual',
                     'confirm' => true,
-                    'statement_descriptor' => 'irish-safetytraining',
+                    'statement_descriptor' => 'Skillcourses',
                     'customer'=> $customer->id,
                     'description' => 'Payment made by '. auth()->user()->email,
                 ]);

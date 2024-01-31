@@ -11,9 +11,8 @@
                         <br><br>
                         You can take the course by following the steps from our website if you are logged in or come back later anytime through your email that was sent to you right now from our system using your login details ( password & email).Check your spam/junk mail just in case.
                         <br><br>
-                        You can choose the language you need for taking your training after the payment it’s processed successfully (English/Polish/Spanish/Russian/Romanian)
-                        <br><br>
-                        We are assisting our customers from 10am till 7-8pm every single day including weekends.
+                        You can choose the language you need for taking your training (Manual Handling Course) after the payment it’s processed successfully (English/Polish/Spanish/Russian/Romanian).All other online courses are available in English.                        <br><br>
+                        We are assisting our customers from 9am till 9-10pm every single day including weekends.
                     </div>
                 </div>
                 <div class="modalText">
