@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tiny.cloud/1/913vjdcsi8rs0du9iqclay1dlmlwkad55hngv09qjo5ce2d8/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
 <body>
 <script>
@@ -69,14 +70,7 @@
 @include('adminIncludes/navigationAdminMain')
 @yield('adminContent')
 
-<script src="https://cdn.tiny.cloud/1/pgal37qe4cgquwsgonvp0ix3ld3pjrui1uioy8u9v5p02mt9/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-    tinymce.init({
-        selector: 'textarea',
-        plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-        toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-    });
-</script>
+
 {{--<script src="{{asset('js/language.js')}}"></script>--}}
 <script src="{{asset('js/dropAdminMenu.js')}}"></script>
 <script src="{{asset('js/trainer.js')}}"></script>
