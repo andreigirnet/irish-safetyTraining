@@ -133,7 +133,7 @@
 
                     if (percentageCorrect >= 70) {
                         this.tryAgainButton = false;
-                        this.video = true;
+                        this.showVideo()
                         this.showHideLang = false;
                         // Display correct and wrong answers
                         console.log('Correct Answers:', this.answerFeedback.filter(answer => answer.correct));
