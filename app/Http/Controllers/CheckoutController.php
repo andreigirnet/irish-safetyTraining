@@ -73,6 +73,7 @@ class CheckoutController extends Controller
                 $intent = \Stripe\PaymentIntent::create([
                     'payment_method' => $json_obj->payment_method_id,
                     'amount' => $amountToInt,
+                    'return_url' => route('package.index'),
                     'currency' => 'eur',
                     'confirmation_method' => 'manual',
                     'confirm' => true,
