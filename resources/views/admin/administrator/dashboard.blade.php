@@ -18,7 +18,7 @@
                 @foreach($employees as $employee)
                     <tr>
                         <td class="hiddenRows actionRow">
-                            <form action="{{route('delete.employer', $employee->id)}}" method="POST"> @csrf @method('DELETE')<button class="submitDeleteOrder"><img class="deleteFormOrders" src="{{asset('images/icons/bin.png')}}" alt=""></button></form>
+{{--                            <form action="{{route('delete.employer', $employee->id)}}" method="POST"> @csrf @method('DELETE')<button class="submitDeleteOrder"><img class="deleteFormOrders" src="{{asset('images/icons/bin.png')}}" alt=""></button></form>--}}
                             <a href="{{route('employer.employee', $employee->id)}}" class="editLink"><img src="{{asset('images/icons/info.png')}}" alt=""></a>
 {{--                                <a href="{{route('employer.info', $employee->employee)}}" class="editLink"><img src="{{asset('images/icons/info.png')}}" alt=""></a>--}}
                         </td>

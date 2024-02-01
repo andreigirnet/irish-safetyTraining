@@ -2,7 +2,7 @@
 @section('adminPages')
     <div class="dashWrapper">
         <div class="adminHomePageTitle">{{$employee->name}} courses</div>
-        @if($employeePackages == [])
+        @if(count($employeePackages))
         <table class="styled-table">
                 <thead>
                 <tr>

@@ -99,13 +99,13 @@
 {{--                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">--}}
 {{--                <div class="navLinkDropAdmin">Все пользователи</div>--}}
 {{--            </a>--}}
-            <a href="{{route('orders.trainer')}}">
-                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">All orders</div>
-            </a>
+{{--            <a href="{{route('orders.trainer')}}">--}}
+{{--                <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">--}}
+{{--                <div class="navLinkDropAdmin">All orders</div>--}}
+{{--            </a>--}}
             <a href="{{route('packages.trainer.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">
-                <div class="navLinkDropAdmin">All packages</div>
+                <div class="navLinkDropAdmin">History of Paid Courses</div>
             </a>
             <a href="{{route('certificates.trainer.index')}}">
                 <img class="navArrow" src="{{asset('images/arrows/right-white.png')}}" alt="">

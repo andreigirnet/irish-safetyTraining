@@ -16,7 +16,7 @@
         <table class="styled-table hide">
             <thead>
             <tr>
-                <th>Action</th>
+{{--                <th>Action</th>--}}
                 <th>Package Id</th>
                 <th class="hiddenRows">Created At</th>
                 <th>Holder Name</th>
@@ -28,7 +28,7 @@
             @if($packages)
             @foreach($packages as $package)
                 <tr>
-                    <td class="actionRow">
+{{--                    <td class="actionRow">--}}
 {{--                        <form action="{{route('packages.admin.delete', $package->id)}}" method="POST">--}}
 {{--                            @csrf--}}
 {{--                            @method('DELETE')--}}
@@ -36,8 +36,8 @@
 {{--                                <img src="{{asset('images/icons/bin.png')}}" alt="">--}}
 {{--                            </button>--}}
 {{--                        </form>--}}
-                        <a href="{{route('packages.trainer.edit', $package->id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>
-                    </td>
+{{--                        <a href="{{route('packages.trainer.edit', $package->id)}}" class="editLink"><img src="{{asset('images/icons/edit.png')}}" alt=""></a>--}}
+{{--                    </td>--}}
                     <td>{{$package->id}}</td>
                     <td class="hiddenRows">{{$package->created_at}}</td>
                     <td>{{$package->userPackageHolder}}</td>
