@@ -110,9 +110,11 @@
     background: #163020 ;
     color: white;
 }
+.whiteLink{
+    color: white;
+}
 a{
     text-decoration: none;
-    color: white;
 }
 #frontNav{
     background: var(--primary);
