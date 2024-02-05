@@ -1,5 +1,5 @@
 {
-    "correctAnswers": [3, 1, 2, 2, 1, 3, 2, 1, 2, 3, 1, 1, 3, 3, 2, 1, 2, 3, 1, 3],
+    "correctAnswers": [3, 1, 2, 2, 1, 3, 1, 1, 1, 3, 2, 1, 3, 3, 2, 3, 2, 3, 1, 3],
     "english": {
         "stage_1": {
             "slide_1": { "img": "/images/allCourse/FE-0-0.jpg" },
@@ -229,7 +229,7 @@
                 "content": "",
                 "bullets": [
                     "a. 5-8 feet",
-                    "b. 10-15 feet",
+                    "b. 8-12 feet",
                     "c. 20-25 feet"
                 ]
             },
