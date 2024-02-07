@@ -99,6 +99,6 @@ const handleServerResponse = async (response) => {
             handleServerResponse(await serverResponse.json());
         }
     } else {
-        window.location.href = '/packages';
+        window.location.href = '/payment/success';
     }
 }

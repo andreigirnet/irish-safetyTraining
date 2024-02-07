@@ -51,6 +51,9 @@ Auth::routes();
         Route::get('/checkout/index', [App\Http\Controllers\CheckoutController::class,'indexS'])->name('checkout.index.secret');
 
         Route::post('/payment', [App\Http\Controllers\CheckoutController::class,'setPayment']);
+        Route::get('/payment/success', function(){
+            return view('admin.administrator.payment');
+        })->name('success.payment');
 
         Route::get('/orders', [App\Http\Controllers\OrderController::class, 'index'])->name('order.index');
         Route::post('/order/items', [App\Http\Controllers\OrderController::class, 'store'])->name('order.store');
