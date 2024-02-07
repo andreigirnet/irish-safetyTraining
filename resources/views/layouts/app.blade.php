@@ -24,7 +24,7 @@
         var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
     })('https://widget.replain.cc/dist/client.js');
 </script>
-        <main>
+        <main style="height: 100%">
             @yield('content')
         </main>
 </body>
