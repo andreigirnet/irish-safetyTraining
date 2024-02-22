@@ -69,7 +69,7 @@ class CertificateController extends Controller
             $size,
             $page
         );
-        $paginationData->setPath('/admin/certificates');
+        $paginationData->setPath('/trainer/certificates');
         return view('admin.trainer.certificates.index')->with('certificates',$paginationData);
     }
 
