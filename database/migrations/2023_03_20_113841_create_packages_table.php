@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('product_id')->nullable()->constrained('products')->cascadeOnDelete()->cascadeOnUpdate();
             $table->text('course_name')->nullable();
             $table->text('status')->nullable();
+            $table->boolean('paidToTrainer')->nullable()->default(0);
             $table->foreignId('certificate_id')->nullable()->constrained('certificates')->cascadeOnDelete()->cascadeOnUpdate();;
             $table->timestamps();
         });

@@ -73,6 +73,8 @@
 
 {{--<script src="{{asset('js/language.js')}}"></script>--}}
 <script src="{{asset('js/dropAdminMenu.js')}}"></script>
+<script src="{{asset('js/bulkPackageEdit.js')}}"></script>
+<script src="{{asset('js/fromToCount.js')}}"></script>
 <script src="{{asset('js/trainer.js')}}"></script>
 <script src="{{asset('js/errors.js')}}"></script>
 <script src="{{asset('js/hideAdminNav.js')}}"></script>

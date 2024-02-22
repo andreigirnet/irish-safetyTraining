@@ -145,6 +145,27 @@ class PackageController extends Controller
         return view('admin.admin.packages.edit')->with('package', $package)->with('employees', $employees);
     }
 
+    public function editBulk(Request $request)
+    {
+        $selectedIdsString = $request->query('selected_ids', '');
+        $selectedIds = array_map('intval', explode(',', $selectedIdsString));
+        Package::whereIn('id', $selectedIds)->update(['paidToTrainer' => \DB::raw('IF(paidToTrainer = 1, 0, 1)')]);
+        return redirect()->back()->with('success', 'Records updated successfully.');
+    }
+
+    public function editFromTo()
+    {
+        return view('admin.admin.packages.fromTo');
+    }
+
+    public function updateFromTo(Request $request)
+    {
+        $from = $request->from;
+        $to = $request->to;
+        Package::whereBetween('id', [$from, $to])->update(['paidToTrainer' => 1]);
+        return redirect(route('packages.admin.index'))->with('success', 'Records updated successfully.');
+    }
+
     public function trainerEdit($id)
     {
         $package= Package::find($id);
