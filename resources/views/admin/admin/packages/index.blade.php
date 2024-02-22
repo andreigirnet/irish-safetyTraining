@@ -13,13 +13,7 @@
                 <button type="submit" class="searchButton">Search</button>
             </form>
         </div>
-        <div class="buttonPackageEdit">
-            <a href="{{route('packages.admin.edit.bulk')}}"  id="bulkEditLink">
-                <div>bulk edit</div>
-                <div id="countEditBulk"></div>
-            </a>
-            <a href="{{route('packages.admin.edit.from.to')}}"  id="bulkEditLink">From-To edit</a>
-        </div>
+
         <table class="styled-table hide">
             <thead>
             <tr>
@@ -37,7 +31,6 @@
             @foreach($packages as $package)
                 <tr>
                     <td class="actionRow">
-                        <input type="checkbox" class="packageCheckbox" onchange="grabIdsBulk(this)" name="selected_ids[]" value="{{ $package->id }}">
                         <form action="{{route('packages.admin.delete', $package->id)}}" method="POST">
                             @csrf
                             @method('DELETE')

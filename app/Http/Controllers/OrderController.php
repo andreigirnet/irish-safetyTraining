@@ -52,7 +52,7 @@ class OrderController extends Controller
             $size,
             $page
         );
-        $paginationData->setPath('/admin/orders');
+        $paginationData->setPath('/trainer/orders');
         return view('admin.trainer.orders.index')->with('orders',$paginationData);
     }
 

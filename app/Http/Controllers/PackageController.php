@@ -70,7 +70,7 @@ class PackageController extends Controller
             $size,
             $page
         );
-        $paginationData->setPath('/admin/packages');
+        $paginationData->setPath('/trainer/packages');
         return view('admin.trainer.packages.index')->with('packages', $paginationData);
     }
 
