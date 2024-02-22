@@ -23,7 +23,7 @@
                 <th>Holder Name</th>
                 <th>Course Name</th>
                 <th>Status</th>
-                <th>paidToTrainer</th>
+{{--                <th>paidToTrainer</th>--}}
             </tr>
             </thead>
             <tbody>
@@ -45,11 +45,11 @@
                     <td>{{$package->userPackageHolder}}</td>
                     <td>{{$package->course_name}}</td>
                     <td>{{$package->status}}</td>
-                    @if($package->paidToTrainer)
-                    <th><img src="{{asset('images/icons/check.png')}}" style="width: 30px" alt=""></th>
-                    @else
-                    <th>-</th>
-                    @endif
+{{--                    @if($package->paidToTrainer)--}}
+{{--                    <th><img src="{{asset('images/icons/check.png')}}" style="width: 30px" alt=""></th>--}}
+{{--                    @else--}}
+{{--                    <th>-</th>--}}
+{{--                    @endif--}}
                 </tr>
             @endforeach
             {{--        <tr class="active-row">--}}
